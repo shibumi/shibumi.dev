@@ -1,0 +1,13 @@
+# Site settings
+title: nullday
+email:
+description: "nullday ist der private webspace von Christian Rebischke und powered by jekyll: Garantiert ohne Javascript, PHP, Cookies und MySQL. Letzte Veränderung: 20.11.2015"
+baseurl: ""
+url: "http://www.nullday.de"
+twitter_username: sh1bumi
+github_username:  shibumi
+
+# Build settings
+markdown: rdiscount
+permalink: pretty
+highlighter: pygments
