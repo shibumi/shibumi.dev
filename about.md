@@ -32,7 +32,7 @@ Studiengang Informatik
 Angestrebter Abschluss Bachelor    
 (2013-)  
   
-Abitur an dem Robert-Koch-Gymnasium    
+Abitur am Robert-Koch-Gymnasium    
 Clausthal-Zellerfeld (2004-2013)  
   
 **Fremdsprachen**  
