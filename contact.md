@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Impressum
-permalink: /impressum/
+title: Contact
+permalink: /contact/
 ---
 
 **Angaben gemäß § 5 TMG:**  
