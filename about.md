@@ -8,6 +8,7 @@ permalink: /about/
 Hilfswissenschaftler im  
 Rechenzentrum TU-Clausthal  
 (April 2016-)  
+
 * Network Monitoring with Centreon
 * NFSv4 with Kerberos
 * System Administration (CentOS 7, Ubuntu, RHEL)
@@ -16,6 +17,7 @@ Rechenzentrum TU-Clausthal
 Hilfswissenschaftler am    
 Institut für Mathematik   
 (April 2014-)  
+
 * First-Level-Support
 * System Administration (Windows, GNU/Linux)
 * Network Monitoring with Centreon
@@ -34,16 +36,19 @@ Abitur an dem Robert-Koch-Gymnasium
 Clausthal-Zellerfeld (2004-2013)  
   
 **Fremdsprachen**  
+
 * Deutsch (Muttersprache)
 * Englisch (fließend)
   
 **Weitere Fremdsprachen (Grundkenntnisse)**  
+
 * Japanisch
 * Russisch
 * Chinesisch
 * Arabisch
   
 **Programmiersprachen**  
+
 * C
 * C++
 * Assembler
@@ -53,17 +58,20 @@ Clausthal-Zellerfeld (2004-2013)
 * Rust
   
 **Interessen**  
+
 * Ostasien (Japan, Korea, China)
 * Geschichte
 * Politik
   
 **Skills**  
+
 * Systemadministration 
 * Reverse Engineering
 * Malware Analysis
 * Software Engineering
   
 **Mitwirken**  
+
 * [Archlinux: CVE-Monitoring Team](https://www.archlinux.org/people/support-staff/)
   
 **Erwähnungen**  
@@ -71,6 +79,7 @@ Clausthal-Zellerfeld (2004-2013)
 Ein großes Danke an [Peter Kalnai](https://twitter.com/pkalnai) and [Jaromir Horejsi](https://twitter.com/JaromirHorejsi) für die Ehre.    
    
 **Besuchte Events**  
+
 * Oktober 2014, Hackover in Hannover
 * Dezember 2014, 31. Chaos Communication Congress in Hamburg
 * April 2015, Easterhegg in Braunschweig
