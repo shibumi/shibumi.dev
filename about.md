@@ -12,6 +12,7 @@ Rechenzentrum TU-Clausthal
 * Network Monitoring with Centreon
 * NFSv4 with Kerberos
 * System Administration (CentOS 7, Ubuntu, RHEL)
+* LanSweeper
 * ...
   
 Hilfswissenschaftler am    
@@ -62,6 +63,9 @@ Clausthal-Zellerfeld (2004-2013)
 * Ostasien (Japan, Korea, China)
 * Geschichte
 * Politik
+* Literatur
+* Philosophie
+* Musik
   
 **Skills**  
 
