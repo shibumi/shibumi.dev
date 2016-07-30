@@ -13,6 +13,7 @@ gesehen aus Zeitmangel::
 * Ghost in the Shell
 * Jormungand
 * Black Lagoon
+* Terror in Tokyo
 * NOIR
 * Psycho-Pass
 * Death Note
