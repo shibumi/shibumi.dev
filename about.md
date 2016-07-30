@@ -9,9 +9,9 @@ Hilfswissenschaftler im
 Rechenzentrum TU-Clausthal  
 (April 2016-)  
 
-* Network Monitoring with Centreon
-* NFSv4 with Kerberos
-* System Administration (CentOS 7, Ubuntu, RHEL)
+* Network Monitoring mit Centreon
+* NFSv4 mit Kerberos
+* Systemadministration (CentOS 7, Ubuntu, RHEL)
 * LanSweeper
 * ...
   
@@ -20,12 +20,12 @@ Institut für Mathematik
 (April 2014-)  
 
 * First-Level-Support
-* System Administration (Windows, GNU/Linux)
-* Network Monitoring with Centreon
-* Firefox-Cloud (Sync- and Authserver)
+* Systemadministration (Windows, GNU/Linux)
+* Network Monitoring mit Centreon
+* Firefox-Cloud (Sync- und Authserver)
 * DALCO AG Computecluster
 * PAM, LDAP, ActiveDirectory, MySQL, NFS4
-* Software development in Bash and Python
+* Softwareentwicklung in Bash und Python
 * ...
   
 Studium an der TU-Clausthal-Zellerfeld    
@@ -41,7 +41,7 @@ Clausthal-Zellerfeld (2004-2013)
 * Deutsch (Muttersprache)
 * Englisch (fließend)
   
-**Weitere Fremdsprachen (Grundkenntnisse)**  
+**Weitere Fremdsprachen (Geringe Kenntnisse)**  
 
 * Japanisch
 * Russisch
