@@ -16,7 +16,7 @@ Rechenzentrum TU-Clausthal
 * ...
   
 Hilfswissenschaftler am    
-Institut für Mathematik   
+Institut für Mathematik TU-Clausthal    
 (April 2014-)  
 
 * First-Level-Support
@@ -28,7 +28,7 @@ Institut für Mathematik
 * Softwareentwicklung in Bash und Python
 * ...
   
-Studium an der TU-Clausthal-Zellerfeld    
+Studium an der TU-Clausthal    
 Studiengang Informatik    
 Angestrebter Abschluss Bachelor    
 (2013-)  
@@ -84,9 +84,9 @@ Ein großes Danke an [Peter Kalnai](https://twitter.com/pkalnai) and [Jaromir Ho
    
 **Besuchte Events**  
 
-* Oktober 2014, Hackover in Hannover
-* Dezember 2014, 31. Chaos Communication Congress in Hamburg
-* April 2015, Easterhegg in Braunschweig
-* August 2015, Chaos Communication Camp in Mildenberg (Berlin)
-* Oktober 2015, Hackover in Hannover
 * Dezember 2015, 32. Chaos Communication Congress in Hamburg
+* Oktober 2015, Hackover in Hannover
+* August 2015, Chaos Communication Camp in Mildenberg (Berlin)
+* April 2015, Easterhegg in Braunschweig
+* Dezember 2014, 31. Chaos Communication Congress in Hamburg
+* Oktober 2014, Hackover in Hannover
