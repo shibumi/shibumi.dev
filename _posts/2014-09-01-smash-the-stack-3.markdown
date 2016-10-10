@@ -33,13 +33,10 @@ int main(int argc, char **argv, char **envp)
 {
         void (*functionpointer)(void) = bad;
         char buffer[50];
-
         if(argc != 2 || strlen(argv[1]) < 4)
                 return 0;
-
         memcpy(buffer, argv[1], strlen(argv[1]));
         memset(buffer, 0, strlen(argv[1]) - 4);
-
         printf("This is exciting we're going to %p\n", functionpointer);
         functionpointer();
 
