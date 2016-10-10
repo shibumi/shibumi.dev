@@ -26,18 +26,13 @@ Wir könnten uns eine Aufgabe aussuchen. Aber wir werden beide Aufgaben bearbeit
 #define answer 3.141593
 
 void main(int argc, char **argv) {
-
-	float a = (argc - 2)?: strtod(argv[1], 0);
-
-        printf("You provided the number %f which is too ", a);
-
-
-        if(a < answer)
-                 puts("low");
-        else if(a > answer)
-                puts("high");
-        else
-                execl("/bin/sh", "sh", "-p", NULL);
+    float a = (argc - 2)?: strtod(argv[1], 0); 
+    printf("You provided the number %f which is too ", a); 
+    if(a < answer) 
+        puts("low"); 
+    else if(a > answer) 
+        puts("high"); 
+    else execl("/bin/sh", "sh", "-p", NULL);
 }
 {% endhighlight %}
 
@@ -56,20 +51,20 @@ Soviel zu Aufgabe *level02_alt*. Nun widmen wir uns *level02*. Dazu schauen wir 
 
 void catcher(int a)
 {
-        setresuid(geteuid(),geteuid(),geteuid());
-	printf("WIN!\n");
-        system("/bin/sh");
-        exit(0);
+    setresuid(geteuid(),geteuid(),geteuid());
+    printf("WIN!\n");
+    system("/bin/sh");
+    exit(0);
 }
 
 int main(int argc, char **argv)
 {
-	puts("source code is available in level02.c\n");
+    puts("source code is available in level02.c\n");
 
-        if (argc != 3 || !atoi(argv[2]))
-                return 1;
-        signal(SIGFPE, catcher);
-        return abs(atoi(argv[1])) / atoi(argv[2]);
+    if (argc != 3 || !atoi(argv[2]))
+        return 1;
+    signal(SIGFPE, catcher);
+    return abs(atoi(argv[1])) / atoi(argv[2]);
 }
 {% endhighlight %}
 
