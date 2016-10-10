@@ -111,23 +111,22 @@ vorstellen:
 #include <stdlib.h>
 
 void shift(char* string) {
-  size_t length = strlen(string);
-  size_t i;
-  for (i = 0; i < length; ++i) {
-    string[i] -= 0x3;
-
-  }
-  printf("%s\n", string);
+     size_t length = strlen(string);
+     size_t i;
+     for (i = 0; i < length; ++i) {
+        string[i] -= 0x3;
+     }
+     printf("%s\n", string);
 }
 
 int main() {
-  char string1[] = "Lqydolg_Sdvvzrug";
-  char string2[] = "Sdvvzrug_RN";
-  printf("%s = ", string1 );
-  shift(string1);
-  printf("%s = ", string2 );
-  shift(string2);
-  return 0;
+    char string1[] = "Lqydolg_Sdvvzrug";
+    char string2[] = "Sdvvzrug_RN";
+    printf("%s = ", string1 );
+    shift(string1);
+    printf("%s = ", string2 );
+    shift(string2);
+    return 0;
 }
 
 {% endhighlight %}
