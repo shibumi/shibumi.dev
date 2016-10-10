@@ -39,7 +39,6 @@ int main(int argc, char **argv, char **envp)
         memset(buffer, 0, strlen(argv[1]) - 4);
         printf("This is exciting we're going to %p\n", functionpointer);
         functionpointer();
-
         return 0;
 }
 
