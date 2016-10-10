@@ -12,16 +12,11 @@ Herzlich willkommen zurück zu Smash-the-Stack Level5. Dieses mal widmen wir uns
 #include <string.h>
 
 int main(int argc, char **argv) {
-
-	char buf[128];
-
-	if(argc < 2) return 1;
-
-	strcpy(buf, argv[1]);
-
-	printf("%s\n", buf);	
-
-	return 0;
+    char buf[128];
+    if(argc < 2) return 1;
+    strcpy(buf, argv[1]);
+    printf("%s\n", buf);	
+    return 0;
 }
 {% endhighlight %}
 

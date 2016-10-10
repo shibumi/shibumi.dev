@@ -16,12 +16,11 @@ Heute widmen wir uns Level4 ( um genauer zu sein level04.c und der zugehörigen 
 #include <stdio.h>
 
 int main() {
-        char username[1024];
-        FILE* f = popen("whoami","r");
-        fgets(username, sizeof(username), f);
-        printf("Welcome %s", username);
-
-        return 0;
+    char username[1024];
+    FILE* f = popen("whoami","r");
+    fgets(username, sizeof(username), f);
+    printf("Welcome %s", username);
+    return 0;
 }
 {% endhighlight %}
 
