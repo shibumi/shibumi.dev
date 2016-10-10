@@ -60,7 +60,6 @@ void catcher(int a)
 int main(int argc, char **argv)
 {
     puts("source code is available in level02.c\n");
-
     if (argc != 3 || !atoi(argv[2]))
         return 1;
     signal(SIGFPE, catcher);
@@ -77,10 +76,10 @@ Von immenser Bedeutung für das Programm ist also das potenzielle Abfangen des S
 #include <stdio.h>
 
 int main(void){
-  printf("Obere Grenze von Integer %d\n", INT_MAX);
-  printf("Untere Grenze von Integer %d\n", INT_MIN);
-  return 0;
-  }
+    printf("Obere Grenze von Integer %d\n", INT_MAX);
+    printf("Untere Grenze von Integer %d\n", INT_MIN);
+    return 0;
+}
 {% endhighlight %}
 
 Das Programm tut nichts anderes als die Konstanten *INT_MAX* und *INT_MIN* auszugeben, welche in der headerfile *limits.h* definiert sind. In den Konstanten stehen der höchste Wert und der niedrigste Wert für Integer. Die Ausgabe des Programms sieht so aus:
