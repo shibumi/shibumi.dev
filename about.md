@@ -5,6 +5,13 @@ permalink: /about/
 ---
   
 **Curriculum Vitae**  
+
+Hilfswissenschaftler am
+Institut für Software Systems Engineering TU-Clausthal
+(Oktober 2016-)
+
+* Softwareentwicklung in Java
+
 Hilfswissenschaftler im  
 Rechenzentrum TU-Clausthal  
 (April 2016-)  
