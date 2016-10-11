@@ -5,21 +5,22 @@ permalink: /about/
 ---
   
 **Curriculum Vitae**  
-
-Hilfswissenschaftler am
-Institut für Software Systems Engineering TU-Clausthal
-(Oktober 2016-)
-
+  
+Hilfswissenschaftler am  
+Institut für Software Systems Engineering TU-Clausthal  
+(Oktober 2016-)  
+  
 * Softwareentwicklung in Java
-
+  
 Hilfswissenschaftler im  
 Rechenzentrum TU-Clausthal  
 (April 2016-)  
-
+  
 * Network Monitoring mit Centreon
 * NFSv4 mit Kerberos
 * Systemadministration (CentOS 7, Ubuntu, RHEL)
 * LanSweeper
+* OPSI
 * ...
   
 Hilfswissenschaftler am    
