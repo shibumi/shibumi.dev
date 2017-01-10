@@ -11,6 +11,8 @@ Institut für Software Systems Engineering TU-Clausthal
 (Oktober 2016-)  
   
 * Softwareentwicklung in Java
+* Functional-Mockup-Interface (FMI)
+* ...
   
 Hilfswissenschaftler im  
 Rechenzentrum TU-Clausthal  
@@ -21,6 +23,7 @@ Rechenzentrum TU-Clausthal
 * Systemadministration (CentOS 7, Ubuntu, RHEL)
 * LanSweeper
 * OPSI
+* Package-Management (Ubuntu/CentOS)
 * ...
   
 Hilfswissenschaftler am    
@@ -92,6 +95,7 @@ Ein großes Danke an [Peter Kalnai](https://twitter.com/pkalnai) and [Jaromir Ho
    
 **Besuchte Events**  
 
+* Dezember, 2016, 33. Chaos Communication Congress in Hamburg
 * Oktober 2016, Hackover in Hannover
 * Dezember 2015, 32. Chaos Communication Congress in Hamburg
 * Oktober 2015, Hackover in Hannover
