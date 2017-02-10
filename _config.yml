@@ -11,6 +11,6 @@ google_plus_username: ChristianRebischke
 xing_username: Christian_Rebischke
 
 # Build settings
-markdown: rdiscount
+markdown: kramdown
 permalink: pretty
-highlighter: pygments
+highlighter: rouge

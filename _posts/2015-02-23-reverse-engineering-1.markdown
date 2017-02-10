@@ -18,7 +18,7 @@ Level0
 
 Schauen wir uns die binary erstmal an was sie tut:
 
-![level0]({{ sitebase.url }}/img/crackme-level0x01.png")
+![level0]({{ sitebase.url }}/img/crackme-level0x01.png)
 
 Wie man sieht erwartet uns eine Passwort-Prompt. Schauen wir uns also mal
 standardmäßig als erstes die Strings an. Ist ja schließlich Level 1 ;-)

@@ -14,7 +14,7 @@ Level4
 
 Schauen wir uns die binary erstmal an was sie tut:
 
-![level4]({{ sitebase.url }}/img/crackme-level0x41.png")
+![level4]({{ sitebase.url }}/img/crackme-level0x41.png)
 
 Der interessante Teil scheint in der sym.check function zu stehen. Schauen wir
 uns diese mal genauer an:

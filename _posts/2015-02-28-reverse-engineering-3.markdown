@@ -31,12 +31,12 @@ gestripped ist können wir kein *pdf@sym.main* in radare2 benutzen um die main
 Methode zu disassemblieren. Wir schauen uns also einfach den *entry-point* via
 *pd* an:
 
-![level7]({{ sitebase.url }}/img/crackme-level0x71.png")
-![level7]({{ sitebase.url }}/img/crackme-level0x72.png")
-![level7]({{ sitebase.url }}/img/crackme-level0x73.png")
-![level7]({{ sitebase.url }}/img/crackme-level0x74.png")
-![level7]({{ sitebase.url }}/img/crackme-level0x75.png")
-![level7]({{ sitebase.url }}/img/crackme-level0x76.png")
+![level7]({{ sitebase.url }}/img/crackme-level0x71.png)
+![level7]({{ sitebase.url }}/img/crackme-level0x72.png)
+![level7]({{ sitebase.url }}/img/crackme-level0x73.png)
+![level7]({{ sitebase.url }}/img/crackme-level0x74.png)
+![level7]({{ sitebase.url }}/img/crackme-level0x75.png)
+![level7]({{ sitebase.url }}/img/crackme-level0x76.png)
 
 Das scheint eine Menge zusammenhangloser Code zu sein. Räumen wir also mal auf.
 Wir können mit dem Befehl *af+ <offset> <size> <func name>* neue Funktionen
