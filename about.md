@@ -89,6 +89,7 @@ Clausthal-Zellerfeld (2004-2013)
 **Mitwirken**  
 
 * [Archlinux: CVE-Monitoring Team](https://www.archlinux.org/people/support-staff/)
+* [Archlinux: Trusted User](https://www.archlinux.org/people/trusted-users/)
   
 **Erwähnungen**  
 [Virus Bulletin Conference 2015](https://www.virusbtn.com/pdf/conference_slides/2015/KalnaiHorejsi-VB2015.pdf)    
