@@ -30,7 +30,6 @@ Hilfswissenschaftler am
 Institut für Mathematik TU-Clausthal    
 (April 2014-)  
 
-* First-Level-Support
 * Systemadministration (Windows, GNU/Linux)
 * Network Monitoring mit Centreon
 * Firefox-Cloud (Sync- und Authserver)
