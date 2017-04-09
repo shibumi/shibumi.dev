@@ -1,7 +1,7 @@
 # Site settings
 title: nullday
 email: chris@nullday.de
-description: "nullday ist der private webspace von Christian Rebischke und powered by jekyll: Garantiert ohne Javascript, PHP, Cookies und MySQL. Letzte Veränderung: 10.01.2017"
+description: "nullday ist der private webspace von Christian Rebischke und powered by jekyll: Garantiert ohne Javascript, PHP, Cookies und MySQL. Letzte Veränderung: 2017-04-09"
 baseurl: ""
 url: "http://www.nullday.de"
 twitter_username: sh1bumi

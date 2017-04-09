@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Privates Data Mining"
+title:  "Private Data Mining"
 date:   2014-08-18 13:13:13
 categories: IT-Sec
 ---

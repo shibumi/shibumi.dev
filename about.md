@@ -34,7 +34,7 @@ Institut für Mathematik TU-Clausthal
 * Systemadministration (Windows, GNU/Linux)
 * Network Monitoring mit Centreon
 * Firefox-Cloud (Sync- und Authserver)
-* DALCO AG Computecluster
+* Computecluster
 * PAM, LDAP, ActiveDirectory, MySQL, NFS4
 * Softwareentwicklung in Bash und Python
 * ...
@@ -68,15 +68,15 @@ Clausthal-Zellerfeld (2004-2013)
 * Python
 * Bash
 * Rust
+* Ruby
   
 **Interessen**  
 
 * Ostasien (Japan, Korea, China)
 * Geschichte
-* Politik
-* Literatur
 * Philosophie
 * Musik
+* Kochen
   
 **Skills**  
 
@@ -84,6 +84,7 @@ Clausthal-Zellerfeld (2004-2013)
 * Reverse Engineering
 * Malware Analysis
 * Software Engineering
+* DevOps
   
 **Mitwirken**  
 
