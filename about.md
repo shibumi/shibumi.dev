@@ -81,7 +81,7 @@ Clausthal-Zellerfeld (2004-2013)
     * Compute Cluster (MPI)
     * VPN (OpenVPN)
     * Firewall (firewalld, iptables)
-    * Package building (deb, rpm, pkg.tar.xz)
+    * Package Management (deb, rpm, pkg.tar.xz)
     * Network Monitoring (NSCA, NRPE, SNMP)
     * Access-Control (PAM, sudo, polkit, LDAP)
     * Backups (borg, rsync)
@@ -91,11 +91,14 @@ Clausthal-Zellerfeld (2004-2013)
         * Reverse-Engineering
         * Statische Malware-Analyse
         * Dynamische Malware-Analyse
+        * Phishing
+        * APT
+        * Threat-Modells
         * Yara, radare2, gdb, strace, photorec, ..
     * Offensive
         * Blackbox-Tests
         * Whitebox-Tests
-        * Custom Exploits
+        * Exploits
         * Information Gathering
         * Fuzzing
         * Social-Engineering
@@ -123,8 +126,8 @@ Clausthal-Zellerfeld (2004-2013)
     * Site-Reliability-Engineering
     * Qualitätssicherung
     * Release-Engineering
-    * Container (Docker, Systemd-nspawn)
-    * Testing (Vagrant)
+    * Container (Docker, Systemd-Nspawn)
+    * Virtualisierung (Vagrant, libvirt, KVM)
     * IaaS, SaaS, ..
   
 **Interessen**  
