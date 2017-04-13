@@ -65,9 +65,67 @@ Clausthal-Zellerfeld (2004-2013)
 * Assembler
 * Java
 * Python
-* Bash
+* Bash/ZSH
 * Rust
 * Ruby
+  
+**Skillset**
+
+* Systemadministration
+    * RHEL, Debian, Ubuntu, Arch Linux, CentOS
+    * Webserver (Nginx, Apache)
+    * Editors (vim, nano)
+    * Init-Systems (Sysvinit, systemd)
+    * Databases (MySQL, MariaDB)
+    * NFS (NFSv4 with Kerberos Support)
+    * Compute Cluster (MPI)
+    * VPN (OpenVPN)
+    * Firewall (firewalld, iptables)
+    * Package building (deb, rpm, pkg.tar.xz)
+    * Network Monitoring (NSCA, NRPE, SNMP)
+    * Access-Control (PAM, sudo, polkit, LDAP)
+    * Backups (borg, rsync)
+* IT-Sicherheit
+    * IT-Forensik
+        * Datenrettung
+        * Reverse-Engineering
+        * Statische Malware-Analyse
+        * Dynamische Malware-Analyse
+        * Yara, radare2, gdb, strace, photorec, ..
+    * Offensive
+        * Blackbox-Tests
+        * Whitebox-Tests
+        * Custom Exploits
+        * Information Gathering
+        * Fuzzing
+        * Social-Engineering
+    * Defensive
+        * Linux-Hardening (grsec, selinux, audit, namespaces, cgroups)
+        * Verschlüsselung (dm-crypt, LUKS, openssl)
+        * Anonymisierung (Tor)
+        * Obfuscation, Steganographie
+* Software Engineering
+    * IDE (Eclipse, Intellij)
+    * VCS (SVN, GIT)
+    * Agil, V-Modell XT, Test-Driven-Development
+    * Kanban
+    * SWOT
+    * Requirements-Engineering
+    * Design-Patterns
+    * Unit-Tests
+    * User-Experience (UX)
+    * Architektur-Modellierung (UML)
+* DevOps
+    * Orchestration (Ansible)
+    * Config-Management (Puppet)
+    * Continuous-Delivery
+    * Continuous-Integration (Jenkins)
+    * Site-Reliability-Engineering
+    * Qualitätssicherung
+    * Release-Engineering
+    * Container (Docker, Systemd-nspawn)
+    * Testing (Vagrant)
+    * IaaS, SaaS, ..
   
 **Interessen**  
 
@@ -76,14 +134,6 @@ Clausthal-Zellerfeld (2004-2013)
 * Philosophie
 * Musik
 * Kochen
-  
-**Skills**  
-
-* Systemadministration 
-* Reverse Engineering
-* Malware Analysis
-* Software Engineering
-* DevOps
   
 **Mitwirken**  
 
