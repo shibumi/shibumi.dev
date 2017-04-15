@@ -65,9 +65,12 @@ Clausthal-Zellerfeld (2004-2013)
 * Assembler
 * Java
 * Python
-* Bash/ZSH
+* Bash
 * Rust
 * Ruby
+* Javascript
+* PHP
+* Prolog
   
 **Skillset**
 
@@ -85,6 +88,7 @@ Clausthal-Zellerfeld (2004-2013)
     * Network Monitoring (NSCA, NRPE, SNMP)
     * Access-Control (PAM, sudo, polkit, LDAP)
     * Backups (borg, rsync)
+    * DNS (dnsmasq)
 * IT-Sicherheit
     * IT-Forensik
         * Datenrettung
@@ -107,6 +111,8 @@ Clausthal-Zellerfeld (2004-2013)
         * Verschlüsselung (dm-crypt, LUKS, openssl)
         * Anonymisierung (Tor)
         * Obfuscation, Steganographie
+        * Honeypots (kippo, cowrie)
+        * Port-Knocking
 * Software Engineering
     * IDE (Eclipse, Intellij)
     * VCS (SVN, GIT)
@@ -118,6 +124,7 @@ Clausthal-Zellerfeld (2004-2013)
     * Unit-Tests
     * User-Experience (UX)
     * Architektur-Modellierung (UML)
+    * Full-Stack-Development (HTML, JSON, SQL, PHP, ...)
 * DevOps
     * Orchestration (Ansible)
     * Config-Management (Puppet)
