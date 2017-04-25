@@ -7,5 +7,5 @@
 #
 # To enable this hook, rename this file to "pre-commit".
 
-sed  -i "s|[[:digit:]]*\.[[:digit:]]*\.[[:digit:]]*|$(date -I)|g" "${GIT_DIR}/../_config.yml"
+sed  -i "s|[[:digit:]]\+-[[:digit:]]\+-[[:digit:]]\+|$(date -I)|g" "${GIT_DIR}/../_config.yml"
 git add "${GIT_DIR}/../_config.yml"
