@@ -157,6 +157,7 @@ Ein großes Danke an [Peter Kalnai](https://twitter.com/pkalnai) and [Jaromir Ho
    
 **Besuchte Events**  
 
+* März, 2017, Cebit in Hannover
 * Dezember, 2016, 33. Chaos Communication Congress in Hamburg
 * Oktober 2016, Hackover in Hannover
 * Dezember 2015, 32. Chaos Communication Congress in Hamburg
