@@ -8,11 +8,13 @@ permalink: /about/
   
 Hilfswissenschaftler am  
 Institut für Software Systems Engineering TU-Clausthal  
-(Oktober 2016-)  
+(Oktober 2016-September 2017)  
   
-* Softwareentwicklung in Java
-* Functional-Mockup-Interface (FMI)
-* ...
+* Software Development (Java)
+* FMI (Functional-Mockup-Interface)
+* Matlab
+* Multi-Level-Simulation
+* Build-Management (Gradle)
   
 Hilfswissenschaftler im  
 Rechenzentrum TU-Clausthal  
@@ -28,15 +30,18 @@ Rechenzentrum TU-Clausthal
   
 Hilfswissenschaftler am    
 Institut für Mathematik TU-Clausthal    
-(April 2014-)  
+(April 2014-September 2017)  
 
 * Systemadministration (Windows, GNU/Linux)
-* Network Monitoring mit Centreon
-* Firefox-Cloud (Sync- und Authserver)
-* Computecluster
-* PAM, LDAP, ActiveDirectory, MySQL, NFS4
-* Softwareentwicklung in Bash und Python
-* ...
+* Identity and Access Management (LDAP, PAM, Kerberos)
+* Monitoring (NRPE, NSCA, SNMP)
+* Package Management (RPM, DEB)
+* Bash-Scripting
+* Printserver (CUPS)
+* Webserver (Apache)
+* Network-Storage (NFSv4, Firefox-Sync-Server)
+* Database (MySQL)
+* Configuration-Management (OPSI)
   
 Studium an der TU-Clausthal    
 Studiengang Informatik    
