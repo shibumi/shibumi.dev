@@ -162,6 +162,7 @@ Ein großes Danke an [Peter Kalnai](https://twitter.com/pkalnai) and [Jaromir Ho
    
 **Besuchte Events**  
 
+* Dezember, 2017, 34. Chaos Communication Congress in Leipzig
 * März, 2017, Cebit in Hannover
 * Dezember, 2016, 33. Chaos Communication Congress in Hamburg
 * Oktober 2016, Hackover in Hannover
