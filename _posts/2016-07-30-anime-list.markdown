@@ -54,4 +54,7 @@ gesehen aus Zeitmangel::
 * Gantz
 * Black Cat
 * Eve no Jikan
-* Samurai 7 
+* Samurai 7
+* Neon Genesis Evangelion
+* Kokoro Ga Sakebitagatterunda
+* Blame!
