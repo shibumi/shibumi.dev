@@ -58,3 +58,5 @@ gesehen aus Zeitmangel::
 * Neon Genesis Evangelion
 * Kokoro Ga Sakebitagatterunda
 * Blame!
+* Harmoni
+* Subete ga F ni naru
