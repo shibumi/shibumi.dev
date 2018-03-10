@@ -6,16 +6,6 @@ permalink: /about/
   
 **Curriculum Vitae**  
   
-Hilfswissenschaftler am  
-Institut für Software Systems Engineering TU-Clausthal  
-(Oktober 2016-September 2017)  
-  
-* Software Development (Java)
-* FMI (Functional-Mockup-Interface)
-* Matlab
-* Multi-Level-Simulation
-* Build-Management (Gradle)
-  
 Hilfswissenschaftler im  
 Rechenzentrum TU-Clausthal  
 (April 2016-)  
@@ -27,6 +17,18 @@ Rechenzentrum TU-Clausthal
 * OPSI
 * Package-Management (Ubuntu/CentOS)
 * ...
+  
+Hilfswissenschaftler am  
+Institut für Software Systems Engineering TU-Clausthal  
+(Oktober 2016-September 2017)  
+  
+* Versionkontrolle mit SVN
+* Software-Architektur
+* Software-Entwicklung in Java
+* Build-Management mit Gradle
+* FMI (Functional Mockup Interface)
+* Matlab Simulink Compiler
+* Continuous Code Quality mit Sonarqube
   
 Hilfswissenschaftler am    
 Institut für Mathematik TU-Clausthal    
