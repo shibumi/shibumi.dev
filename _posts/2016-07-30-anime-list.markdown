@@ -60,3 +60,4 @@ gesehen aus Zeitmangel::
 * Blame!
 * Harmoni
 * Subete ga F ni naru
+* New Game!
