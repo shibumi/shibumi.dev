@@ -61,3 +61,4 @@ gesehen aus Zeitmangel::
 * Harmoni
 * Subete ga F ni naru
 * New Game!
+* Rakuen Tsuiho
