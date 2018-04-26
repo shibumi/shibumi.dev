@@ -62,3 +62,5 @@ gesehen aus Zeitmangel::
 * Subete ga F ni naru
 * New Game!
 * Rakuen Tsuiho
+* Death Parade
+* Patema Inverted
