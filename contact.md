@@ -29,8 +29,5 @@ Diese Seite sammelt keine Daten. Es werden keine IP-Adressen gespeichert
 geloggt, es werden keine Cookies verwendet um Benutzer zu identifizieren
 und die Verbindung zu dieser Seite erfolgt ausschließlich über HTTPS.
 
-Ergo werden keine Daten gesammelt und somit können auch keine Daten
-weitergegeben werden.
-
-Falls Daten doch ermittelt werden (beisielsweise bei der Fehlersuche)
-werden diese Daten umgehend nach Beheben des Fehlers vernichtet.
+Ergo werden keine Daten gesammelt und somit werden auch keine
+Daten weitergegeben.
