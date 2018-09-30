@@ -1,9 +1,9 @@
 # Site settings
 title: nullday
 email: chris@nullday.de
-description: "nullday ist der private webspace von Christian Rebischke. Letzte Veränderung: 2018-07-15"
+description: "nullday ist der private webspace von Christian Rebischke. Letzte Veränderung: 2018-10-01"
 baseurl: ""
-url: "http://www.nullday.de"
+url: "https://www.nullday.de"
 twitter_username: sh1bumi
 github_username:  shibumi
 linkedin_username: shibumi
