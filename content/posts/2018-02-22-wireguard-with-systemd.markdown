@@ -1,7 +1,7 @@
 ---
 title:  "wireguard with systemd"
 date:   2018-02-22T13:13:13+01:00
-draft: true
+draft: false
 toc: false
 images:
 tags:

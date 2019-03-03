@@ -1,7 +1,7 @@
 ---
 title:  "Private Data Mining"
 date:   2014-08-18T13:13:13+01:00
-draft: true
+draft: false
 toc: false
 images:
 tags:

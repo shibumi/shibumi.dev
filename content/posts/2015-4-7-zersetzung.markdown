@@ -1,7 +1,7 @@
 ---
 title:  "Zersetzung - STASI guideline (english translation)"
 date:   2015-04-07T13:13:13+01:00
-draft: true
+draft: false
 toc: false
 images:
 tags:

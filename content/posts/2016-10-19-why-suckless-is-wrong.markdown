@@ -1,7 +1,7 @@
 ---
 title:  "Why suckless is wrong"
 date:   2016-10-19T13:13:13+01:00
-draft: true
+draft: false
 toc: false
 images:
 tags:
