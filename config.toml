@@ -1,5 +1,5 @@
 baseURL = "https://nullday.de"
-title   = "Hello Friend NG"
+title   = "nullday.de"
 
 DefaultContentLanguage = "en"
 
@@ -57,7 +57,7 @@ disableHugoGeneratorInject = false
   keywords = ""
   images = [""]
 
-  homeSubtitle = "Hello Friend NG"
+  homeSubtitle = "by Christian Rebischke"
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
   # gitUrl = ""
@@ -76,7 +76,7 @@ disableHugoGeneratorInject = false
   defaultTheme = "dark"
 
   [params.logo]
-    logoText     = "$ cd /home/"
+    logoText     = "$ cd /home/chris/"
     logoHomeLink = "/"
 
   # Social icons
