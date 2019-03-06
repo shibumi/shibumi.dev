@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "/"
 title   = "nullday.de"
 
 DefaultContentLanguage = "en"
