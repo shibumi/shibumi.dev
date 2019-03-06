@@ -76,7 +76,7 @@ disableHugoGeneratorInject = false
   defaultTheme = "dark"
 
   [params.logo]
-    logoText     = "$ cd /home/chris/"
+    logoText     = "cd /home/chris/"
     logoHomeLink = "/"
 
   # Social icons
