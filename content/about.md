@@ -27,6 +27,7 @@ A big thanks to [Peter Kalnai](https://twitter.com/pkalnai) and [Jaromir Horejsi
 
 **Visited Events**
 
+* March, 2019, 70. Betriebstagung Deutsches Forschungsnetz (DFN-BT) in Berlin
 * December, 2018, 35. Chaos Communication Congress in Leipzig
 * December, 2017, 34. Chaos Communication Congress in Leipzig
 * March, 2017, Cebit in Hannover
