@@ -1,5 +1,5 @@
 ---
-title:  "Private Data Mining"
+title:  "Private Data Mining (German)"
 date:   2014-08-18T13:13:13+01:00
 draft: false
 toc: false
