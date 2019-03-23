@@ -50,7 +50,7 @@ Wir haben den Payload. Widmen wir uns also wieder der level05.c Binary. Ähnlich
 
 Wenn wir Level05 nun in gdb starten und das pattern als Argument übergeben und level05 ausführen erhalten wir folgenden Output:
 
-![pattern]({{ sitebase.url }}/img/pattern.png)
+![pattern](/img/pattern.png)
 
 Anhand dieses Outputs können wir nun den Offset zum instruction pointer Register (EIP) berechnen den wir brauchen. Dazu nutzen wir `pattern_offset.rb` ebenfalls im `Metasploit`-Framework enthalten:
 
@@ -68,6 +68,6 @@ Davor hatte ich folgendes Layout ausprobiert:
 
 Dies hatte leider seltsamerweise zu segfaults gefühlt. Wieso sich der Exploit so verhalten hat kann ich mir nicht erklären. Aber anscheinend macht es einen Unterschied wo der Shellcode auf dem Stack liegt. Sehr interessant. Ein Vorfall der weiter untersucht werden möchte.
 
-![creepy]({{ sitebase.url }}/img/creepy.png)
+![creepy](/img/creepy.png)
 
 Damit wäre Level05 auch endlich gelöst.

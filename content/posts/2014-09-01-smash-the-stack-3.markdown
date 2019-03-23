@@ -53,7 +53,7 @@ In der `main`-Funktion wird zu erst ein sogenannter "Functionpointer" initialisi
 
 Bei level03 handelt es sich um ein klassisches Beispiel für einen Buffer-Overflow. Es wird nirgends überprüft ob wir uns an die 50 byte des Arrays halten. Wir können also das erste Argument beliebig groß machen und so da Programm zum Absturz bringen. Hier ein kleines Beispiel:
 
-![Bild des disassemblierten Programms](storage/img/level03_1.png)
+![Bild des disassemblierten Programms](/img/level03_1.png)
 
 Wir benutzen hier folgende Zeile als Argument:
 
@@ -82,20 +82,20 @@ Wenn wir den Stack von unten nach oben durchgehen wird uns klar, dass beim Aufru
 
 Als Erstes besorgen wir uns die Adresse der `good`-Funktion. Dabei hilft uns gdb:
 
-![Bild des disassemblierten Programms](storage/img/level03_2.png)
+![Bild des disassemblierten Programms](/img/level03_2.png)
 
 Die Adresse ist einfach die Adresse an Stelle Null: `0x08048474`.
 Als nächstes starten wir das Programm mal mit einem spezifischen Pattern als Argument. Dadurch finden wir das Argument schnell im Speicher wieder. Am besten bietet sich dafür 'AAAA' an.
 Davor setzen wir aber noch einen Breakpoint genau an die Stelle hinter `memcpy`. Dadurch lokalisieren wir wo das Argument in den Speicher geschrieben wird:
 
-![Bild des disassemblierten Programms](storage/img/level03_3.png)
+![Bild des disassemblierten Programms](/img/level03_3.png)
 
 Dann starten wir das Programm mit "AAAA" als Argument und holen uns die Adresse der `bad`-Funktion. Danach geben wir uns den Stack aus und berechnen den Offset also die Entfernung zwischen unserem Pattern und der `bad`-Funktion auf dem Stack:
 
-![Bild des disassemblierten Programms](storage/img/level03_4.png)
+![Bild des disassemblierten Programms](/img/level03_4.png)
 
 Nun kennen wir den Offset und können den Exploit weiterausbauen. Wir schreiben also den kompletten Offset in den Speicher + die Adresse von der `good`-Funktion und wir haben es geschafft. Dafür nutzen wir wieder Python. Falls ihr euch über die komische Adresse im hinteren Teil wundert, dass ist die gleiche Adresse wie oben nur aufgeteilt in Hex-Ziffern und im `Little-Endian`-Format. Die ganze Adresse also praktisch einmal verkehrtherum. Es wird also zuerst das kleinstwertige byte genannt und dann die Größeren.
 
-![Bild des disassemblierten Programms](storage/img/level03_5.png)
+![Bild des disassemblierten Programms](/img/level03_5.png)
 
 Damit spawnt die Shell und wir haben level03 gelöst. 

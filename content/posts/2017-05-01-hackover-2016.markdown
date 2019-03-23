@@ -23,7 +23,7 @@ ausführen mit der folgenden Zeile:
 
 Ob alles geklappt hat kann man mit `gnu-netcat` überprüfen:
 
-![gnu-netcat in action](storage/img/ez_pz_1.png)
+![gnu-netcat in action](/img/ez_pz_1.png)
 
 Da wir einen Login-Dialog bekommen hat alles geklappt. Wir sehen etwas
 ASCII-Art, ein paar Sprüche und eine Frage:"What's your Name?".
@@ -35,14 +35,14 @@ Rücksprungsadresse. Also die Addresse zu der wir später springen müssen
 um die Challenge zu beenden. Ok werfen wir einen Blick auf die binary
 mit einem meiner Lieblingstools `radare2`:
 
-![radare2 in action](storage/img/ez_pz_2.png)
+![radare2 in action](/img/ez_pz_2.png)
 
 Was wir hier sehen ist die `main`-function. Interessant für uns ist hier
 allerdings nur der Aufruf: `call sym.chall`. `sym.header` beherbergt
 anscheinend nur die Ausgabe des Headers. Diesen Part können wir also
 getrost ignorieren. Schauen wir uns also mal `sym.chall` an:
 
-![radare2 in action2](storage/img/ez_pz_3.png)
+![radare2 in action2](/img/ez_pz_3.png)
 
 Was sofort ins Auge fällt ist folgende Zeile die nicht ins Gesamtbild
 passt:
@@ -54,7 +54,7 @@ Funktion `sym.vuln` zu springen. Ansonsten landen wir nur bei dem `nop`
 in `0x080486df`. Gut schauen wir uns mal diese `sym.vuln` an. Der Name
 ist ja bereits so verräterisch:
 
-![radare2 in action3](storage/img/ez_pz_4.png)
+![radare2 in action3](/img/ez_pz_4.png)
 
 Anscheinend handled die Application den Null-Terminator falsch. Heißt
 wir können eine Eingabe machen, diese mit dem Null-Byte terminieren und

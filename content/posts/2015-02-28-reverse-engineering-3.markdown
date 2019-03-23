@@ -11,7 +11,7 @@ tags:
 Hier die dritte Runde von meinem kleinen crackme-special. Die crackmes findet
 ihr hier:
 
-[http://www.nullday.de/img/crackme.tar.gz](storage/img/crackme.tar.gz)
+[http://www.nullday.de/img/crackme.tar.gz](/img/crackme.tar.gz)
 
 Level7
 ------
@@ -34,12 +34,12 @@ gestripped ist können wir kein `pdf@sym.main` in radare2 benutzen um die main
 Methode zu disassemblieren. Wir schauen uns also einfach den `entry-point` via
 `pd` an:
 
-![level7](storage/img/crackme-level0x71.png)
-![level7](storage/img/crackme-level0x72.png)
-![level7](storage/img/crackme-level0x73.png)
-![level7](storage/img/crackme-level0x74.png)
-![level7](storage/img/crackme-level0x75.png)
-![level7](storage/img/crackme-level0x76.png)
+![level7](/img/crackme-level0x71.png)
+![level7](/img/crackme-level0x72.png)
+![level7](/img/crackme-level0x73.png)
+![level7](/img/crackme-level0x74.png)
+![level7](/img/crackme-level0x75.png)
+![level7](/img/crackme-level0x76.png)
 
 Das scheint eine Menge zusammenhangloser Code zu sein. Räumen wir also mal auf.
 Wir können mit dem Befehl `af+ <offset> <size> <func name>` neue Funktionen
@@ -51,28 +51,28 @@ Main-Funktion und schon haben wir die Größe der Main-Funktion. Danach können 
 den Rahmen der Funktionen bauen via `af+ 0x0804867d 99 main`. Hier ist das
 fertige Ergebnis:
 
-![level7](storage/img/crackme-level0x77.png)
+![level7](/img/crackme-level0x77.png)
 
 Die Main-Funktion scheint sich nicht weit verändert zu haben. Alles was passiert
 ist, ist bei Offset `0x080486d4`. Dort fehlt natürlich wegen dem stripping der
 Funktionsname `sym.check`. Schauen wir uns diese Funktion mal an und passen die
 auch gleich mal an:
 
-![level7](storage/img/crackme-level0x78.png)
-![level7](storage/img/crackme-level0x79.png)
+![level7](/img/crackme-level0x78.png)
+![level7](/img/crackme-level0x79.png)
 
 Anscheinend gibt es noch mehr Functions. Versuchen wir diese also auch mal zu
 identifizieren. Dies hier scheint unsere `parell`-Funktion zu sein:
 
-![level7](storage/img/crackme-level0x711.png)
+![level7](/img/crackme-level0x711.png)
 
 Das hier ist unsere `dummy`-Funktion:
 
-![level7](storage/img/crackme-level0x712.png)
+![level7](/img/crackme-level0x712.png)
 
 Und das hier scheint eine Art `exit`-Funktion zu sein:
 
-![level7](storage/img/crackme-level0x713.png)
+![level7](/img/crackme-level0x713.png)
 
 De facto handelt es sich also um unser crackme0x06 mit einigen Extra-Funktionen  
 in gestrippter Version. Diese Extra-Funktionen scheinen nur in Funktionen
@@ -80,7 +80,7 @@ ausgelagerte Code-Abschnitte zu sein. Dennoch habe ich noch was hinzuzufügen.
 Dieser Auszug aus der `parell`-Funktion scheint dennoch eine Funktion zu erfüllen. 
 Nicht wie im letzten Teil behauptet:
 
-![level7](storage/img/crackme-level0x714.png)
+![level7](/img/crackme-level0x714.png)
 
 Es handelt sich dabei offenbar um eine Überprüfung wie lang die eingegeben Zahl
 ist. Wenn sie länger als 9 Chars ist, ist die Eingabe nämlich ungültig. Dies
@@ -94,7 +94,7 @@ scheint sich nicht viel verändert zu haben. Nur in der Funktion `check` scheint
 es eine neue Funktion namens `che` zu geben. Schauen wir uns diese Funktion doch
 mal an:
 
-![level8](storage/img/crackme-level0x81.png)
+![level8](/img/crackme-level0x81.png)
 
 Bei der `che`-Funktion scheint es sich um nichts neues zu handeln. Es handelt
 sich einfach nur um alten Code der in eine Funktion ausgelagert worden ist. Wir
@@ -103,7 +103,7 @@ Version von crackme0x07. Wenn wir uns mal den Diff von den beiden binaries
 ansehen sieht man auch gut, dass die beiden binaries sich ziemlich ähnlich sind.
 Nur dass eine Version gestripped ist und die andere nicht:
 
-![level8](storage/img/crackme-level0x82.png)
+![level8](/img/crackme-level0x82.png)
 
 Level 8 scheint also erledigt zu sein. Hier gelten die gleichen Bedingungen wie
 in Level 7 und Level 6.
@@ -114,7 +114,7 @@ Level9
 Das letzte Level scheint ein komisches Verhalten an den Tag zu legen wenn die
 ENV-Variable "LOLO" nicht gesetzt ist. 
 
-![level9](storage/img/crackme-level0x91.png)
+![level9](/img/crackme-level0x91.png)
 
 So wird das Programm entweder beendet mit Fehlerstatus 255 oder es gibt den
 String "Incorrect!" aus wenn die Eingabe an sich falsch ist. Setzt man die
@@ -125,7 +125,7 @@ Wenn man das programm mal mit gdb und PEDA durchgeht erhält man am Ende folgend
 
 Die Funktion die überprüft ob "LOLO" vorhanden ist oder nicht ist diese hier:
 
-![level9](storage/img/crackme-level0x92.png)
+![level9](/img/crackme-level0x92.png)
 
 Fazit: Die binary crackme0x09 scheint also den binaries zuvor ähnlich zu sein.
 crackme0x09 reagiert allerdings deutlich agressiver wenn man die ENV-Variable

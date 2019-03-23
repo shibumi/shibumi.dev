@@ -20,7 +20,7 @@ Interessant wird diese Entdeckung allerdings in Verbindung mit Facebook. Ich sag
 
 Dies funktioniert in dem man ganz einfach die Passwort-Vergessen Funktion von Facebook benutzt. Man kann sich nämlich seit einigen Monaten bei Facebook auch mit der Telefonnummer einloggen. Wenn man dies mit einer vorher über Yowsup gesammelten Whatsapp-Telefonnummer versucht erhält man nach mehreren Versuchen den Vollen Namen + Profilbild samt der netten Frage ob man wirklich diese Person ist. Man muss allerdings fairerweise sagen, dass diese Funktionen nur verfügbar sind wenn das Profil öffentlich ist. Wenn nicht wird kein Name+Profilbild angezeigt. Standardmäßig ist das Profil jedoch ähnlich wie bei Whatsapp öffentlich.
 
-![invalid facebook auth](storage/img/facebook.png)
+![invalid facebook auth](/img/facebook.png)
 
 Ein [Freund](http://klassikercodes.wordpress.com/) hat mich vorhin auch noch auf eine schnellere Möglichkeit hingewiesen:
 
@@ -30,7 +30,7 @@ Ein [Freund](http://klassikercodes.wordpress.com/) hat mich vorhin auch noch auf
 
 Wenn man dort die Telefonnummer einträgt kommt man zu folgendem Anmeldeformular. Ebenfalls mit vollen Namen und Profilbild:
 
-![facebook login form](storage/img/facebook2.png)
+![facebook login form](/img/facebook2.png)
 
 Anhand dieses vollen Namens hat man dann auch das Facebook-Profil und durch Google noch andere private Daten wie beispielsweise die Adresse. Das man anhand des Facebook-Profils noch mehr Bilder, Freunde, Hobbys, Orte, politische Ausrichtung, Sexuelle Ausrichtung etc bekommt hängt davon ab wie weit die Person die Datenschutzfunktionen von Facebook nutzt. Die meisten tun es leider nicht! Interessant ist dies auch im Zusammenhang mit dem Facebook Messenger, welcher einen praktisch dazu drängt seine Nummer mit dem Facebook-Profil zu verknüpfen. 
 

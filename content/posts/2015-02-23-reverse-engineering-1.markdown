@@ -11,7 +11,7 @@ tags:
 Nach langer Pause bin ich wieder zurück mit einem kleinen crackme. Ein Backup
 von dem crackme findet ihr unter: 
 
-[http://www.nullday.de/img/IOLI-crackme.tar.gz]({{ sitebase.url }}/img/IOLI-crackme.tar.gz)
+[http://www.nullday.de/img/IOLI-crackme.tar.gz](/img/IOLI-crackme.tar.gz)
 
 Als Werkzeug zum Reverse-Engineeren werde ich radare2 einsetzen. 
 Also dann, Happy Hacking!
@@ -21,27 +21,27 @@ Level0
 
 Schauen wir uns die binary erstmal an was sie tut:
 
-![level0]({{ sitebase.url }}/img/crackme-level0x01.png)
+![level0](/img/crackme-level0x01.png)
 
 Wie man sieht erwartet uns eine Passwort-Prompt. Schauen wir uns also mal
 standardmäßig als erstes die Strings an. Ist ja schließlich Level 1 ;-)
 
-![level0 string]({{ sitebase.url }}/img/crackme-level0x02.png)
+![level0 string](/img/crackme-level0x02.png)
 
 Und sie an wir haben das Passwort gefunden: 250382.
 
-![level0 ende]({{ sitebase.url }}/img/crackme-level0x03.png)
+![level0 ende](/img/crackme-level0x03.png)
 
 Level1
 ------
 
 Diesesmal scheinen wir schon nicht so leichtes Spiel zu haben:
 
-![level1 anfang]({{ sitebase.url }}/img/crackme-level0x11.png)
+![level1 anfang](/img/crackme-level0x11.png)
 
 Schauen wir uns also mal den Disassembly an:
 
-![level1 dis]({{ sitebase.url }}/img/crackme-level0x12.png)
+![level1 dis](/img/crackme-level0x12.png)
 
 Was sofort auffällt ist der Vergleich an Offset `0x0804842b`. Wenn wir 
 das Level also in C-Code darstellen müssten, würde dieser ungefähr so
@@ -67,7 +67,7 @@ int main() {
 
 Das Passwort lautet also 5274.
 
-![level1 ende]({{ sitebase.url }}/img/crackme-level0x13.png)
+![level1 ende](/img/crackme-level0x13.png)
 
 Level2
 ------
@@ -77,7 +77,7 @@ dem Vergleich wild umher gerechnet um die zu vergleichende Zahl etwas zu
 verschleiern. Der entscheidende Part des Disassembly ist also der Teil nach dem
 scanf-Aufruf.
 
-![level 2 anfang]({{ sitebase.url }}/img/crackme-level0x21.png)
+![level 2 anfang](/img/crackme-level0x21.png)
 
 Die Lösung ist also 0x52b24 in dezimaler Form: 338724.
 
@@ -89,7 +89,7 @@ Unterschied zu Level2 liegt allerdings in dem Funktions-Aufruf: `call sym.test`.
 Vor dem Aufruf werden via `mov` unsere beiden Werte auf den Stack manövriert.
 Schauen wir uns also mal `sym.test` an:
 
-![level3 sym.test]({{ sitebase.url }}/img/crackme-level0x31.png)
+![level3 sym.test](/img/crackme-level0x31.png)
 
 Vor dem `cmp` sehen wir das unsere Eingabe an der Stelle `[ebp+0x8]` in das
 Register `eax` geschoben wird. Danach wird bei Offset `0x8048477` der Wert in
@@ -101,7 +101,7 @@ diesesmal etwas obfuscated. Die Funktion `sym.shift` scheint die
 "verschlüsselten" Strings zu "entschlüsseln". Schauen wir uns diese spaßeshalber
 auch mal an:
 
-![level3 sym.shift]({{ sitebase.url }}/img/crackme-level0x32.png)
+![level3 sym.shift](/img/crackme-level0x32.png)
 
 Entscheidend am disassembly ist das `sub al, 3` hier wird jeder Char im String
 um den wert 0x3 dekrementiert. Die Funktion kann man sich so in C-Code
@@ -134,7 +134,7 @@ int main() {
 
 Wenn man dies nun ausführt, sieht das Ergebnis so aus:
 
-![level3 decoded string]({{ sitebase.url }}/img/crackme-level0x33.png)
+![level3 decoded string](/img/crackme-level0x33.png)
 
 Den Rest gibt es dann im zweiten Teil. Stay tuned ;-)
 

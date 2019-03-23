@@ -10,23 +10,23 @@ tags:
 
 Auf zur zweiten Runde mit dem Crackme. Hier nochmal der Downloadlink:
 
-[http://nullday.de/img/IOLI-crackme.tar.gz](storage/img/IOLI-crackme.tar.gz)
+[http://nullday.de/img/IOLI-crackme.tar.gz](/img/IOLI-crackme.tar.gz)
 
 Level4
 ------
 
 Schauen wir uns die binary erstmal an was sie tut:
 
-![level4](storage/img/crackme-level0x41.png)
+![level4](/img/crackme-level0x41.png)
 
 Der interessante Teil scheint in der sym.check function zu stehen. Schauen wir
 uns diese mal genauer an:
 
-![level4 check](storage/img/crackme-level0x42.png)
+![level4 check](/img/crackme-level0x42.png)
 
 Wenn wir das ganze etwas kommentieren sieht sym.check so aus:
 
-![level4 commented](storage/img/crackme-level0x43.png)
+![level4 commented](/img/crackme-level0x43.png)
 
 Wie man erkennen kann ist das entscheidende die Operation bei Offset
 `0x080484d6`:`cmp dword [ebp - 8], 0xf`. Dort wird praktisch die Summe der
@@ -35,7 +35,7 @@ Eingabe dessen Quersumme 15 ergibt und wir sind durch:
 
 Nehmen wir also einfach mal die Eingabe: 12345
 
-![level4 ende](storage/img/crackme-level0x44.png)
+![level4 ende](/img/crackme-level0x44.png)
 
 
 Level5
@@ -44,7 +44,7 @@ Level5
 Das fünfte Level scheint ähnlich dem Vierten zu sein. Hier ist die
 check-Funktion des fünften Levels:
 
-![level5 anfang](storage/img/crackme-level0x51.png)
+![level5 anfang](/img/crackme-level0x51.png)
 
 Das Erste was mir spontan einfällt ist der veränderte Wert an Offset
 `0x0804851a`. Statt einem compare mit 15 machen wir nun einen mit 16.
@@ -53,7 +53,7 @@ eine Funktion namens `parell` aufgerufen zu werden anstatt nur ein printf.
 
 Schauen wir uns diese Funktion mal an:
 
-![level5 dis](storage/img/crackme-level0x52.png)
+![level5 dis](/img/crackme-level0x52.png)
 
 Bei Offset `0x080484a4` wird ein Pointer mit unserer Eingabe nach eax
 verschoben. Diese Eingabe wird dann via einem logischen AND mit dem Wert 1
@@ -72,14 +72,14 @@ Im dritten Level scheint neben der `parell`-Funktion noch eine 3. Funktion
 hinzugekommen zu sein. In der `parell`-Funktion finden wir nämlich eine Funktion
 namens `dummy`.
 
-![level 6 anfang](storage/img/crackme-level0x61.png)
+![level 6 anfang](/img/crackme-level0x61.png)
 
 Ansonsten scheint sich nichts verändert zu haben. Es wird immer noch auf
 Gerade/Ungerade überprüft. Es wurde nur eine weitere Funktion davor geschaltet
 die sozusagen den Zugang zum interessanten Teil der `parell`-Funktion überprüft.
 Schauen wir uns also mal die `dummy`-Funktion an:
 
-![level6 dummy](storage/img/crackme-level0x62.png)
+![level6 dummy](/img/crackme-level0x62.png)
 
 Interessant ist Offset `0x080484cb` hier wird scheinbar die erste
 ENVIRONMENT-Variable nach `eax` geladen. Bei Offset `0x080484ce` wird `[edx+eax]`
@@ -102,7 +102,7 @@ Variable setzen **und** einen Wert eingeben der ungerade ist sowie dessen
 Quersumme 16 ergibt sind wir durch und haben es geschafft. Aber Moment, nach
 unserer Funktion finden noch einige Vergleiche statt:
 
-![level6 vergleiche](storage/img/crackme-level0x63.png)
+![level6 vergleiche](/img/crackme-level0x63.png)
 
 das `test eax, eax` und `je 0x8048586` prüft wie oben bereits erwähnt den
 Return-Wert der `dummy`-Funktion. Wenn da eine 1 steht können wir passieren.

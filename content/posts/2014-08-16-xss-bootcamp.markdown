@@ -12,7 +12,7 @@ Bevor wir zum nächsten Level von [http://io.smashthestack.org/](http://io.smash
 
 Fangen wir auch gleich mal an mit Level 1:
 
-![XSS-Level](storage/img/xss-level1.png)
+![XSS-Level](/img/xss-level1.png)
 
 Was wir in Level 1 sehen ist eine einfaches Suchfeld, in dieses können wir Javascript injezieren umrahmt von HTML-tags. 
 
@@ -22,7 +22,7 @@ Was wir in Level 1 sehen ist eine einfaches Suchfeld, in dieses können wir Java
 
 Und weiter gehts zu Level 2:
 
-![XSS-Level](storage/img/xss-level2.png)
+![XSS-Level](/img/xss-level2.png)
 
 Level 2 ähnelt einer einfachen Kommentarfunktion wie sie auf vielen Websiten zu finden ist. Was uns sofort beim ersten Testen auffällt: Wir können HTML-tags in den Kommentaren benutzen.
 Allerdings funktioniert die gleiche Eingabe wie oben hier nicht. Auch wenn wir die Sonderzeichen durch ihre Hex-Werte ersetzen kommen wir hier nicht weiter. Stattdessen müssen wir uns die standard HTML-tags zu Nutze machen und diese etwas feintunen. Am Besten eignet sich hier für der <img>-tag:
@@ -33,7 +33,7 @@ Allerdings funktioniert die gleiche Eingabe wie oben hier nicht. Auch wenn wir d
 
 Level 3:
 
-![XSS-Level](storage/img/xss-level3.png)
+![XSS-Level](/img/xss-level3.png)
 
 In Level 3 sehen wir eine stupide Bilder-Gallerie. Was uns natürlich gleich auffällt ist, dass die Zahl am Ende des Links die Bildnummer angibt: 
 
@@ -53,7 +53,7 @@ Dies ist deshalb möglich weil über die Variable `num` die Bildauswahl gesteuer
 
 Level 4:
 
-![XSS-Level](storage/img/xss-level4.png)
+![XSS-Level](/img/xss-level4.png)
 
 Auf der Website für Level 4 befindet sich ein Timer. Wenn wir uns den Code ansehen sehen wir, dass die Funktion `startTimer` einen Parameter benötigt. Dies sind die Sekunden die wir ins `Create Timer`-Feld eintragen können. Wenn wir dort zum Beispiel 3 eintragen erhalten wir folgende URL:
 
@@ -78,7 +78,7 @@ Nun klappt es.
 
 Level 5:
 
-![XSS-Level](storage/img/xss-level5.png)
+![XSS-Level](/img/xss-level5.png)
 
 Level 5 soll einen Link zu einem Registrier-formular darstellen. Auffallend ist die `next` Variable im javascript die via DOM (Document Object Model) in HTML-tags eingebettet ist. Wenn wir also es schaffen die Variable `next` im folgenden Abschnitt zu ändern haben wir es geschafft:
 
@@ -94,7 +94,7 @@ https://xss-game.appspot.com/level5/frame/signup?next=javascript:alert("nullday.
 
 Level 6:
 
-![XSS-Level](storage/img/xss-level6.png)
+![XSS-Level](/img/xss-level6.png)
 
 Level 6 lädt eine externe Javascript-Datei. 
 

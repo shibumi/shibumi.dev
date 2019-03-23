@@ -59,7 +59,7 @@ All diese Faktoren sind in unserem script nicht berücksichtigt. Deshalb kommen 
 
 Wir debuggen das Programm. Dafür starten wir `gdb` den standard debugger auf Linux und disassemblieren die `main`-Funktion. Die `main`-Funktion ist bei C-Programmen sowas wie der Einstiegspunkt. Jedes C-Programm hat eine `main`-Funktion:  
 
-![Bild des disassemblierten Programms](storage/img/level01.png) 
+![Bild des disassemblierten Programms](/img/level01.png) 
 
 Gehen wir den disassemblierten Code mal Schritt für Schritt durch. Fangen wir mit der ersten Zeile an:  
 
