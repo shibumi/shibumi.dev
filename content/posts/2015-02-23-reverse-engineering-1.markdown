@@ -11,7 +11,7 @@ tags:
 Nach langer Pause bin ich wieder zurück mit einem kleinen crackme. Ein Backup
 von dem crackme findet ihr unter: 
 
-[http://www.nullday.de/img/IOLI-crackme.tar.gz](/img/IOLI-crackme.tar.gz)
+[http://www.nullday.de/img/IOLI-crackme.tar.gz](/storage/IOLI-crackme.tar.gz)
 
 Als Werkzeug zum Reverse-Engineeren werde ich radare2 einsetzen. 
 Also dann, Happy Hacking!
