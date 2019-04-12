@@ -1,0 +1,57 @@
+==================================================================
+https://keybase.io/sh1bumi
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://nullday.de
+  * I am sh1bumi (https://keybase.io/sh1bumi) on keybase.
+  * I have a public key ASCzULumqEdN4LmQ1uZ3e_MtnqwTfPTBy7KMmcTap2bEGgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120b350bba6a8474de0b990d6e6777bf32d9eac137cf4c1cbb28c99c4daa766c41a0a",
+      "host": "keybase.io",
+      "kid": "0120b350bba6a8474de0b990d6e6777bf32d9eac137cf4c1cbb28c99c4daa766c41a0a",
+      "uid": "87e6dc173ce3914f90123069359be919",
+      "username": "sh1bumi"
+    },
+    "merkle_root": {
+      "ctime": 1555102594,
+      "hash": "072faaf95301e2f370c213521b3fb6ad94e9f065507234698abe458758d3858898d930af6bb6ba823f7ee7cf0be88cb51a598bf8520d202610f947d9e7363d8a",
+      "hash_meta": "9dcc744bc08bc9540a449a196565a5ebf30b42fcd774566859b128fd08a02724",
+      "seqno": 5156081
+    },
+    "service": {
+      "entropy": "HQ8m+ocVnokoAA28IB/n6JTf",
+      "hostname": "nullday.de",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "3.2.1"
+  },
+  "ctime": 1555102635,
+  "expire_in": 504576000,
+  "prev": "458eacfc989f19eb926df91ae5832d69e2fb0af1337d8419a01c6eccfb9dfe6d",
+  "seqno": 13,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgs1C7pqhHTeC5kNbmd3vzLZ6sE3z0wcuyjJnE2qdmxBoKp3BheWxvYWTESpcCDcQgRY6s/JifGeuSbfka5YMtaeL7CvEzfYQZoBxuzPud/m3EIB0W31V66naEcxUfqrBqII8xLavbPl7o0u6dcHsgycjOAgHCo3NpZ8RAceXPey8piuQO0tfxAxx28om0x3Dr5f9wezotUORGuMUN0CMMGV9pukhAGsuesW49Uf4ETq+JY3LHOb8kwojRC6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIOKoqRAlVqZQJ/TYALKKL5/KYQrZeD6uqMo91ISbvyugo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/sh1bumi
+
+==================================================================
+
