@@ -25,6 +25,15 @@ I am Christian Rebischke and very passionate about Open Source software.
 [Virus Bulletin Conference 2015](https://www.virusbtn.com/pdf/conference_slides/2015/KalnaiHorejsi-VB2015.pdf)
 A big thanks to [Peter Kalnai](https://twitter.com/pkalnai) and [Jaromir Horejsi](https://twitter.com/JaromirHorejsi) for this honour.
 
+**Publications**
+* Seminar paper: Amazon AWS (EC2 virtual Server and EC2 container) (German) [https://github.com/shibumi/aws-ec2-project-paper](https://github.com/shibumi/aws-ec2-project-paper)
+* Seminar paper: Openstack (internal structure and overview) (German) [https://github.com/shibumi/openstack-project-paper](https://github.com/shibumi/openstack-project-paper)
+* Seminar paper: Tor (a short introduction in The Onion Routing) (German) [https://github.com/shibumi/Tor-project-paper](https://github.com/shibumi/Tor-project-paper)
+* Bachelor thesis: Evaluation of a distributed monitoring system for the TU Clausthal Campus (German) [https://github.com/shibumi/bachelor-thesis](https://github.com/shibumi/bachelor-thesis)
+* Bachelor defense: Evaluation of a distributed monitoring system for the TU Clausthal Campus (German) [https://github.com/shibumi/bachelor-kolloquium](https://github.com/shibumi/bachelor-kolloquium)
+
+
+
 **Visited Events**
 
 * March, 2019, 70. Betriebstagung Deutsches Forschungsnetz (DFN-BT) in Berlin
