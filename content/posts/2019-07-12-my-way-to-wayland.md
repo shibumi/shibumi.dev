@@ -12,6 +12,8 @@ I guess everybody knows that X11 aka Xorg is a pain in the ass and a security ni
 Therefore it shouldn't be such a suprise that I think about switching to Wayland for a long time now.
 And it looks like it's finally the day, where I can switch to wayland without effects on my convenience.
 
+**TL;DR** here is the link to my dotfiles with the whole configuration: [https://github.com/shibumi/dotfiles](https://github.com/shibumi/dotfiles)
+
 But first let's sum up what I need:
 
 * Screen-recording
@@ -38,12 +40,9 @@ login into my `TTY1`:
 ```bash
 if [ "$(tty)" = "/dev/tty1" ]; then
 	exec sway
-	exec mako
-	exec swaybg -c "#151718"
 fi
 ```
 
-This will start mako (the notification daemon) and set a solid color background as well.
 My mako configuration looks like this:
 ```ini
 font=Inconsolata 14
@@ -57,5 +56,98 @@ text-color=#CD3F45
 
 The mako configuration sets some font and color configurations on-default and a special text color for notifications with urgency `high`.
 
+My sway configuration is the same as with my i3 configuration, the only difference is this specific section here:
+```
+# Setting sway specific inputs
+input * xkb_layout "de"
+input * xkb_variant "us"
 
+# Setting sway specific executions
+exec mako
+exec swaybg -c "#151718"
+```
 
+This configuration will set my us/de hybrid keymap layout and will autoexecute mako and swaybg on sway start.
+
+The next big question is:"How do I share screenshots? Record my Screen or share copypasted text?".
+Well, I have a solution for this as well. Here is my small shell script for sharing text via filebin:
+```bash
+#!/bin/bash
+readonly TEXTSHOTDIR="$HOME/.cache/textshot/"
+
+if [[ ! -e "$TEXTSHOTDIR" ]]; then
+  mkdir -p "$TEXTSHOTDIR"
+fi
+readonly TIME="$(date +%Y-%m-%d-%H-%M-%S)"
+readonly TEXTPATH="$TEXTSHOTDIR/text-$TIME.txt"
+wl-paste -o >"$TEXTPATH"
+readonly OUTPUT="$(fb "$TEXTPATH")"
+notify-send "Text uploaded" "$OUTPUT"
+```
+
+Taking a screenshot and sharing it via filebin is quite simple as well (btw feel free to fork it and modify it to your needs. All snippets are licensed under GPLv3):
+```bash
+#!/bin/bash
+readonly SCREENSHOTDIR="$HOME/.cache/screenshot"
+
+if [[ ! -e "$SCREENSHOTDIR" ]]; then
+  mkdir -p "$SCREENSHOTDIR"
+fi
+readonly TIME="$(date +%Y-%m-%d-%H-%M-%S)"
+readonly IMGPATH="$SCREENSHOTDIR/img-$TIME.png"
+grim -g "$(slurp)" "$IMGPATH"
+readonly OUTPUT="$(fb "$IMGPATH")"
+notify-send "Screenshot uploaded" "$OUTPUT"
+```
+
+And finally my solution for sharing screen recordings on the fly (this is a little bit longer):
+```bash
+#!/bin/bash
+readonly VIDEOSHOTDIR="$HOME/.cache/videoshot"
+
+if [[ ! -e $VIDEOSHOTDIR ]]; then
+  mkdir -p "$VIDEOSHOTDIR"
+fi
+
+readonly PIDPATH="$VIDEOSHOTDIR/videoshot.pid"
+readonly RESOURCEPATH="$VIDEOSHOTDIR/videoshot.txt"
+
+if [[ ! -f "$PIDPATH" ]]; then
+  readonly TIME="$(date +%Y-%m-%d-%H-%M-%S)"
+  readonly VIDPATH="$VIDEOSHOTDIR/rec-$TIME.mp4"
+  (
+    wf-recorder -g "$(slurp)" -f "$VIDPATH" &
+    echo "$!" >"$PIDPATH"
+    echo "$VIDPATH" >"$RESOURCEPATH"
+    notify-send "Start recording" "$VIDPATH"
+    readonly PID="$(cat $PIDPATH)"
+    wait "$PID"
+    readonly VIDPATH="$(cat $RESOURCEPATH)"
+    if [ ! -f "$VIDPATH" ]; then
+      notify-send "Recording aborted"
+    else
+      readonly OUTPUT="$(fb "$VIDPATH")"
+      notify-send "Video uploaded" "$OUTPUT"
+    fi
+    rm "$PIDPATH"
+    rm "$RESOURCEPATH"
+  ) &
+else
+  readonly PID="$(cat $PIDPATH)"
+  kill -SIGINT "$PID"
+```
+
+Another topic is pasting passwords from a password manager via rofi into your current window.
+The tool `xdotool` is not available anymore, because it's X11 only, so wayland will not support it.
+Luckily there seems to be someone who has created `ydotool`, it's a replacement for `xdotool` and uses `/dev/uinput` as source for the inputs. However I decided against it, because installing two new libraries and `ydotool` was a too big hassle for me. So I just stick with copying the password into the buffer via `wl-copy`:
+```bash
+#!/bin/bash
+_rofi() {
+  rofi -i -no-levenshtein-sort -lines 8 "$@"
+}
+
+input=$(gopass list -f | rofi -lines 8 -dmenu -p "gopass")
+printf '%s' "$(gopass show -o "$input")" | wl-copy
+```
+
+This solution is not perfect, as well, because the output will be stored into the clipboard and the clipboard will not get cleaned up! Therefore i should really install `ydotool`.
