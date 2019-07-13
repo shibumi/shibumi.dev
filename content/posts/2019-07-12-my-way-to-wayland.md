@@ -22,7 +22,7 @@ But first let's sum up what I need:
 * A notification daemon
 * Setting a background
 
-To my suprise there are solutions for every bullet point now.
+I've decided to go with the following setup:
 
 * [wf-recorder](https://github.com/ammen99/wf-recorder) for screen-recording
 * [grim](https://github.com/emersion/grim) for screenshots
@@ -31,5 +31,30 @@ To my suprise there are solutions for every bullet point now.
 * [rofi](https://github.com/davatorium/rofi) as menu library. Unfortunately it's not a native wayland application. So I hope I can replace it with something awesome in the future.
 * [mako](https://github.com/emersion/mako) as wayland-ready notification daemon
 * [swaybg](https://github.com/swaywm/swaybg) for setting a background
+
+
+So, how do I start sway? I've build a statement in my `.zshrc` file to start sway automatically, when I
+login into my `TTY1`:
+```bash
+if [ "$(tty)" = "/dev/tty1" ]; then
+	exec sway
+	exec mako
+fi
+```
+
+This will start mako (the notification daemon) as well.
+My mako configuration looks like this:
+```ini
+font=Inconsolata 14
+background-color=#151718
+text-color=#9FCA56
+border-color=#151718
+
+[urgency=high]
+text-color=#CD3F45
+```
+
+The mako configuration sets some font and color configurations on-default and a special text color for notifications with urgency `high`.
+
 
 
