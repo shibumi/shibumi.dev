@@ -39,10 +39,11 @@ login into my `TTY1`:
 if [ "$(tty)" = "/dev/tty1" ]; then
 	exec sway
 	exec mako
+	exec swaybg -c "#151718"
 fi
 ```
 
-This will start mako (the notification daemon) as well.
+This will start mako (the notification daemon) and set a solid color background as well.
 My mako configuration looks like this:
 ```ini
 font=Inconsolata 14
