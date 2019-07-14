@@ -1,7 +1,7 @@
 ---
 title: "My Way to Wayland"
 date: 2019-07-12T22:03:07+02:00
-draft: true
+draft: false
 toc: false
 images:
 tags:
@@ -150,4 +150,9 @@ input=$(gopass list -f | rofi -lines 8 -dmenu -p "gopass")
 printf '%s' "$(gopass show -o "$input")" | wl-copy
 ```
 
-This solution is not perfect, as well, because the output will be stored into the clipboard and the clipboard will not get cleaned up! Therefore i should really install `ydotool`.
+**Note:** This solution is not perfect, as well, because the output will be stored into the clipboard and the clipboard will not get cleaned up! So using `ydotool` is might a better solution.
+
+If you experience problems with Java applications like, `IntelliJ`-IDEs, then you should put the following line in your `.zshrc.` or `.bashrc` line:
+```
+export _JAVA_AWT_WM_NONREPARENTING=1
+```
