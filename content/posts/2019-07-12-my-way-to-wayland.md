@@ -57,7 +57,7 @@ text-color=#CD3F45
 The mako configuration sets some font and color configurations on-default and a special text color for notifications with urgency `high`.
 
 My sway configuration is the same as with my i3 configuration, the only difference is this specific section here:
-```
+```bash
 # Setting sway specific inputs
 input * xkb_layout "de"
 input * xkb_variant "us"
