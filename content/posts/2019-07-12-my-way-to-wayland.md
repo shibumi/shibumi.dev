@@ -80,8 +80,9 @@ if [[ ! -e "$TEXTSHOTDIR" ]]; then
 fi
 readonly TIME="$(date +%Y-%m-%d-%H-%M-%S)"
 readonly TEXTPATH="$TEXTSHOTDIR/text-$TIME.txt"
-wl-paste -o >"$TEXTPATH"
+wl-paste >"$TEXTPATH"
 readonly OUTPUT="$(fb "$TEXTPATH")"
+wl-copy "$OUTPUT"
 notify-send "Text uploaded" "$OUTPUT"
 ```
 
@@ -97,6 +98,7 @@ readonly TIME="$(date +%Y-%m-%d-%H-%M-%S)"
 readonly IMGPATH="$SCREENSHOTDIR/img-$TIME.png"
 grim -g "$(slurp)" "$IMGPATH"
 readonly OUTPUT="$(fb "$IMGPATH")"
+wl-copy "$OUTPUT"
 notify-send "Screenshot uploaded" "$OUTPUT"
 ```
 
@@ -127,6 +129,7 @@ if [[ ! -f "$PIDPATH" ]]; then
       notify-send "Recording aborted"
     else
       readonly OUTPUT="$(fb "$VIDPATH")"
+      wl-copy "$OUTPUT"
       notify-send "Video uploaded" "$OUTPUT"
     fi
     rm "$PIDPATH"
