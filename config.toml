@@ -3,7 +3,7 @@ title   = "nullday.de"
 
 DefaultContentLanguage = "en"
 
-theme = "hello-friend-ng"
+theme = "hermit"
 
 pygmentsCodefences = true
 pygmentsUseClasses = true
