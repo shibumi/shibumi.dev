@@ -66,8 +66,6 @@ disableHugoGeneratorInject = false
 
   # Directory name of your blog content (default is `content/posts`)
   contentTypeName = "posts"
-  # Default theme "light" or "dark"
-  defaultTheme = "dark"
 
 # Social icons
 [[params.social]]
