@@ -1,17 +1,11 @@
 baseURL = "/"
 title   = "nullday.de"
-
 DefaultContentLanguage = "en"
-
 theme = "hermit"
-
 pygmentsCodefences = true
 pygmentsUseClasses = true
 rssLimit  = 10  # Maximum number of items in the RSS feed.
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
-
-# googleAnalytics = ""
-# disqusShortname = ""
 
 archetypeDir = "archetypes"
 contentDir   = "content"
@@ -75,26 +69,22 @@ disableHugoGeneratorInject = false
   # Default theme "light" or "dark"
   defaultTheme = "dark"
 
-  [params.logo]
-    logoText     = "cd /home/chris/"
-    logoHomeLink = "/"
+# Social icons
+[[params.social]]
+ name = "twitter"
+ url  = "https://twitter.com/sh1bumi"
 
-  # Social icons
-  [[params.social]]
-    name = "twitter"
-    url  = "https://twitter.com/sh1bumi"
+[[params.social]]
+  name = "email"
+  url  = "mailto:chris@nullday.de"
 
-  [[params.social]]
-    name = "email"
-    url  = "mailto:chris@nullday.de"
+[[params.social]]
+  name = "github"
+  url  = "https://github.com/shibumi"
 
-  [[params.social]]
-    name = "github"
-    url  = "https://github.com/shibumi"
-
-  [[params.social]]
-    name = "linkedin"
-    url  = "https://www.linkedin.com/in/shibumi"
+[[params.social]]
+  name = "linkedin"
+  url  = "https://www.linkedin.com/in/shibumi"
 
 [menu]
   [[menu.main]]
@@ -109,3 +99,18 @@ disableHugoGeneratorInject = false
     identifier = "contact"
     name       = "Contact"
     url        = "contact/"
+
+# Disable all services for GDPR compliance
+[privacy]
+[privacy.disqus]
+disable = true
+[privacy.googleAnalytics]
+disable = true
+[privacy.instagram]
+disable = true
+[privacy.twitter]
+disable = true
+[privacy.vimeo]
+disable = true
+[privacy.youtube]
+disable = true
