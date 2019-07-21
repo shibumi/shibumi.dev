@@ -23,6 +23,7 @@ But first let's sum up what I need:
 * A dmenu/rofi like menu library with a client
 * A notification daemon
 * Setting a background
+* Setting brightness of the background
 
 I've decided to go with the following setup:
 
@@ -33,6 +34,7 @@ I've decided to go with the following setup:
 * [rofi](https://github.com/davatorium/rofi) as menu library. Unfortunately it's not a native wayland application. So I hope I can replace it with something awesome in the future.
 * [mako](https://github.com/emersion/mako) as wayland-ready notification daemon
 * [swaybg](https://github.com/swaywm/swaybg) for setting a background
+* [brightnessctl](https://github.com/Hummer12007/brightnessctl) for setting brightness
 
 
 So, how do I start sway? I've build a statement in my `.zshrc` file to start sway automatically, when I
