@@ -7,7 +7,7 @@ draft: false
 I use `zsh` for a pretty long time now. It began with `zsh` + `grml`
 configuration, went over the famous `powerlevel9k` (where I helped implementing
 a few features like `svn` support) and currently ended with my own `zsh`
-configuration: ![Hikari-ZSH](https://github.com/shibumi/hikari-zsh)
+configuration: [Hikari-ZSH](https://github.com/shibumi/hikari-zsh)
 
 I have to admit I have been quite happy with `powerlevel9k`. It had a rich
 feature set and I have been in love with all these shiny `UTF-8` icons and
