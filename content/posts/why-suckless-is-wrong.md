@@ -2,7 +2,7 @@
 title:  "Why suckless is wrong"
 date:   2016-10-19T13:13:13+01:00
 draft: false
-toc: false
+toc: true
 images:
 tags:
   - untagged
@@ -16,7 +16,7 @@ so feel free to grab a coffee or a cold mate.
   
 Let us begin with the second abstract:  
   
-**What PID 1 Should Do**  
+## What PID 1 Should Do
 *When your system boots up the kernel is executing a given binary in its
 known namespace. To see what are the only tasks the application running
 as pid 1 has to do, see sinit. Just wait for child process to reap and
@@ -31,7 +31,7 @@ several things are done during the boot process. Computers are not just
 a server in some university anymore. Many people use GNU/Linux in their
 workstations or notebooks nowadays.  
 
-**systemd does {,U}EFI bootload**  
+## systemd does {,U}EFI bootload
 *Should systemd’s PID be changed from 1 to a negative, or imaginary,
 number? It now exists before the kernel itself, during a bootup. See
 also systemd-boot.*  
@@ -47,7 +47,7 @@ As you see this sentence is absolutly ridiculous. Systemd has a
 bootloader. **systemd-boot** is not booting the system. It is just a
 boot-manager! **EFI** does!  
   
-**systemd replaces sudo and su**  
+## systemd replaces sudo and su
 *Please note the command name, machinectl and its features at the
 manpage. In exchange for a program which contains sudo, su and kill (and
 does some functions which historically ssh/telnet did), bare metal users
@@ -68,14 +68,14 @@ policies than just kernel-based permissions. You can find more about
 this topic here:
 [why-polkit](https://www.collabora.com/about-us/blog/2015/06/08/why-polkit-(or,-how-to-mount-a-disk-on-modern-linux))  
   
-**systemd-journald can do log-rotate**  
+## systemd-journald can do log-rotate
 *Being journal files binaries written with easily corruptable
 transactions, does this feature make the log unreadable at times?*  
   
 Nope. Sorry. It will not get unreadable. I am running systemd now for
 years and I had never an unreadable log.  
   
-**Transient units**  
+## Transient units
 *Temporary services, because we love to reinvent procps, forking, nohup
 and lsof.*  
   
@@ -83,7 +83,7 @@ What is so wrong with this feature? I think it is a good idea when an
 Administrator can pass environment-variables to a service or set
 security features via kernel capabilities.  
   
-**systemd does socat/netcat**  
+## systemd does socat/netcat
   
 This feature is being used in the socket-activation. Something that is
 pretty awesome. Why do you want socket-activation? Think about the boot
@@ -97,7 +97,7 @@ service does not need to wait for the log daemon. Every output from this
 service will be buffered in the activated socket and will be forwarded
 to the log daemon when the log daemon is ready. 
   
-**systemd-logind does sighup and nohup**  
+## systemd-logind does sighup and nohup
 *Logout is equivalent to shutting off the machine, so you will NOT have
 any running program after logout, unless you inform your init system.*
   
@@ -122,7 +122,7 @@ that are allowed to stay running after logout. This way we can make sure
 that only these whitelisted programs will run and not other stuff like
 malware, zombie processes or the 16-years-old users porn torrents.  
   
-**systemd-nspawn can patch at will any kind of file in a container**  
+## ystemd-nspawn can patch at will any kind of file in a container
 *Paired with transient units and user escalation performable remotely,
 this can mean that if you house VPS instances somewhere, your hosting
 provider has means and tools to spy, modify, delete any kind of content
@@ -134,7 +134,7 @@ with hardware access could do harmful things and modify, delete, spy
 your stuff. This feature is necessary if we want to use namespaces in
 containers.  
   
-**systemd does UNIX nice**  
+## systemd does UNIX nice
   
 Let me quote the first sentence from the README there this feature is
 mentioned:  
@@ -147,7 +147,7 @@ service? Imagine a service that starts consuming a lot of memory. This
 way we can limit this service when it happens and give the other
 processes a better place in the scheduling.  
   
-**systemd locks down /etc and makes it read-only**  
+## systemd locks down /etc and makes it read-only
   
 This is absolutly out of context. **systemd** uses a capability that is
 called **ProtectSystem** with this capability I can reduce the access
@@ -157,7 +157,7 @@ this service. This way the service is not able to change configuration
 files maliciously or unintentionally. I think this is a good feature to
 secure your system.  
   
-**systemd now does your DNS**  
+## systemd now does your DNS
   
 We are not in North-Korea. DNS is something important nowadays that
 every system that wants to do networking need. It was just an amount of
@@ -167,8 +167,7 @@ for the nspawn-containers. They rely on a proper DNS service. And
 mostly: The systemd developers can finally enforce DNSSEC everywhere
 with this option. That's a good step to a more secure internet.  
   
-**systemd hates when you adapt your system (graphics on other than
-vt1)**  
+## systemd hates when you adapt your system (graphics on other than vt1)
   
 Support has borders. You can't support everything in a software and
 standards are needed. The internet relies on standards because standards
