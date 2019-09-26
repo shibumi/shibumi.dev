@@ -3,9 +3,6 @@ title:  "Smash the Stack 4"
 date:   2014-10-15T13:13:13+01:00
 draft: false
 toc: false
-images:
-tags:
-  - untagged
 ---
 
 So nach einer längeren Pause bin ich wieder zurück und habe neue Levels für io.smashthestack.org mitgebracht.

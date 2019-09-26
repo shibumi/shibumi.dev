@@ -3,9 +3,6 @@ title:  "Smash the Stack 3"
 date:   2014-09-01T13:13:13+01:00
 draft: false
 toc: false
-images:
-tags:
-  - untagged
 ---
 
 Willkommen zur dritten Runde von [http://io.smashthestack.org/](http://io.smashthestack.org/)

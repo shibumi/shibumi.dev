@@ -3,9 +3,6 @@ title:  The raise of Javascript-droppers
 date:   2015-11-29T13:13:13+01:00
 draft: false
 toc: false
-images:
-tags:
-  - untagged
 ---
 
 ![interfaxgraphic](/img/behaviour.jpg)

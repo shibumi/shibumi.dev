@@ -4,9 +4,6 @@ title:  "DuBrute - a rare view into chinese blackhat techniques"
 date:   2015-09-05T13:13:13+01:00
 draft: false
 toc: false
-images:
-tags:
-  - untagged
 ---
 
 As member of the MalwareMustDie ELF-Team, I was assigned to make report to dissect the DuBrute bruteforcing tool. This report is published on the effort as the first official report that hopefully can help good people in InfoSec.

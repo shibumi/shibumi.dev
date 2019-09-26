@@ -3,9 +3,6 @@ title:  "Hackover 2016"
 date:   2017-05-01T13:13:13+01:00
 draft: false
 toc: false
-images:
-tags:
-  - untagged
 ---
 
 Eigentlich wollte ich diesen Artikel schon Ende Oktober 2016

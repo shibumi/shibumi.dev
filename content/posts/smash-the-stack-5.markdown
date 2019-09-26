@@ -3,9 +3,6 @@ title:  "Smash the Stack 5"
 date:   2014-10-17T13:13:13+01:00
 draft: false
 toc: false
-images:
-tags:
-  - untagged
 ---
 
 Herzlich willkommen zurück zu Smash-the-Stack Level5. Dieses mal widmen wir uns folgendem C-Sourcecode (level05.c) :

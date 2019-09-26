@@ -3,9 +3,6 @@ title:  "Reverse-Engineering mit radare2 - Teil 3"
 date:   2015-02-28T13:13:13+01:00
 draft: false
 toc: false
-images:
-tags:
-  - untagged
 ---
 
 Hier die dritte Runde von meinem kleinen crackme-special. Die crackmes findet

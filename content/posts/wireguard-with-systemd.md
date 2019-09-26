@@ -3,9 +3,6 @@ title:  "wireguard with systemd"
 date:   2018-02-22T13:13:13+01:00
 draft: false
 toc: false
-images:
-tags:
-  - untagged
 ---
 
 As you might know, *systemd-networkd* got support for *wireguard*.

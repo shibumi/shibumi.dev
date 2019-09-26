@@ -3,9 +3,6 @@ title:  "XSS Bootcamp"
 date:   2014-08-16T13:13:13+01:00
 draft: false
 toc: false
-images:
-tags:
-  - untagged
 ---
 
 Bevor wir zum nächsten Level von [http://io.smashthestack.org/](http://io.smashthestack.org/) kommen möchte ich ein kleines XSS-Wargame einschieben auf das mich ein Kommilitone aufmerksam gemacht hat. Zu finden ist das hier: [https://xss-game.appspot.com/](https://xss-game.appspot.com/). 

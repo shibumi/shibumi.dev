@@ -3,9 +3,6 @@ title:  "Anime Liste"
 date:   2016-04-30T13:13:13+01:00
 draft: true
 toc: false
-images:
-tags:
-  - untagged
 ---
 
 Dieser Artikel hat ausnahmsweise mal nichts mit Computern zu tun.

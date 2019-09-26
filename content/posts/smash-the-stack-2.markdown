@@ -3,9 +3,6 @@ title:  "Smash the Stack 2"
 date:   2014-08-15T13:13:13+01:00
 draft: false
 toc: false
-images:
-tags:
-  - untagged
 ---
 
 Willkommen zur zweiten Runde von [http://io.smashthestack.org/](http://io.smashthestack.org/)

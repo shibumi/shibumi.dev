@@ -3,9 +3,6 @@ title:  "Why suckless is wrong"
 date:   2016-10-19T13:13:13+01:00
 draft: false
 toc: true
-images:
-tags:
-  - untagged
 ---
 
 Many people pointed me to this website [suckless](http://suckless.org/sucks/systemd) when a discussion about systemd

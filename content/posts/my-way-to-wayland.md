@@ -3,9 +3,6 @@ title: "My Way to Wayland"
 date: 2019-07-12T22:03:07+02:00
 draft: false
 toc: false
-images:
-tags:
-  - untagged
 ---
 
 I guess everybody knows that X11 aka Xorg is a pain in the ass and a security nightmare.

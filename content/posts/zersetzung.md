@@ -3,9 +3,6 @@ title:  "Zersetzung - STASI guideline (english translation)"
 date:   2015-04-07T13:13:13+01:00
 draft: false
 toc: false
-images:
-tags:
-  - untagged
 ---
 
 Translation of [http://www.ddr-wissen.de/wiki/ddr.pl?MfS-Richtlinie_1-76](http://www.ddr-wissen.de/wiki/ddr.pl?MfS-Richtlinie_1-76)
