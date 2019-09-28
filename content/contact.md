@@ -5,7 +5,7 @@ draft: false
 toc: true
 ---
 
-**Contact**
+## Contact
 
 Christian Rebischke  
 Marie-Hedwigstraße 13  
@@ -13,17 +13,17 @@ Apartment 321
 38678 Clausthal-Zellerfeld  
 Germany
 
-**Mail**
+## Mail
 
 chris@nullday.de  
 
-**Mail Encryption**
+## Mail Encryption
 
 If you want to write me an encrypted email via PGP, feel free to download my PGP key: [0xDFE2060D](/storage/pubkey.txt)
 
 The fingerprint for the key is: `6DAF 7B80 8F9D F251 3962 0000 D214 61E3 DFE2 060D`
 
-**Privacy Policy**
+## Privacy Policy
 
 This site does not collect any user data. No IP addresses are stored , no user
 agent logged, no timestamp logged, no cookies are used to identify users and
