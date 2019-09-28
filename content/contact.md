@@ -2,7 +2,7 @@
 title: Contact
 date:  2019-03-03T10:55:00+01:00
 draft: false
-toc: true
+toc: false
 ---
 
 Christian Rebischke  

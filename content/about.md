@@ -2,7 +2,7 @@
 title: About
 date:   2019-03-03T10:54:00+01:00
 draft: false
-toc: true
+toc: false
 ---
 
 I am Christian Rebischke and very passionate about Open Source software.
