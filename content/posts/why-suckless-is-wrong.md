@@ -119,7 +119,7 @@ that are allowed to stay running after logout. This way we can make sure
 that only these whitelisted programs will run and not other stuff like
 malware, zombie processes or the 16-years-old users porn torrents.  
   
-## ystemd-nspawn can patch at will any kind of file in a container
+## systemd-nspawn can patch at will any kind of file in a container
 *Paired with transient units and user escalation performable remotely,
 this can mean that if you house VPS instances somewhere, your hosting
 provider has means and tools to spy, modify, delete any kind of content
