@@ -4,6 +4,8 @@ date: 2019-09-27T18:03:17+02:00
 draft: false
 ---
 
+**THIS TUTORIAL IS DEPRECATED, PLEASE USE [THIS]({{< ref "login-via-yubikey-on-linux" >}}) INSTEAD**
+
 In this small article I want to explain how to use your Yubikey as 2-factor device for logins on Linux.
 I used the "Yubikey 5" for this article. If you use an older one, some option will maybe not work.
 Make sure to read [https://developers.yubico.com/yubikey-personalization/Manuals/ykpersonalize.1.html](https://developers.yubico.com/yubikey-personalization/Manuals/ykpersonalize.1.html) before reading further.
@@ -37,11 +39,11 @@ The following command will configure the slot 2 for a challenge: `ykpersonalize 
 
 Let's analyze the command, so we know what's going on:
 
-* `ykpersonalize`: is the the Yubico tool for configuring your Yubikey.
-* `-2`: means that we want to configure the second slot.
-* `-ochal-resp`: refers to "challenge-response" mode, the mode we want to configure for logins.
-* `-ochal-hmac`: this is our "message authentication code" for the challenge. Message authentication codes are used for providing integrity to a message. HMAC uses a hash function (for example SHA-1) for calculating a hash of our message and an outer and inner pad. The outer and inner pads are just constants, that are added to the stream on different moments during the hash calculation. If you want to read more about HMAC, you can do this here: [https://tools.ietf.org/html/rfc2104](https://tools.ietf.org/html/rfc2104)
-* `-ochmac-lt64`: this means we calculate the HMAC on less than 64 bytes input.
+* `ykpersonalize`: Is the the Yubico tool for configuring your Yubikey.
+* `-2`: Means that we want to configure the second slot.
+* `-ochal-resp`: Refers to "challenge-response" mode, the mode we want to configure for logins.
+* `-ochal-hmac`: This is our "message authentication code" for the challenge. Message authentication codes are used for providing integrity to a message. HMAC uses a hash function (for example SHA-1) for calculating a hash of our message and an outer and inner pad. The outer and inner pads are just constants, that are added to the stream on different moments during the hash calculation. If you want to read more about HMAC, you can do this here: [https://tools.ietf.org/html/rfc2104](https://tools.ietf.org/html/rfc2104)
+* `-ochmac-lt64`: This means we calculate the HMAC on less than 64 bytes input.
 * `-oserial-api-visible`: The Yubikey will allow its serial number to be read using an API call.
 * `-ochal-btn-trig`: The Yubikey will ask for confirmation on every challenge via button pressing.
 
