@@ -5,8 +5,6 @@ draft: false
 toc: true
 ---
 
-## Contact
-
 Christian Rebischke  
 Marie-Hedwigstraße 13  
 Apartment 321  
