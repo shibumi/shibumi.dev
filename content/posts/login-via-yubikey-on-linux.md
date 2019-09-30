@@ -24,7 +24,7 @@ So I have configured my laptop for `pam-u2f`. With this module I have the follow
 * The `U2F` is a broader known standard. HMAC challenge-response has been created for applications asking for authentication.
 * I can use the `yubikey-touch-detector` to visualize the `U2F` challenge request in my i3 status bar (for this I use [barista](https://github.com/soumya92/barista))
 
-The next big question is: How do I configured `U2F` for logins on my device?
+The next big question is: How have I configured `U2F` for logins on my device?
 
 It's not so different. I have created for both users (my daily user "chris" and my administrator account "root") the following file in the home directory:
 
