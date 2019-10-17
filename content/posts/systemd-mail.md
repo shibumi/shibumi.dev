@@ -12,12 +12,12 @@ You'll need the following software for it:
 * a mail transfer agent (postfix, qmail, exim, name your poison)
 * sendmail (or any other application that can send mails)
 
-I chose sendmail. First create `/usr/local/bin/send-mail`:
+I chose sendmail. First create `/usr/local/bin/systemd-mail`:
 
 ```bash
 #!/bin/bash
 
-sendmail -t <<ERRMAIL
+sendmail -i -t <<ERRMAIL
 To: <your mail address>
 From: systemd <root@$HOSTNAME>
 Subject: [$HOSTNAME] $1
