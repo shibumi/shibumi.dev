@@ -1,10 +1,8 @@
 ---
-title: "Login via Yubikey on Linux (deprecated)"
+title: "Login via Yubikey on Linux (HMAC)"
 date: 2019-09-27T18:03:17+02:00
 draft: false
 ---
-
-**THIS TUTORIAL IS DEPRECATED, PLEASE USE [THIS]({{< ref "login-via-yubikey-on-linux" >}}) INSTEAD**
 
 In this small article I want to explain how to use your Yubikey as 2-factor device for logins on Linux.
 I used the "Yubikey 5" for this article. If you use an older one, some option will maybe not work.

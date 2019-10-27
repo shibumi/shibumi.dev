@@ -1,5 +1,5 @@
 ---
-title: "Login via Yubikey on Linux"
+title: "Login via Yubikey on Linux (U2F)"
 date: 2019-09-29T00:06:57+02:00
 draft: false
 ---
