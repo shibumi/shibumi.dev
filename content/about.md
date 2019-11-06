@@ -31,10 +31,9 @@ A big thanks to [Peter Kalnai](https://twitter.com/pkalnai) and [Jaromir Horejsi
 * Bachelor defense: Evaluation of a distributed monitoring system for the TU Clausthal Campus (German) [https://github.com/shibumi/bachelor-kolloquium](https://github.com/shibumi/bachelor-kolloquium)
 
 
-
 ## Visited Events
 
-* March, 2019, 70. Betriebstagung Deutsches Forschungsnetz (DFN-BT) in Berlin
+* March, 2019, 70. Betriebstagung Deutsches Forschungsnetz (DFN-BT) in Berlin ([slides](https://www.dfn.de/fileadmin/3Beratung/Betriebstagungen/bt70/BT70_MobileIT_Konfiguration_FreeRADIUS_und_radsecproxy_mit_Ansible_Strauf_Rebischke.pdf))
 * December, 2018, 35. Chaos Communication Congress in Leipzig
 * December, 2017, 34. Chaos Communication Congress in Leipzig
 * March, 2017, Cebit in Hannover

@@ -1,7 +1,7 @@
 ---
 title: "Traefik as Reverse Proxy"
 date: 2019-11-06T17:09:10+01:00
-draft: true
+draft: false
 ---
 
 A few days ago I had the joy to configure a reverse proxy. My first thoughts went to Nginx or Apache, but I forced myself to destroy the filter bubble and get in touch with some new software. Therefore I had a lookon `traefik`. `traefik` is written in Golang and can act as reverse proxy and loadbalancer.
