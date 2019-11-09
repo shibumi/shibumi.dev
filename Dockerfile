@@ -13,9 +13,9 @@ RUN install -Dm755 /tmp/caddy2_beta9_linux_amd64 /usr/local/bin/caddy
 RUN hugo --minify --source=/app/
 
 # Use Alpine as small base image for release container
-FROM alpine:latest AS release
+FROM scratch AS release
 # Copy all necessary things from build to release container
-COPY --from=build /app /app
+COPY --from=build /app/public /app/public
 COPY --from=build /usr/local/bin/caddy /usr/local/bin/caddy
 # Use user 9999 here and an unrestricted port
 USER 9999:9999
