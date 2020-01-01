@@ -33,6 +33,8 @@ A big thanks to [Peter Kalnai](https://twitter.com/pkalnai) and [Jaromir Horejsi
 
 ## Visited Events
 
+* December, 2019, 36. Chaos Communication Congress in Leipzig
+* August, 2019, Chaos Communication Camp in Mildenberg (Berlin)
 * March, 2019, 70. Betriebstagung Deutsches Forschungsnetz (DFN-BT) in Berlin ([slides](https://www.dfn.de/fileadmin/3Beratung/Betriebstagungen/bt70/BT70_MobileIT_Konfiguration_FreeRADIUS_und_radsecproxy_mit_Ansible_Strauf_Rebischke.pdf))
 * December, 2018, 35. Chaos Communication Congress in Leipzig
 * December, 2017, 34. Chaos Communication Congress in Leipzig
