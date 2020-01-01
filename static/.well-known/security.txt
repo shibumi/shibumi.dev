@@ -1,0 +1,25 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+# If you would like to report a security issue.
+# Use the following contact details:
+Contact: mailto:chris@nullday.de
+Encryption: https://nullday.de/storage/pubkey.txt
+Preferred-Languages: en, de
+Canonical: https://nullday.de/.well-known/security.txt
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEba97gI+d8lE5YgAA0hRh49/iBg0FAl4NBUwACgkQ0hRh49/i
+Bg0MOw//e5dObrbi9vfyjVzGPdaFK8rXzVgqKGYWW6WKmOZzrbySg3m/7xetYk3J
++kZSECFk0lw5LC3Mk6/pfUAnU6hn6wN01l8ozhXfFxBxU2AQbHilO7J60w95pX4Y
+Mef1sZ7Y4pw/js6O8EbJMQ30eQjF7BZQitSdL8mqxS5ZZLNlYkoCbZ86SAk9sw/g
+RU9fvbcKTfKopDTivLYaCea1hofXyE4gi6h8wqmRfB53nKzuTJqH75/Bv36tiB85
+a8ERpioTtmCNf7gfsQ4Goy67wO/w6lePzTiy1pCDafnbxg4yWZw9qOnB1+spmRp1
+rMJbTnmIFaf3ptZqY2FJhjUlIWsymAuyE3sTwZd2u2AWW6UcxsM7s21kmTanih+3
+0xlbiZcRSmQk0wKAA/fmB/F2hfJN3Dl9vY5q1pLt3L7URmHo2Lhzrjo9DedjLQsk
+O/Xqhq/FvV4PUBo7244R7VFBG8QAVYZRth1/xfZqtc+7t0N+OrIxPgBUzVywFpaJ
+/phpEZZ6XjWQg00RJ6+CwQFq3jbcqFAzARu8ESYFccreMNQZ+cHyaFELaUwegIRA
+al8jdm4watwT+8Ytbz3QDis7D8l0UCv4uBFqaI8KhurHUUTK47pqTVwgm6r0UPAr
+AlOHI1XHQSSaJVtOo3pUZ++JyN51kbnyWqO5fzucVDB5+eY+xRk=
+=na2n
+-----END PGP SIGNATURE-----
