@@ -39,8 +39,8 @@ Usage = Sync Search
 
 [community]
 Include = /etc/pacman.d/mirrorlist
-[multilib-testing]
 
+[multilib-testing]
 Include = /etc/pacman.d/mirrorlist
 Usage = Sync Search
 
