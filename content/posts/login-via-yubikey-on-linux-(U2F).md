@@ -52,7 +52,7 @@ auth      required  pam_unix.so     try_first_pass nullok
 
 Same as with `yubico-pam`, you can use the keyword `sufficient` here to use the Yubikey **or** the password to login. If you want **true** 2FA experience use the keyword `required`, then you will need both for the login.
 
-The whole process is explained on the official Yubico page ([https://support.yubico.com/support/solutions/articles/15000011356-ubuntu-linux-login-guide-u2f](https://support.yubico.com/support/solutions/articles/15000011356-ubuntu-linux-login-guide-u2f)) as well. The only difference is that I've modified `/etc/pam.d/system-auth` instead of `/etc/pam.d/sudo` (for sudo) and `/etc/pam.d/common-auth` for common logins. I guess `common-auth` is important for graphical logins via loginmanager, but I am not unsure about it, because I just use the TTY to login.
+The whole process is explained on the official Yubico page ([https://support.yubico.com/support/solutions/articles/15000011356-ubuntu-linux-login-guide-u2f](https://support.yubico.com/support/solutions/articles/15000011356-ubuntu-linux-login-guide-u2f)) as well. The only difference is that I've modified `/etc/pam.d/system-auth` instead of `/etc/pam.d/sudo` (for sudo) and `/etc/pam.d/common-auth` for common logins. I guess `common-auth` is important for graphical logins via loginmanager, but I am not sure about it, because I just use the TTY to login.
 
 
 
