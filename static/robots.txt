@@ -1,3 +1,4 @@
 # Treat robots like real humans. Be nice to them and thankful for their service.
 # Robots are welcome on this page :-)
 User-agent: *
+Sitemap: https://nullday.de/sitemap.xml
