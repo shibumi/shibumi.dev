@@ -135,9 +135,3 @@ nullday.de, nspawn.org {
 	}
 }
 ```
-
-Here are some statistics from ssllabs.com, Mozillas Observatory and Googles Pagespeed Insight:
-
-![SSLLABS REPORT](/img/how-i-moved-from-nginx-to-caddy-1.png)
-![MOZILLA OBSERVATORY REPORT](/img/how-i-moved-from-nginx-to-caddy-2.png)
-![PAGESPEED REPORT](/img/how-i-moved-from-nginx-to-caddy-3.png)
