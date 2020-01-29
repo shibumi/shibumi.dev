@@ -5,16 +5,15 @@ draft: false
 toc: false
 ---
 
-Eigentlich wollte ich diesen Artikel schon Ende Oktober 2016
-runterschreiben, kam aber leider noch nicht dazu. Naja, besser spät als
-nie. Letzten Oktober war ich auf dem [Hackover](https://hackover.de/) in
-Hannover. Dieses Mal wurde da ein phänomenales CTF vom CTF-Team des
-[Hamburger CCC](https://www.hamburg.ccc.de/). Eine der Challenges möchte
-ich euch nicht vorenthalten. Da der Server, der das CTF gehandlet hat
-bereits abgeschaltet worden ist, muss man etwas improvisieren. Am besten
-dazu eignet sich eine VM mit GNU/Linux (vorzugsweise Arch Linux
-natürlich, hehe). Dann kann man die Binary nämlich getrost lokal
-ausführen mit der folgenden Zeile:
+Eigentlich wollte ich diesen Artikel schon Ende Oktober 2016 runterschreiben,
+kam aber leider noch nicht dazu. Naja, besser spät als nie. Letzten Oktober war
+ich auf dem [Hackover](https://hackover.de/) in Hannover. Dieses Mal wurde da
+ein phänomenales CTF vom CTF-Team des [Hamburger
+CCC](https://www.hamburg.ccc.de/) veranstaltet. Eine der Challenges möchte ich
+euch nicht vorenthalten. Da der Server, der das CTF gehandled hat bereits
+abgeschaltet worden ist, muss man etwas improvisieren. Am besten dazu eignet
+sich eine VM mit GNU/Linux (vorzugsweise Arch Linux natürlich). Dann kann man
+die Binary nämlich getrost lokal ausführen mit der folgenden Zeile:
 
 `socat TCP-LISTEN:6666,bind=localhost,reuseaddr,fork EXEC:./ez_pz`
 
