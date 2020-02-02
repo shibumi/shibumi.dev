@@ -20,8 +20,11 @@ My interests are high-scalable infrastructure, IT security and Linux.
 
 ## Mentions
 
-[Virus Bulletin Conference 2015](https://www.virusbtn.com/pdf/conference_slides/2015/KalnaiHorejsi-VB2015.pdf)
-A big thanks to [Peter Kalnai](https://twitter.com/pkalnai) and [Jaromir Horejsi](https://twitter.com/JaromirHorejsi) for this honour.
+In 2014/2015 I have been involved in the analysis of the Xor DDoS Linux Trojan.
+[Virus Bulletin Conference 2015](/store/KalnaiHoreisi-VB2015.pdf)
+
+My VirusTotal profile from that time:
+[https://www.virustotal.com/gui/user/Shibumi/comments](https://www.virustotal.com/gui/user/Shibumi/comments)
 
 ## Publications
 
