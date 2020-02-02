@@ -33,4 +33,4 @@ A big thanks to [Peter Kalnai](https://twitter.com/pkalnai) and [Jaromir Horejsi
 
 ## Talks
 
-* March, 2019, 70. Betriebstagung Deutsches Forschungsnetz (DFN-BT) in Berlin ([Configuration of Freeradius & radsecproxy via Ansible](/storages/freeradius_ansible.pdf))
+* March, 2019, 70. Betriebstagung Deutsches Forschungsnetz (DFN-BT) in Berlin ([Configuration of AAA infrastructure via Ansible](/storages/freeradius_ansible.pdf))
