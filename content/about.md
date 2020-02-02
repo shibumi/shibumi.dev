@@ -28,11 +28,11 @@ My VirusTotal profile from that time:
 
 ## Publications
 
-* Seminar paper: Amazon AWS (EC2 virtual Server and EC2 container) (German) [https://github.com/shibumi/aws-ec2-project-paper](https://github.com/shibumi/aws-ec2-project-paper)
-* Seminar paper: Openstack (internal structure and overview) (German) [https://github.com/shibumi/openstack-project-paper](https://github.com/shibumi/openstack-project-paper)
-* Seminar paper: Tor (a short introduction in The Onion Routing) (German) [https://github.com/shibumi/Tor-project-paper](https://github.com/shibumi/Tor-project-paper)
-* Bachelor thesis: Evaluation of a distributed monitoring system for the TU Clausthal Campus (German) [https://github.com/shibumi/bachelor-thesis](https://github.com/shibumi/bachelor-thesis)
-* Bachelor defense: Evaluation of a distributed monitoring system for the TU Clausthal Campus (German) [https://github.com/shibumi/bachelor-kolloquium](https://github.com/shibumi/bachelor-kolloquium)
+* Seminar paper: Amazon AWS (EC2 virtual Server and EC2 container) ([https://github.com/shibumi/aws-ec2-project-paper](https://github.com/shibumi/aws-ec2-project-paper))
+* Seminar paper: Openstack (internal structure and overview) ([https://github.com/shibumi/openstack-project-paper](https://github.com/shibumi/openstack-project-paper))
+* Seminar paper: Tor (a short introduction in The Onion Routing) ([https://github.com/shibumi/Tor-project-paper](https://github.com/shibumi/Tor-project-paper))
+* Bachelor thesis: Evaluation of a distributed monitoring system for the TU Clausthal Campus ([https://github.com/shibumi/bachelor-thesis](https://github.com/shibumi/bachelor-thesis))
+* Bachelor defense: Evaluation of a distributed monitoring system for the TU Clausthal Campus ([https://github.com/shibumi/bachelor-kolloquium](https://github.com/shibumi/bachelor-kolloquium))
 
 
 ## Talks
