@@ -5,7 +5,8 @@ draft: false
 toc: false
 ---
 
-I am Christian Rebischke and very passionate about Open Source software.
+I am Christian Rebischke a passionted Linux user from the Harz (Germany).
+My interests are high-scalable infrastructure, IT security and Linux.
 
 ## Want to hire me?
 
