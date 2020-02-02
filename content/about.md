@@ -31,19 +31,6 @@ A big thanks to [Peter Kalnai](https://twitter.com/pkalnai) and [Jaromir Horejsi
 * Bachelor defense: Evaluation of a distributed monitoring system for the TU Clausthal Campus (German) [https://github.com/shibumi/bachelor-kolloquium](https://github.com/shibumi/bachelor-kolloquium)
 
 
-## Visited Events
+## Talks
 
-* December, 2019, 36. Chaos Communication Congress in Leipzig
-* August, 2019, Chaos Communication Camp in Mildenberg (Berlin)
-* March, 2019, 70. Betriebstagung Deutsches Forschungsnetz (DFN-BT) in Berlin ([slides](https://www.dfn.de/fileadmin/3Beratung/Betriebstagungen/bt70/BT70_MobileIT_Konfiguration_FreeRADIUS_und_radsecproxy_mit_Ansible_Strauf_Rebischke.pdf))
-* December, 2018, 35. Chaos Communication Congress in Leipzig
-* December, 2017, 34. Chaos Communication Congress in Leipzig
-* March, 2017, Cebit in Hannover
-* December 2016, 33. Chaos Communication Congress in Hamburg
-* October 2016, Hackover in Hannover
-* December 2015, 32. Chaos Communication Congress in Hamburg
-* October 2015, Hackover in Hannover
-* August 2015, Chaos Communication Camp in Mildenberg (Berlin)
-* April 2015, Easterhegg in Braunschweig
-* December 2014, 31. Chaos Communication Congress in Hamburg
-* October 2014, Hackover in Hannover
+* March, 2019, 70. Betriebstagung Deutsches Forschungsnetz (DFN-BT) in Berlin ([Configuration of Freeradius & radsecproxy via Ansible](/storages/freeradius_ansible.pdf))
