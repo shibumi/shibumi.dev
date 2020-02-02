@@ -21,7 +21,7 @@ My interests are high-scalable infrastructure, IT security and Linux.
 ## Mentions
 
 In 2014/2015 I have been involved in the analysis of the Xor DDoS Linux Trojan.
-[Virus Bulletin Conference 2015](/storage/KalnaiHoreisi-VB2015.pdf)
+[Virus Bulletin Conference 2015](/storage/KalnaiHorejsi-VB2015.pdf)
 
 My VirusTotal profile from that time:
 [https://www.virustotal.com/gui/user/Shibumi/comments](https://www.virustotal.com/gui/user/Shibumi/comments)
