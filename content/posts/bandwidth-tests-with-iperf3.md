@@ -6,7 +6,7 @@ draft: false
 
 If you ever come to the need of a simple bandwidth test for your server or client, you can setup a bandwidth test via iperf3.
 
-For starting an iperf3, just use `iperf3 -s`:
+For starting an iperf3 server, just use `iperf3 -s`:
 ```
 ❯ iperf3 -s
 -----------------------------------------------------------
