@@ -1,14 +1,14 @@
 ---
-title: "Bandwidth tests with Iperf3"
+title: "Bandwidth tests with iperf3"
 date: 2020-02-03T20:29:24+01:00
 draft: false
 ---
 
-If you ever come to the need of a simple bandwidth test for your server or client, you can setup a bandwidth test via Iperf3.
+If you ever come to the need of a simple bandwidth test for your server or client, you can setup a bandwidth test via iperf3.
 
-On the server do:
+For starting an iperf3, just use `iperf3 -s`:
 ```
-❯ iperf3 -s 
+❯ iperf3 -s
 -----------------------------------------------------------
 Server listening on 5201
 -----------------------------------------------------------
@@ -34,8 +34,10 @@ Server listening on 5201
 ^Ciperf3: interrupt - the server has terminated
 ```
 
-
-On your client you can do:
+Now you can test your client against your server via `iperf3 -R -c <hostname>`,
+where `-R` means reverse mode (the server sends data to your client). If you
+want to test the opposite way, just use `iperf3 -c <hostname>` or `iperf3
+--bidir -c <hostname>` for a bidirectional connection:
 ```
 ❯ iperf3 -R -c kurisu
 Connecting to host kurisu, port 5201
