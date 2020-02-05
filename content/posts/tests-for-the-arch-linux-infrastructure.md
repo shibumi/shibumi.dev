@@ -24,6 +24,22 @@ makes sense to reuse them infrastructure tests.
 The actual test are written in Python with support of the library
 [testinfra](https://testinfra.readthedocs.io/en/latest/).
 
+First of all we need to install the dependencies. You can find most of our
+needed tools in our repositories:
+
+* ansible
+* python-pip
+* python
+* flake8
+* ansible-lint
+* docker
+* vagrant
+
+What we are missing right now is molecule. We can install molecule with the
+vagrant dependencies via `pip install molecule[vagrant] --user`. Pip will
+install all needed packages to our $HOME.
+
+
 So let us pick a first role we want to test:
 
 `infrastructure/roles/sshd`:
@@ -154,6 +170,12 @@ def test_openssh_is_running_and_enabled(host):
     assert openssh.is_running
     assert openssh.is_enabled
 ```
+
+For running our tests we can trigger `molecule test` from inside of our sshd
+role directory. I haven't played around with `molecule converge` yet, but I
+guess this is the command you would use for local Ansible development.
+`molecule test` will trigger a clean environment on every test (destroying the
+VM snapshot etc). This is pretty cost intensive and takes time.
 
 If you are interested in this work, you can follow my branch on github:
 
