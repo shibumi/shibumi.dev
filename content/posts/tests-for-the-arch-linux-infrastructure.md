@@ -154,3 +154,7 @@ def test_openssh_is_running_and_enabled(host):
     assert openssh.is_running
     assert openssh.is_enabled
 ```
+
+If you are interested in this work, you can follow my branch on github:
+
+[https://github.com/shibumi/infrastructure/tree/shibumi/molecule-tests](https://github.com/shibumi/infrastructure/tree/shibumi/molecule-tests)
