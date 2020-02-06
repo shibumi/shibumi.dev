@@ -21,7 +21,7 @@ projects are called [Arch-Boxes](https://github.com/archlinux/arch-boxes) and
 [Archlinux-Docker](https://github.com/archlinux/archlinux-docker). Therefore it
 makes sense to reuse them infrastructure tests.
 
-The actual test are written in Python with support of the library
+The actual tests are written in Python with support of the library
 [testinfra](https://testinfra.readthedocs.io/en/latest/).
 
 First of all we need to install the dependencies. You can find most of our
