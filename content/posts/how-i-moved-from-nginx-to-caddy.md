@@ -129,6 +129,10 @@ nullday.de, nspawn.org {
 		Expect-CT "max-age=604800"
 	}
 	# Lastly we just enable zstd and gzip compression.
+	# Note: zstd compression is not yet supported by browsers.
+	# You may ask yourself why I don't enable brotli.
+	# The brotli impementation in caddy performs surprisingly bad.
+	# I hope the caddy devs are going to fix this..
 	encode {
 		zstd
 		gzip
