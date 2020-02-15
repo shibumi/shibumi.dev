@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://nullday.de/sitemap.xml
+Sitemap: https://shibumi.dev/sitemap.xml
