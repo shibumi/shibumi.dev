@@ -2,8 +2,8 @@
 	"name": "shibumi.dev",
 	"short_name": "shibumi.dev",
 	"description": "The personal blog of Christian Rebischke",
-	"theme_color": "#ffffff",
-	"background_color": "#ffffff",
+	"theme_color": "#D8D8D8",
+	"background_color": "#282a2b",
 	"display": "standalone",
 	"icons": [
 		{
