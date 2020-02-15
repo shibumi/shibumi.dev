@@ -1,5 +1,5 @@
 ---
-title: "New Domain: shibumi.dev"
+title: "A new domain: shibumi.dev"
 date: 2020-02-09T18:44:37+01:00
 draft: false
 ---
