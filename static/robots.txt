@@ -1,2 +1,2 @@
-User-agent: *
-Sitemap: https://shibumi.dev/sitemap.xml
+user-agent: *
+sitemap: https://shibumi.dev/sitemap.xml
