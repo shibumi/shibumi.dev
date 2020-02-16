@@ -33,3 +33,6 @@ PersistentKeepalive = 25
 This will disable all routing on the client for wireguard and you should be
 able to find your server on for example 10.0.0.1 and connect to the internet
 via your normal gateway.
+
+Two of my readers have mentioned that you could also just set `AllowedIPs =
+10.0.0.0/24` instead of setting `Table = off` in the wireguard configuration.
