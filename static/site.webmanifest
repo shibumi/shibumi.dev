@@ -4,7 +4,7 @@
   "description": "The personal blog of Christian Rebischke",
   "theme_color": "#d8d8d8",
   "background_color": "#282a2b",
-  "display": "browser",
+  "display": "standalone",
   "Scope": "/",
   "start_url": "/",
   "icons": [
