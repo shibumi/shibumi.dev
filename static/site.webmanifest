@@ -5,6 +5,7 @@
 	"theme_color": "#D8D8D8",
 	"background_color": "#282a2b",
 	"display": "standalone",
+	"start_url": "https://shibumi.dev",
 	"icons": [
 		{
 			"src": "/android-chrome-96x96.png",
@@ -12,8 +13,8 @@
 			"type": "image/png"
 		},
 		{
-			"src":"/mstile-150x150.png",
-			"sizes": "150x150",
+			"src":"/mstile-270x270.png",
+			"sizes": "270x270",
 			"type": "image/png"
 		},
 		{
@@ -27,7 +28,7 @@
 			"type": "image/png"
 		},
 		{
-			"src":"apple-touch-icon",
+			"src":"apple-touch-icon.png",
 			"sizes": "120x120",
 			"type": "image/png"
 		}
