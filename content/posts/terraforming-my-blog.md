@@ -16,7 +16,7 @@ let Terraform retrieve the Hetzner Cloud API key magically.
 
 The solution is the use of the `external` Terraform module:
 
-```tf
+```hcl
 data "external" "hetzner_cloud_api_key" {
 	program = ["${path.module}/fetch-key.sh"]
 }
@@ -36,7 +36,7 @@ It's important to use the key  `hetzner_cloud_api_key` here!  In the next part
 I am going to set the `hetzner_cloud_api_key` and call the `hcloud` provider
 (this is going to download a go binary):
 
-```tf
+```hcl
 provider "hcloud" {
   token = data.external.hetzner_cloud_api_key.result.hetzner_cloud_api_key
 }
@@ -44,7 +44,7 @@ provider "hcloud" {
 
 Then we are setting the actual server resource and an rdns entry for the server:
 
-```tf
+```hcl
 resource "hcloud_server" "kurisu" {
   name        = "kurisu"
   server_type = "cx11-ceph"
@@ -63,7 +63,7 @@ resource "hcloud_rdns" "kurisu" {
 ```
 
 Interesting is the last part of the `hcloud_server` resource:
-```tf
+```hcl
   image       = "fedora-31"
   lifecycle {
     ignore_changes = [image]
@@ -81,18 +81,6 @@ API will think it's a valid image value and will try to destroy your image and
 create a new one. To go around this issue, just add a lifecycle for it and set
 `ignore_changes = [image]`.  This will ignore any changes to the image variable
 on Hetzner Cloud API side.
-
-The last part of my current configuration is setting a reverse DNS entry for my server (right now IPv4 only):
-
-```tf
-resource "hcloud_rdns" "kurisu" {
-  server_id  = hcloud_server.kurisu.id
-  ip_address = hcloud_server.kurisu.ipv4_address
-  dns_ptr    = "kurisu.shibumi.dev"
-}
-```
-
-This should be self-explaining.
 
 If you want to have a look on all files go and checkout:
 
