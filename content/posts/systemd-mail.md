@@ -2,6 +2,7 @@
 title: "Systemd Mail"
 date: 2019-10-12T15:46:06+02:00
 draft: false
+description: "How to monitor systemd services with mails or how to send an email with systemd service logs"
 ---
 
 In this small article I am going to explain how to setup a small systemd service for notifications in case of failing systemd services.

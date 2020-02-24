@@ -2,6 +2,7 @@
 title:  "Private Data Mining"
 date:   2014-08-18T13:13:13+01:00
 draft: false
+description: "This article describes how to use whatsapp and facebook for data mining"
 toc: false
 ---
 

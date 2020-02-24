@@ -2,6 +2,7 @@
 title:  "Anime Liste"
 date:   2016-04-30T13:13:13+01:00
 draft: true
+description: "Eine Zusammenfassung der Animes die ich bisher so gesehen habe"
 toc: false
 ---
 

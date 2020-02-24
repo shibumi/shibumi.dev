@@ -2,6 +2,7 @@
 title:  "Why suckless is wrong"
 date:   2016-10-19T13:13:13+01:00
 draft: false
+description: "Suckless.org claims to be better than systemd. I want to proof why this is not the case"
 toc: true
 ---
 

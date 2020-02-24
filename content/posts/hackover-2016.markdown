@@ -2,6 +2,7 @@
 title:  "Hackover 2016"
 date:   2017-05-01T13:13:13+01:00
 draft: false
+description: "Dieser Artikel fasst eine CTF challenge vom Hackover 2016 in Hannover zusammen. Benutzte Tools: Python, Netcat, radare2"
 toc: false
 ---
 

@@ -2,6 +2,7 @@
 title: "Terraforming my blog"
 date: 2020-02-18T16:11:06+01:00
 draft: false
+description: "How I manage my blog with Hashicorp Terraform on Hetzner Cloud"
 ---
 
 I've just pushed a first step for managing my infrastructure via Hashicorps

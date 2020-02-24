@@ -2,6 +2,7 @@
 title:  "Zersetzung - STASI guideline (english translation)"
 date:   2015-04-07T13:13:13+01:00
 draft: false
+description: "English translation of the STASI Guideline 'Zersetzung'"
 toc: false
 ---
 

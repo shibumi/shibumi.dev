@@ -2,6 +2,7 @@
 title:  "XSS Bootcamp"
 date:   2014-08-16T13:13:13+01:00
 draft: false
+description: "Auflösung für das XSS bootcamp"
 toc: false
 ---
 

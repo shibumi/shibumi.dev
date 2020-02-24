@@ -3,6 +3,7 @@ layout: post
 title:  "DuBrute - a rare view into chinese blackhat techniques"
 date:   2015-09-05T13:13:13+01:00
 draft: false
+description: "This article is about DuBrute a Bruteforce tools from chinese cyber criminals"
 toc: false
 ---
 

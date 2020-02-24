@@ -2,6 +2,7 @@
 title:  "Private Data Mining (German)"
 date:   2014-08-18T13:13:13+01:00
 draft: false
+description: "Dieser Artikel beschreibt wie man mit Hilfe von Whatsapp und Facebook Data Mining betreiben kann"
 toc: false
 ---
 

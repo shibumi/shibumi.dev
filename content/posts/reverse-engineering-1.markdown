@@ -2,6 +2,7 @@
 title:  "Reverse-Engineering mit radare2 - Teil 1"
 date:   2015-02-23T13:13:13+01:00
 draft: false
+description: "Reverse-Engineering mit radare2 und IOLI crackme"
 toc: false
 ---
 

@@ -2,6 +2,7 @@
 title: "How to trace Linux signals"
 date: 2019-09-26T23:10:42+02:00
 draft: false
+description: "How to find out which process kills another process"
 ---
 
 Did you ever run into the problem, that a random process on your hosts is running amok and killing other processes? If so, you know how painful it is to find the process. But there is a solution for it: **systemtap**.

@@ -2,6 +2,7 @@
 title:  "Hello World"
 date:   2014-08-14T13:13:13+01:00
 draft: false
+description: "Dies ist mein erster Blog-Artikel über io.smashthestack.org"
 toc: false
 ---
 

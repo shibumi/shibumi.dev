@@ -2,6 +2,7 @@
 title: "Traefik BasicAuth"
 date: 2019-12-05T22:47:59+01:00
 draft: false
+description: "How to setup basicAuth for Traefik"
 ---
 
 In this short blog article we revisit traefik and add password authentication to our reverse proxy example.Password authentication means we use a (user,password) tuple for the login. We don't want to safe our password in clear text, therefore we need to encrypt it.

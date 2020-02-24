@@ -2,6 +2,7 @@
 title: "A new domain: shibumi.dev"
 date: 2020-02-09T18:44:37+01:00
 draft: false
+description: "I've moved my domain from nullday.de to shibumi.dev"
 ---
 
 Hello everybody,

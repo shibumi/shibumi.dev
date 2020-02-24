@@ -2,6 +2,7 @@
 title:  "Reverse-Engineering mit radare2 - Teil 3"
 date:   2015-02-28T13:13:13+01:00
 draft: false
+description: "Der dritte Teil meiner Reverse Engineering mit Radare2 Reihe"
 toc: false
 ---
 

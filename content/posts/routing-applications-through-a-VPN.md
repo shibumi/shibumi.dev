@@ -2,6 +2,7 @@
 title: "Routing applications through a VPN"
 date: 2020-01-27T22:06:59+01:00
 draft: false
+description: "How to route you favourite linux application through a VPN using systemd-nspawn container"
 ---
 
 You may know this problem: You are using a laptop for work and for private stuff and you don't want that

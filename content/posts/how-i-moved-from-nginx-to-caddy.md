@@ -2,6 +2,7 @@
 title: "How I moved from Nginx to Caddy"
 date: 2020-01-18T12:57:34+01:00
 draft: false
+description: "How to move your nginx webserver configuration to a more modern webserver called caddy. Caddy has several advantages like automated TLS"
 ---
 
 Nginx has been my webserver of choice for several years now. But I had always

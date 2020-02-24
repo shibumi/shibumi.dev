@@ -2,6 +2,7 @@
 title: "Login via Yubikey on Linux (HMAC)"
 date: 2019-09-27T18:03:17+02:00
 draft: false
+description: "How to login via your Yubikey in your Linux using HMAC (without interaction)"
 ---
 
 In this small article I want to explain how to use your Yubikey as 2-factor device for logins on Linux.

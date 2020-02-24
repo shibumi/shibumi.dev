@@ -2,6 +2,7 @@
 title: "Zsh Performance"
 date: 2019-07-21T21:45:05+02:00
 draft: false
+description: "How to measure ZSH performance"
 ---
 
 I use **zsh** for a pretty long time now. It began with **zsh** + **grml**

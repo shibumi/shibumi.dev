@@ -2,6 +2,7 @@
 title:  "wireguard with systemd"
 date:   2018-02-22T13:13:13+01:00
 draft: false
+description: "How to setup wireguard with systemd-networkd"
 toc: false
 ---
 

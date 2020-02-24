@@ -2,6 +2,7 @@
 title: "Tests for the Arch Linux infrastructure"
 date: 2020-02-05T21:57:15+01:00
 draft: false
+description: "Proof of concept for Ansible Arch Linux infrastructure with Molecule and Testinfra"
 ---
 
 The Arch Linux DevOps team uses a combination of Ansible and Terraform to

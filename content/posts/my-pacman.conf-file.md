@@ -2,6 +2,7 @@
 title: "My pacman.conf file"
 date: 2020-01-01T21:12:09+01:00
 draft: false
+description: "How to enhance your pacman.conf file for testing repositories and more verbose output"
 ---
 
 Many users don't modify their **pacman.conf** file. Either because they think
