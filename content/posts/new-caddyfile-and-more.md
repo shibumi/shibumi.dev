@@ -7,7 +7,7 @@ description: "In this article I write about SEO changes for my blog and changes 
 
 I made a few significant changes on my blog. First, I have a new Caddyfile for Caddy:
 
-```
+```yaml
 {
 	experimental_http3
 }
