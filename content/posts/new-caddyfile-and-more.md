@@ -51,8 +51,14 @@ version without www prefix.  My old domain nullday.de redirects now to my new
 domain shibumi.dev.  Also I had to add `connect-src 'self'` to my CSP, because
 Google Lighthouse seems to have problems with `defalt-src 'none'`. If just
 `default-src 'none'` is being set, Google Lighthouse can't access your
-robot.txt. This seems to be an issue in the Google Lighthouse implementation,
-the Google Search Bot is not affected.  You can follow this issue here:
+robots.txt. This seems to be an issue in the Google Lighthouse implementation,
+the Google Search Bot is not affected. You can test your robots.txt via:
+
+```javascript
+await fetch(new URL('/robots.txt', location.href).href)
+```
+
+Feel free to follow this issue here:
 [https://github.com/GoogleChrome/lighthouse/issues/4386](https://github.com/GoogleChrome/lighthouse/issues/4386)
 
 The second change I has been adding a meta description for my blog and my blog
