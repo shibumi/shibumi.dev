@@ -1,5 +1,5 @@
 ---
-title: "How to Handle Dotfiles"
+title: "How to handle dotfiles"
 date: 2020-02-29T16:14:00+01:00
 draft: false
 description: "How to handle your Linux/Mac dotfiles with git"
