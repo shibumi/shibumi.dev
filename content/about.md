@@ -37,4 +37,4 @@ My VirusTotal profile from that time:
 
 ## Talks
 
-* March, 2019, 70. Betriebstagung Deutsches Forschungsnetz (DFN-BT) in Berlin ([Configuration of AAA infrastructure via Ansible](/storages/freeradius_ansible.pdf))
+* March, 2019, 70. Betriebstagung Deutsches Forschungsnetz (DFN-BT) in Berlin ([Configuration of AAA infrastructure via Ansible](/storage/freeradius_ansible.pdf))
