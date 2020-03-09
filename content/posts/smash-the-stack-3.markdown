@@ -4,6 +4,8 @@ date:   2014-09-01T13:13:13+01:00
 draft: false
 description: "Smash the stack Level 3 Auflösung"
 toc: false
+tags:
+  - ctf
 ---
 
 Willkommen zur dritten Runde von [http://io.smashthestack.org/](http://io.smashthestack.org/)

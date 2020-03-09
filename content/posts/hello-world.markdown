@@ -4,6 +4,8 @@ date:   2014-08-14T13:13:13+01:00
 draft: false
 description: "Dies ist mein erster Blog-Artikel über io.smashthestack.org"
 toc: false
+tags:
+  - ctf
 ---
 
 Hey, schön das du da bist. Dies ist mein erster Blog-Eintrag. Ich habe lange Zeit darüber nachgedacht was ich in meinem ersten Blog-Eintrag schreibe. Nach viel hin und her kam ich also dann zu dem Schluss, dass ich doch einfach mit einem kleinen Spiel anfangen könnte. Das Spiel nennt sich `SmashTheStack`. Du kannst gerne mit spielen du findest das Spiel hier:  

@@ -3,6 +3,8 @@ title: "More ways to handle dotfiles"
 date: 2020-03-02T00:31:49+01:00
 draft: false
 description: "In this article I mention more ways to handle your dotfiles"
+tags:
+  - linux
 ---
 
 I've received plenty of feedback for my last blog article on how I handle

@@ -3,6 +3,8 @@ title: "Bandwidth tests with iperf3"
 date: 2020-02-03T20:29:24+01:00
 draft: false
 description: "Self-hosted bandwidth tests with iperf3"
+tags:
+  - linux
 ---
 
 If you ever come to the need of a simple bandwidth test for your server or client, you can setup a bandwidth test via iperf3.

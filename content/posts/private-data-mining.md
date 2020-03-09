@@ -4,6 +4,8 @@ date:   2014-08-18T13:13:13+01:00
 draft: false
 description: "This article describes how to use whatsapp and facebook for data mining"
 toc: false
+tags:
+  - politics
 ---
 
 I've got some good news for everybody who dreamed of mining data like the big agencies do. The key to this data is **WhatsApp**. Whatsapp is the leader of mobil instant messaging in Germany. According to the "Netzoekonom" there are 32 million germans who use Whatsapp. This is a dizzying number when you compare it to the 80 million citizens in Germany. Facebook has 27,38 million users in Germany. This is a important fact, because you can query with the help of WhatsApp and Facebook millions of names with phonenumbers and profile-pictures. 

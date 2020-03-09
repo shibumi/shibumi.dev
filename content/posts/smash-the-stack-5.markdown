@@ -4,6 +4,8 @@ date:   2014-10-17T13:13:13+01:00
 draft: false
 description: "Smash the stack Level 5 Auflösung"
 toc: false
+tags:
+  - ctf
 ---
 
 Herzlich willkommen zurück zu Smash-the-Stack Level5. Dieses mal widmen wir uns folgendem C-Sourcecode (level05.c) :

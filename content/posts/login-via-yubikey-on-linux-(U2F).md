@@ -3,6 +3,8 @@ title: "Login via Yubikey on Linux (U2F)"
 date: 2019-09-29T00:06:57+02:00
 draft: false
 description: "How to login with your Yubikey in your Linux using U2F (with interaction)"
+tags:
+  - linux
 ---
 
 I was very happy with my HMAC challenge-response solution for my Yubikey, but when I wanted to configure my i3 status bar to show the current state of the key I ran into issues.

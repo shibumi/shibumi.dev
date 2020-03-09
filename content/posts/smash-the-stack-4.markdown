@@ -4,6 +4,8 @@ date:   2014-10-15T13:13:13+01:00
 draft: false
 description: "Smash the stack Level 4 Auflösung"
 toc: false
+tags:
+  - ctf
 ---
 
 So nach einer längeren Pause bin ich wieder zurück und habe neue Levels für io.smashthestack.org mitgebracht.

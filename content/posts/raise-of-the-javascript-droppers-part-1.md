@@ -4,6 +4,8 @@ date:   2015-11-29T13:13:13+01:00
 draft: false
 description: "How cyber criminals use javascript droppers"
 toc: false
+tags:
+  - malware
 ---
 
 ![interfaxgraphic](/img/behaviour.jpg)

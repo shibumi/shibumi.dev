@@ -3,6 +3,9 @@ title: "New Caddyfile and more"
 date: 2020-02-26T12:18:37+01:00
 draft: false
 description: "In this article I write about SEO changes for my blog and changes on my Caddyfile"
+tags:
+  - linux
+  - devops
 ---
 
 I made a few significant changes on my blog. First, I have a new Caddyfile for Caddy:

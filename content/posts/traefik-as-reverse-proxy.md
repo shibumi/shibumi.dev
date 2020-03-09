@@ -3,6 +3,9 @@ title: "Traefik as Reverse Proxy"
 date: 2019-11-06T17:09:10+01:00
 draft: false
 description: "How to setup traefik as a reverse proxy for prometheus and grafana"
+tags:
+  - linux
+  - devops
 ---
 
 ![Traefik Reverse Proxy](/img/traefik.png)

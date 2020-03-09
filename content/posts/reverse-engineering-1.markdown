@@ -4,6 +4,8 @@ date:   2015-02-23T13:13:13+01:00
 draft: false
 description: "Reverse-Engineering mit radare2 und IOLI crackme"
 toc: false
+tags:
+  - ctf
 ---
 
 Nach langer Pause bin ich wieder zurück mit einem kleinen crackme. Ein Backup

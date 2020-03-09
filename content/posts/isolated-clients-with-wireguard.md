@@ -3,6 +3,8 @@ title: "Isolated clients with Wireguard"
 date: 2020-02-02T15:03:12+01:00
 draft: false
 description: "How to isolate clients in the Wireguard VPN network from each other"
+tags:
+  - linux
 ---
 
 The Wireguard VPN doesn't isolate clients on default. If you want to enable client isolation, you can do so via the following iptables rules:

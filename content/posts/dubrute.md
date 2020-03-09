@@ -5,6 +5,8 @@ date:   2015-09-05T13:13:13+01:00
 draft: false
 description: "This article is about DuBrute a Bruteforce tools from chinese cyber criminals"
 toc: false
+tags:
+  - malware
 ---
 
 As member of the MalwareMustDie ELF-Team, I was assigned to make report to dissect the DuBrute bruteforcing tool. This report is published on the effort as the first official report that hopefully can help good people in InfoSec.

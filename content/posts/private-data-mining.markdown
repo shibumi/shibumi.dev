@@ -4,6 +4,8 @@ date:   2014-08-18T13:13:13+01:00
 draft: false
 description: "Dieser Artikel beschreibt wie man mit Hilfe von Whatsapp und Facebook Data Mining betreiben kann"
 toc: false
+tags:
+  - politics
 ---
 
 Ich habe erfreuliche Nachrichten für alle die schonmal davon geträumt haben im großen Stil Data Mining zu betreiben. Wir leben im Zeitalter des Post-Privacy. Facebook, Whatsapp, Google, Amazon,.. Jeder Mensch hinterlässt im Internet einen unverwechselbaren Fingerabdruck. Den Wenigsten ist überhaupt bewusst wie einfach man an ihre Daten kommt und was für Schaden man damit anrichten kann. Im Folgenden möchte ich auf die technischen Möglichkeiten eingehen im großen Stil Telefonnummern + Namen + Adressen + Hobbys + privates Umfeld zu sammeln. 

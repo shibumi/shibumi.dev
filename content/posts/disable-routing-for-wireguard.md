@@ -3,6 +3,8 @@ title: "Disable routing for Wireguard"
 date: 2020-02-04T17:18:40+01:00
 draft: false
 description: "This tutorial shows how to disable routing for Wireguard VPN"
+tags:
+  - linux
 ---
 
 Think about the following scenario. You have a client at home and you have a

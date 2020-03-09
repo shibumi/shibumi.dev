@@ -3,6 +3,8 @@ title: "How to setup your own WKD server"
 date: 2020-02-16T20:02:28+01:00
 draft: false
 description: "How to get rid of common GPG key server infrastructure and host your own WKD server"
+tags:
+  - linux
 ---
 
 You may have heard about the

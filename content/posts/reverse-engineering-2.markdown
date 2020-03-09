@@ -4,6 +4,8 @@ date:   2015-02-26T13:13:13+01:00
 draft: false
 description: "Mehr Reverse Engineering mit Radare2 und IOLI crackme"
 toc: false
+tags:
+  - ctf
 ---
 
 Auf zur zweiten Runde mit dem Crackme. Hier nochmal der Downloadlink:

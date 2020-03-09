@@ -4,6 +4,8 @@ date:   2015-02-28T13:13:13+01:00
 draft: false
 description: "Der dritte Teil meiner Reverse Engineering mit Radare2 Reihe"
 toc: false
+tags:
+  - ctf
 ---
 
 Hier die dritte Runde von meinem kleinen crackme-special. Die crackmes findet

@@ -4,6 +4,8 @@ date: 2019-07-12T22:03:07+02:00
 draft: false
 description: "How to setup Sway with screen recording, screenshots and more"
 toc: false
+tags:
+  - linux
 ---
 
 I guess everybody knows that X11 aka Xorg is a pain in the ass and a security nightmare.

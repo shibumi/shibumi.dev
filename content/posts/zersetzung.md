@@ -4,6 +4,8 @@ date:   2015-04-07T13:13:13+01:00
 draft: false
 description: "English translation of the STASI Guideline 'Zersetzung'"
 toc: false
+tags:
+  - politics
 ---
 
 Translation of [http://www.ddr-wissen.de/wiki/ddr.pl?MfS-Richtlinie_1-76](http://www.ddr-wissen.de/wiki/ddr.pl?MfS-Richtlinie_1-76)

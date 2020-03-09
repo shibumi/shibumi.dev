@@ -4,6 +4,8 @@ date:   2014-08-16T13:13:13+01:00
 draft: false
 description: "Auflösung für das XSS bootcamp"
 toc: false
+tags:
+  - ctf
 ---
 
 Bevor wir zum nächsten Level von [http://io.smashthestack.org/](http://io.smashthestack.org/) kommen möchte ich ein kleines XSS-Wargame einschieben auf das mich ein Kommilitone aufmerksam gemacht hat. Zu finden ist das hier: [https://xss-game.appspot.com/](https://xss-game.appspot.com/). 
