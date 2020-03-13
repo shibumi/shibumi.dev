@@ -1,7 +1,7 @@
 ---
 title: "SPF, DKIM and DMARC"
 date: 2020-03-13T16:14:28+01:00
-draft: true
+draft: false
 description: "How to configure your own domain with mailbox.org with respect to DKIM, DMARC and SPF"
 tags:
   - linux
