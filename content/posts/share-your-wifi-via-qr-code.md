@@ -20,6 +20,6 @@ For example:
 
 On Linux you can directly convert this string via `qrencode` to a QR code:
 
-`qrencode -o - -t utf8 'WIFI:S:MySweetSSID;T:WPA;P:mysecretpassword;;`
+`qrencode -o - -t utf8 'WIFI:S:MySweetSSID;T:WPA;P:mysecretpassword;;'`
 
 This command will directly draw a QR code via UTF8 in your terminal (I hope your terminal and font support UTF-8)
