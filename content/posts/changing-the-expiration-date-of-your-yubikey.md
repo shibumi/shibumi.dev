@@ -2,7 +2,7 @@
 title: "Changing the expiration date of your Yubikey"
 date: 2020-04-22T02:58:36+02:00
 draft: false
-description:
+description: "How to change the expiration date of your GPG key on your Yubikey"
 tags:
  - linux
 ---
