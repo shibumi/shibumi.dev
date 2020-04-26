@@ -36,7 +36,8 @@ A WKD server is the wrong solution for you, if:
 The magic behind a WKD server is simple. The client (this can be either GPG or
 even Thunderbird) will look up your key ID, then it will resolve the domain in
 your key ID and will try to retrieve your public key via your domain and
-webserver. Let us have a look on an example. This is my key with my various key IDs:
+webserver. Let us have a look on an example. This is my key with my various key
+IDs (showed via `gpg -K`):
 
 ```
 sec>  rsa4096 2015-07-16 [SC] [expires: 2020-06-25]
