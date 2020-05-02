@@ -2,7 +2,7 @@
 title: "Identify the OS via ping"
 date: 2020-05-02T15:29:06+02:00
 draft: false
-description:
+description: "How to identify the Operating System (OS) via ping utils"
 tags:
  - linux
  - ctf

@@ -2,7 +2,7 @@
 title: "Postmortem 2020-04-28"
 date: 2020-04-29T00:04:35+02:00
 draft: false
-description:
+description: "postmortem for shibumi.dev for the 2020-04-28"
 tags:
  - linux
  - devops
