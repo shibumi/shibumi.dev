@@ -52,4 +52,5 @@ PING shibumi.dev(shibumi.dev (2a01:4f8:1c17:4572::1)) 56 data bytes
 64 bytes from shibumi.dev (2a01:4f8:1c17:4572::1): icmp_seq=1 ttl=55 time=19.3 ms
 ```
 
-11+55 makes 64 and we are on the number for Linux hosts again.
+11+55 makes 66, we are close to the number 64 (maybe the ping took a different route?), so it's very likely, that the server is running on Unix or Linux.
+If you have an explanation for the hop + TTL difference, write me a mail.
