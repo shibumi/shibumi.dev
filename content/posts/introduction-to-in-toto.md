@@ -19,7 +19,10 @@ ensure a secure supply chain and only because the developer or project owner
 signs their tarballs this doesn't mean that the final product is really the
 product that was in the project owners mind. A secure supply chain begins with the first
 letter of code and ends with the deployment of the product on a target system.
-Managing all of these steps is indeed difficult and I can fully understand why devs have so much problems with it.
+Managing all of these steps is indeed difficult and I can fully understand why
+devs have so much problems with it.  Especially if you have to deal with
+various different artifacts on each step of your supply chain, like input and
+output of compilation or code verification.
 
 This is where **in-toto** jumps into place. **in-toto** specifies how a supply
 chain can be secured and validated. The difference to the usual approach of just signing a tarball is,
@@ -90,15 +93,18 @@ A step is declared as follows:
     }
 ```
 
-Each step has a name, a threshold (an integer stating how many links of
-metadata must be provided to verify this step), expected materials and expected
-products, a list of pubkeys and an expected command. The expected materials and
-expected products are needed for ensuring that a supply chain step has no
-missing or additional content. The expected command declares the command that
-has been invoked in this step. `artifact rules` are more complicated, these are
-rules, that can be used for connecting steps and authorizing certain operations
-on an artifact (for example the README can only be created in the
-create-documentation step).
+Each step has a name and a threshold. The threshold is an integer stating how
+many links of metadata must be provided to verify this step. This means, that
+the threshold specifies how many different keys/functionaries are required to
+sign off a step.  The number of link metadata stays in direct relationship to
+the number of different keys/functionaries.  A step also consists of expected
+materials and expected products (like input and output files), a list of
+pubkeys and an expected command.  The expected materials and expected products
+are needed for ensuring that a supply chain step has no missing or additional
+content. The expected command declares the command that has been invoked in
+this step. `artifact rules` are more complicated, these are rules, that can be
+used for connecting steps and authorizing certain operations on an artifact
+(for example the README can only be created in the create-documentation step).
 
 This is how an inspection looks like:
 
@@ -155,7 +161,10 @@ The **in-toto** specification has much more than this. There exist sub layouts f
 * [https://github.com/in-toto/docs/blob/v0.9/in-toto-spec.md](https://github.com/in-toto/docs/blob/v0.9/in-toto-spec.md)
 * [https://github.com/in-toto/demo](https://github.com/in-toto/demo)
 
-If you are interested in secure updates, you should also have a look on the **TUF** (The Update Framework). This is an excellent addition to **in-toto** and maybe a nice topic for another article.
+If you are interested in secure updates, you should also have a look on the **TUF** (The Update Framework). This is an excellent addition to **in-toto** and maybe a nice topic for another article. With **TUC** and **in-toto** together you can achieve complete end-to-end security.
 
 * [https://theupdateframework.io/](https://theupdateframework.io/)
 
+I would also really encourage to have a look on the blog article of one of my friends:
+
+* [https://badhomb.re/ci/security/2020/05/01/tuf-in-toto.html](https://badhomb.re/ci/security/2020/05/01/tuf-in-toto.html)
