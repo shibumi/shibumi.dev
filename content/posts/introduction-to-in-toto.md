@@ -21,7 +21,7 @@ product that was in the project owners mind. A secure supply chain begins with t
 letter of code and ends with the deployment of the product on a target system.
 Managing all of these steps is indeed difficult and I can fully understand why devs have so much problems with it.
 
-This is where **in-toto** jumps at place. **in-toto** specifies how a supply
+This is where **in-toto** jumps into place. **in-toto** specifies how a supply
 chain can be secured and validated. The difference to the usual approach of just signing a tarball is,
 that **in-toto** makes it possible to sign and validate every step of a supply chain.
 The **in-toto** specification lists three main actors:
@@ -35,7 +35,7 @@ for the final product.  The functionaries are taking part in the supply chain,
 they are usually developers or packagers or an automated system for
 continuous integration.  The client is usually the person or system who
 wants to use the final product and needs to validate each step for
-making sure, that the final product is the desired product and has not
+making sure that the final product is the desired product and has not
 been maliciously altered.
 
 Each role is related to one **in-toto** component. The product owner writes the supply chain layout file.
