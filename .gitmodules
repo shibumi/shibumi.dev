@@ -1,3 +1,4 @@
 [submodule "themes/hermit"]
 	path = themes/hermit
-	url = https://github.com/Track3/hermit
+	url = https://github.com/shibumi/hermit
+	branch = shibumi/add-meta-description
