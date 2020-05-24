@@ -6,3 +6,8 @@ command = "hugo --gc --minify"
 HUGO_VERSION = "0.71.0"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
+
+[[headers]]
+for = "/*"
+[headers.values]
+"X-Frame-Options" = "SAMEORIGIN"
