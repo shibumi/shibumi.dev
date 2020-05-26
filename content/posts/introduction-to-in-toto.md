@@ -45,7 +45,7 @@ Each role is related to one **in-toto** component. The product owner writes the 
 The functionaries use the **in-toto** runtime for creating link metadata for each step of software "production".
 The **in-toto** verify component will then be used to verify the final product.
 
-On default **in-tot** specifies JSON as metadata format. The supply chain layout file looks as follows:
+On default **in-toto** specifies JSON as metadata format. The supply chain layout file looks as follows:
 
 ```json
     { "_type" : "layout",
@@ -161,7 +161,7 @@ The **in-toto** specification has much more than this. There exist sub layouts f
 * [https://github.com/in-toto/docs/blob/v0.9/in-toto-spec.md](https://github.com/in-toto/docs/blob/v0.9/in-toto-spec.md)
 * [https://github.com/in-toto/demo](https://github.com/in-toto/demo)
 
-If you are interested in secure updates, you should also have a look on the **TUF** (The Update Framework). This is an excellent addition to **in-toto** and maybe a nice topic for another article. With **TUC** and **in-toto** together you can achieve complete end-to-end security.
+If you are interested in secure updates, you should also have a look on the **TUF** (The Update Framework). This is an excellent addition to **in-toto** and maybe a nice topic for another article. With **TUF** and **in-toto** together you can achieve complete end-to-end security.
 
 * [https://theupdateframework.io/](https://theupdateframework.io/)
 
