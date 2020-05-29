@@ -23,8 +23,8 @@ The fingerprint for the key is: `6DAF 7B80 8F9D F251 3962 0000 D214 61E3 DFE2 06
 
 ## Privacy Policy
 
-This site does not collect any user data. No IP addresses are stored , no user
-agent logged, no timestamp logged, no cookies are used to identify users and
-the connection to this site is via HTTPS only.
+This website is hosted [https://netlify.com](https://netlify.com)'s content delivery network (CDN).
+The privacy policy and General Data Protection Regulation (GDPR) of netlify does apply:
 
-Therefore no data is collected and can't be passed on to third parties.
+[https://www.netlify.com/privacy/](https://www.netlify.com/privacy/)
+[https://www.netlify.com/gdpr/](https://www.netlify.com/gdpr/)
