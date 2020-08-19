@@ -54,7 +54,7 @@ The next step created my base system, with everything what i need.
 	yubico-pam yubikey-manager yubikey-personalization yubikey-touch-detector \
 	zsh-syntax-highlighting weechat pavucontrol xorg-xev brightnessctl \
 	mlocate xorg-server-xwayland grim wf-recorder exa tlp acpi \
-	sof-firmware amd-ucode tmux sudo go zsh git mako htop \
+	sof-firmware amd-ucode tmux sudo go zsh git mako htop restic \
 	gcc libnotify base-devel swaylock bemenu neovim gopass pulseaudio pamixer \
 # genfstab -p /mnt >> /mnt/etc/fstab
 ```
