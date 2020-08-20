@@ -7,6 +7,8 @@ tags:
  - linux
 ---
 
+![in-toto logo](/img/in-toto-horizontal-color-white.png)
+
 tl;dr Just give me the link to the PR: [https://github.com/in-toto/in-toto-golang/pull/56](https://github.com/in-toto/in-toto-golang/pull/56)
 
 
