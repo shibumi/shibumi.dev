@@ -9,12 +9,16 @@ tags:
 
 ![in-toto logo](/img/in-toto-horizontal-color-white.png)
 
+## Intro
+
 I spent the last three to four months working on the open source project [in-toto](https://in-toto.io) as part
 of my Google Summer of Code stipend at the Cloud Native Computing Foundation (CNCF).
 Followers of my blog might have read already about in-toto. If you do not know the project, I
 suggest you have a look on my [introduction to in-toto](/posts/introduction-to-in-toto/).
 The introduction article has been written as part of my Google Summer of Code stipend and gives
 a good overview about the project and what its objectives are.
+
+## My challenge
 
 The main objective of my Google Summer of Code stipend has been to port in-toto run functionality
 from the in-toto Python reference implementation to the Go implementation. The in-toto run functionality
@@ -61,6 +65,7 @@ in the specification and the Python implementation.
 * Fixing a wrong data type for the return-value in the in-toto specification:
 	* PR [#36](https://github.com/in-toto/docs/pull/36)
 
+## Additional work
 
 Additionally, the following issues have been uncovered during the development process:
 
@@ -85,4 +90,48 @@ A few of these issues have first drafts, already. I have worked on this drafts d
 * [Add Github Actions Support](https://github.com/in-toto/in-toto-golang/pull/72)
 * [Go 1.15 Support](https://github.com/in-toto/in-toto-golang/pull/70)
 
-My plan is to address the other issues in the future, but more about this later.
+## My personal highlights
+
+During the Google Summer of Code my personal highlights were [finding and submitting a patch for a tiny bug in Go's crypto/rsa library](https://go-review.googlesource.com/c/go/+/240008) and attending the Kubecon 2020.
+
+## What did I learn?
+
+I had a lot of fun while working on the CNCF project in-toto, but did I also
+learn something? The answer is clearly **yes**.  Before the Google Summer of
+Code I have contributed already to open source projects, but these
+contributions were mostly small bug fixes, reporting bugs or my very system and
+security focused work at Arch Linux.  It has been a long dream to contribute
+more than just a few lines of code to a project, but in the past I had
+difficulties to get into such a project. The Google Summer of Code was my first
+successful try to deep-dive into a foreign code base and to contribute more
+than just a few lines of code. This experience definitely increased my skills
+in reading foreign code, getting faster familiar with a foreign code-base and
+communicating with project developers. Furthermore, in-toto challenged my
+security skills and lead to a much wider understanding of signing algorithms
+such like ED25519, RSA-PSS or ECDSA and key formats such like PKCS1, PKCS8 or
+PEM. This project increased my security awareness in terms of cryptography
+significantly.
+
+## Plans for the future
+
+Well, I think I totally fall in love with the project. Not only I did never
+join such a welcoming and interesting community, I have also finally found a
+project, that I think is important, interesting and challenging at the same
+time. Moreover I really think, that my future career goals will come one step
+closer with this project. The Go implementation and the near to the CNCF will
+definitely help me in increasing my Site Reliability Skills.
+
+## Special thanks
+
+I do not want to finish, before honouring a few people I have worked with.
+First I want to thank my three mentors Lukas Pühringer, Justin Cappos and
+Santiago Torres-Arias. They always reacted quickly when needed and they always
+gave me the right hints, when I had difficulties understanding the specification
+or the code base. Especially the work with Lukas was very enjoyable and I look forward
+to a lot more interesting discussions in future pull requests and issues.
+Santiago has been always there for me, when I needed a fast contact, when I did a few hours
+too much. The timezone difference was definitely a bonus and not a malus this time.
+Besides my mentors I want to highlight the excellent help from Trishank Karthik Kuppusamy.
+Trishank has not been my mentor, but still he supported me in many ways and we had a few
+interesting discussions around the in-toto specification. I am pretty sure, this will be not
+the last discussions we had about the in-toto specification.
