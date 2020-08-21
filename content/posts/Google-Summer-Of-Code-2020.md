@@ -9,94 +9,80 @@ tags:
 
 ![in-toto logo](/img/in-toto-horizontal-color-white.png)
 
-tl;dr Just give me the link to the PR: [https://github.com/in-toto/in-toto-golang/pull/56](https://github.com/in-toto/in-toto-golang/pull/56)
+I spent the last three to four months working on the open source project [in-toto](https://in-toto.io) as part
+of my Google Summer of Code stipend at the Cloud Native Computing Foundation (CNCF).
+Followers of my blog might have read already about in-toto. If you do not know the project, I
+suggest you have a look on my [introduction to in-toto](/posts/introduction-to-in-toto/).
+The introduction article has been written as part of my Google Summer of Code stipend and gives
+a good overview about the project and what its objectives are.
+
+The main objective of my Google Summer of Code stipend has been to port in-toto run functionality
+from the in-toto Python reference implementation to the Go implementation. The in-toto run functionality
+is responsible for generating in-toto link data. In-toto links are files, that represent a step
+in a software supply chain. Each of these steps can be signed and later verified.
+Adding in-toto run functionality to the Go implementation has been tracked in the following Github issues:
+
+*  [https://github.com/in-toto/in-toto-golang/issues/54](https://github.com/in-toto/in-toto-golang/issues/54)
+*  [https://github.com/in-toto/in-toto-golang/issues/30](https://github.com/in-toto/in-toto-golang/issues/30)
+*  [https://github.com/in-toto/in-toto-golang/issues/27](https://github.com/in-toto/in-toto-golang/issues/27)
+
+The following key results must have been achieved:
+
+* Signing generated link data via signature algorithms as specified in the [in-toto specification](https://github.com/in-toto/docs/blob/master/in-toto-spec.md)
+* Full support for RSA-PSS, ED25519 and ECDSA.
+* Generating link files
+
+My merged pull request, that addresses these key results can be found here: [https://github.com/in-toto/in-toto-golang/pull/56](https://github.com/in-toto/in-toto-golang/pull/56)
+
+During my journey I did a lot more than that. Implementing the above requirements lead us (my mentors and me) to a few other issues.
+These issues were so significant that we decided to solve these issues, while working on the actual in-toto run implementation.
+The following listing shall give a brief insight on what I have worked on additionally.
+
+* Cleanup code indentation and multi-line comments:
+	* Issue [#18](https://github.com/in-toto/in-toto-golang/issues/18)
+	* PR [#51](https://github.com/in-toto/in-toto-golang/pull/51)
+* Handling unhandled errors:
+	* PR [#52](https://github.com/in-toto/in-toto-golang/pull/52)
+* Reviving the in-toto symlink functionality PR and finishing it (this was a dependency for our in-toto run functionality):
+	* Issue [#32](https://github.com/in-toto/in-toto-golang/issues/32)
+	* PR [#55](https://github.com/in-toto/in-toto-golang/pull/55)
+* Handling excess data returned by `pem.Decode`:
+	* Issue [#14](https://github.com/in-toto/in-toto-golang/issues/14)
+	* PR (fixied within the main objective PR [#56](https://github.com/in-toto/in-toto-golang/pull/56))
+
+The in-toto Go implementation is in direct relationship to the [in-toto Python implementation](https://github.com/in-toto/in-toto) and the [in-toto specification](https://github.com/in-toto/docs/blob/master/in-toto-spec.md). Therefore it is not surprising, that I have also addressed a few inconsistencies
+in the specification and the Python implementation.
+
+* Fixing over-importing in the in-toto Python implementation:
+	* Issue [#378](https://github.com/in-toto/in-toto/issues/378)
+	* PR [#379](https://github.com/in-toto/in-toto/pull/379)
+* Fixing key word inconsistencies in the in-toto specification:
+	* PR [#29](https://github.com/in-toto/docs/pull/29)
+* Fixing a wrong data type for the return-value in the in-toto specification:
+	* PR [#36](https://github.com/in-toto/docs/pull/36)
 
 
-## Intro
-This blog post tracks my accomplishments during my Google Summer of Code 2020 Stipend
-at CNCF. I have spend around three months on working on [https://in-toto.io](https://in-toto.io).
+Additionally, the following issues have been uncovered during the development process:
 
-For tracking I am using the goal-setting framework [OKR](https://en.wikipedia.org/wiki/OKR) (objectives and key results).
-My main objective has been to implement in-toto-run functionality in the in-toto Go implementation. However, I have also fixed a few other issues
-on this journey and [wrote a blog post about in-toto](https://shibumi.dev/posts/introduction-to-in-toto/). The blog post worked as my entrypoint into
-the project. After reading the in-toto specification and creating a blog post I slowly climbed my way up to the main objective, while constantly
-fixing minor issues I encountered on my way. This was a good experience for me, because I never donated code to such a big and important project.
+* key format inconsistency in securesystemslib: Issue [#251](https://github.com/secure-systems-lab/securesystemslib/issues/251)
+* compare the way we store symlinks in our link metadata to the reference implementation: Issue [#57](https://github.com/in-toto/in-toto-golang/issues/57)
+* Test clean up does not work due to deferring functions not being called: Issue [#60](https://github.com/in-toto/in-toto-golang/issues/60)
+* Hardware Security Module (HSM) support: Issue [#61](https://github.com/in-toto/in-toto-golang/issues/61)
+* Moving to Github Actions for CI: Issue [#62](https://github.com/in-toto/in-toto-golang/issues/62)
+* Test interoperability with the Python implementation via subprocess calls: Issue [#63](https://github.com/in-toto/in-toto-golang/issues/63)
+* Go 1.15 support: Issue [#64](https://github.com/in-toto/in-toto-golang/issues/64)
+* ecdsa curve sanity checks: Issue [#65](https://github.com/in-toto/in-toto-golang/issues/65)
+* subsetCheck function as part of our Set implementation: Issue [#66](https://github.com/in-toto/in-toto-golang/issues/66)
+* ecdsa-sha2-nistp384 support: Issue [#67](https://github.com/in-toto/in-toto-golang/issues/67)
+* validate functions, specifically key validations: Issue [#68](https://github.com/in-toto/in-toto-golang/issues/68)
+* In-toto record functionality: Issue [#69](https://github.com/in-toto/in-toto-golang/issues/69)
+* Do not share state in test functions: Issue [#71](https://github.com/in-toto/in-toto-golang/issues/71)
+* Use Go Linter for CI: Issue [#74](https://github.com/in-toto/in-toto-golang/issues/74)
 
+A few of these issues have first drafts, already. I have worked on this drafts during my Google Summer of Code stipend, too:
 
-## Objectives
+* [Move subsetCheck to Set Interface](https://github.com/in-toto/in-toto-golang/pull/73)
+* [Add Github Actions Support](https://github.com/in-toto/in-toto-golang/pull/72)
+* [Go 1.15 Support](https://github.com/in-toto/in-toto-golang/pull/70)
 
-### in-toto-run functionality (main objective)
-In-toto-run functionality has been my main objective during the Google Summer of Code stipend.
-
-* Objective description and key results: [https://github.com/in-toto/in-toto-golang/issues/54](https://github.com/in-toto/in-toto-golang/issues/54)
-* Changelist (Pull-Request): [https://github.com/in-toto/in-toto-golang/pull/56](https://github.com/in-toto/in-toto-golang/pull/56)
-
-### in-toto symlink functionality
-When I have on-boarded on the project, the project had a few stalling CLs/PRs. Implementing symlink functionality was one of them.
-Symlink functionality is necessary for handling symlinks while using the in-toto run functionality. Therefore, we have decided to
-finish this CL/PR first:
-
-* Objective description and key results: [https://github.com/in-toto/in-toto-golang/issues/32](https://github.com/in-toto/in-toto-golang/issues/32)
-* Changelist (Pull-Request): [https://github.com/in-toto/in-toto-golang/pull/55](https://github.com/in-toto/in-toto-golang/pull/55)
-
-
-### handling unhandled errors
-While working on the objective `cleanup code indentation and multi-line comments` I got my eyes on a few unhandled errors.
-I fixed these errors in a separate CL/PR:
-
-* Objective description and key results: [https://github.com/in-toto/in-toto-golang/pull/52](https://github.com/in-toto/in-toto-golang/pull/52)
-* Changelist (Pull-Request): [https://github.com/in-toto/in-toto-golang/pull/52](https://github.com/in-toto/in-toto-golang/pull/52)
-
-
-### cleanup code indentation and multi-line comments
-While reading the project code for the first time and setting up my IDE GoLand, I encountered a few warnings.
-Therefore I have decided to clean this up before I start working on my main objective. This ensures I start with a clean code base.
-
-* Objective description and key results: [https://github.com/in-toto/in-toto-golang/issues/18](https://github.com/in-toto/in-toto-golang/issues/18)
-* Changelist (Pull-Request): [https://github.com/in-toto/in-toto-golang/pull/51](https://github.com/in-toto/in-toto-golang/pull/51)
-
-### Fixing over-importing in the Python implementation
-During one of my Slack sessions with my mentors, one contributor posted minor issues in the in-toto Python implementation.
-These issues seem easy to fix, hence I embraced the opportunity and helped fixing these issues.
-
-* Objective description and key results: [https://github.com/in-toto/in-toto/issues/378](https://github.com/in-toto/in-toto/issues/378)
-* Changelist (Pull-Request): [https://github.com/in-toto/in-toto/pull/379](https://github.com/in-toto/in-toto/pull/379)
-
-### Fixing inconsistencies in the in-toto specification
-As preparation for my work I have read the in-toto specification. In the in-toto specification I have found a few minor issues.
-
-* Objective description and key results: [https://github.com/in-toto/docs/pull/29](https://github.com/in-toto/docs/pull/29)
-* Changelist (Pull-Request): [https://github.com/in-toto/docs/pull/29](https://github.com/in-toto/docs/pull/29)
-
-This objective includes a minor CL/PR, that fixes a few backslashes: [https://github.com/in-toto/docs/pull/31](https://github.com/in-toto/docs/pull/31)
-
-### Fixing wrong return values in the specification
-When impleenting in-toto link file dumping/loading, I catched an inconsistency in the in-toto specification.
-The implementation used JSON.INTEGERS as objects for the return-value of a command, while the specification
-specified these return-values as strings.
-
-* Objective description and key results: [https://github.com/in-toto/docs/pull/36](https://github.com/in-toto/docs/pull/36)
-* Changelist (Pull-Request): [https://github.com/in-toto/docs/pull/36](https://github.com/in-toto/docs/pull/36)
-
-
-## Additional contributions
-
-The following section lists additional contributions I made. Additional
-contributions are: opened issues or CL/PR reviews, that do not have a CL/PR yet, blog posts, etc.
-
-### Issues
-
-* [https://github.com/secure-systems-lab/securesystemslib/issues/251](https://github.com/secure-systems-lab/securesystemslib/issues/251)
-* [https://github.com/in-toto/in-toto-golang/issues/64](https://github.com/in-toto/in-toto-golang/issues/64)
-* [https://github.com/in-toto/in-toto-golang/issues/63](https://github.com/in-toto/in-toto-golang/issues/63)
-* [https://github.com/in-toto/in-toto-golang/issues/61](https://github.com/in-toto/in-toto-golang/issues/61)
-* [https://github.com/in-toto/in-toto-golang/issues/60](https://github.com/in-toto/in-toto-golang/issues/60)
-* [https://github.com/in-toto/in-toto-golang/issues/57](https://github.com/in-toto/in-toto-golang/issues/57)
-
-### CL/PR reviews
-
-* [https://github.com/secure-systems-lab/securesystemslib/pull/262](https://github.com/secure-systems-lab/securesystemslib/pull/262)
-
-### Blog posts
-
-* [https://shibumi.dev/posts/introduction-to-in-toto/](https://shibumi.dev/posts/introduction-to-in-toto/)
+My plan is to address the other issues in the future, but more about this later.
