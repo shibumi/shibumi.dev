@@ -84,7 +84,7 @@ Additionally, the following issues have been uncovered during the development pr
 * Do not share state in test functions: Issue [#71](https://github.com/in-toto/in-toto-golang/issues/71)
 * Use Go Linter for CI: Issue [#74](https://github.com/in-toto/in-toto-golang/issues/74)
 
-A few of these issues have first drafts, already. I have worked on this drafts during my Google Summer of Code stipend, too:
+A few of these issues have first drafts already. I have worked on this drafts during my Google Summer of Code stipend, too:
 
 * [Move subsetCheck to Set Interface](https://github.com/in-toto/in-toto-golang/pull/73)
 * [Add Github Actions Support](https://github.com/in-toto/in-toto-golang/pull/72)
