@@ -97,10 +97,10 @@ These issues are already fixed or are on the way to being fixed:
 	* PR (not merged yet) [#72](https://github.com/in-toto/in-toto-golang/pull/72)
 * Implement multi hash support
 	* Issue [#31](https://github.com/in-toto/in-toto-golang/issues/31) and [#67](https://github.com/in-toto/in-toto-golang/issues/67)
-	* PR [#78](https://github.com/in-toto/in-toto-golang/pull/78)
+	* PR (draft) [#78](https://github.com/in-toto/in-toto-golang/pull/78)
 * Gitignore like exclude patterns
 	* Issue [#33](https://github.com/in-toto/in-toto-golang/issues/33)
-	* PR [#53](https://github.com/in-toto/in-toto-golang/pull/53)
+	* PR (draft) [#53](https://github.com/in-toto/in-toto-golang/pull/53)
 
 ## My personal highlights
 
