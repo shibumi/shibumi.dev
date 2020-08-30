@@ -56,15 +56,6 @@ The following listing shall give a brief insight on what I have worked on additi
 * Keeping OS interoperability via using the decoded PEM block, instead of raw PEM bytes:
 	* Issue [#75](https://github.com/in-toto/in-toto-golang/issues/75)
 	* PR [#76](https://github.com/in-toto/in-toto-golang/pull/76)
-* Moving our subSetCheck function to the utils.Set interface
-	* Issue [#66](https://github.com/in-toto/in-toto-golang/issues/66)
-	* PR [#73](https://github.com/in-toto/in-toto-golang/pull/73)
-* Support for Go 1.15 (moving to ecdsa.SignASN1 + fixing testMain)
-	* Issue [#60](https://github.com/in-toto/in-toto-golang/issues/60) and [#64](https://github.com/in-toto/in-toto-golang/issues/64)
-	* PR [#70](https://github.com/in-toto/in-toto-golang/pull/70)
-* Add Logo + fix Readme (because who does not like fancy logos?!)
-	* PR [#77](https://github.com/in-toto/in-toto-golang/pull/77)
-
 
 The in-toto Go implementation is in direct relationship to the [in-toto Python implementation](https://github.com/in-toto/in-toto) and the [in-toto specification](https://github.com/in-toto/docs/blob/master/in-toto-spec.md). Therefore it is not surprising, that I have also addressed a few inconsistencies
 in the specification and the Python implementation.
@@ -84,20 +75,32 @@ Additionally, the following issues have been uncovered during the development pr
 * key format inconsistency in securesystemslib: Issue [#251](https://github.com/secure-systems-lab/securesystemslib/issues/251)
 * compare the way we store symlinks in our link metadata to the reference implementation: Issue [#57](https://github.com/in-toto/in-toto-golang/issues/57)
 * Hardware Security Module (HSM) support: Issue [#61](https://github.com/in-toto/in-toto-golang/issues/61)
-* Moving to Github Actions for CI: Issue [#62](https://github.com/in-toto/in-toto-golang/issues/62)
 * Test interoperability with the Python implementation via subprocess calls: Issue [#63](https://github.com/in-toto/in-toto-golang/issues/63)
 * ecdsa curve sanity checks: Issue [#65](https://github.com/in-toto/in-toto-golang/issues/65)
-* subsetCheck function as part of our Set implementation: Issue [#66](https://github.com/in-toto/in-toto-golang/issues/66)
-* ecdsa-sha2-nistp384 support: Issue [#67](https://github.com/in-toto/in-toto-golang/issues/67)
 * validate functions, specifically key validations: Issue [#68](https://github.com/in-toto/in-toto-golang/issues/68)
 * In-toto record functionality: Issue [#69](https://github.com/in-toto/in-toto-golang/issues/69)
 * Do not share state in test functions: Issue [#71](https://github.com/in-toto/in-toto-golang/issues/71)
 * Use Go Linter for CI: Issue [#74](https://github.com/in-toto/in-toto-golang/issues/74)
 
-A few of these issues have first drafts already. I have worked on this drafts during my Google Summer of Code stipend, too:
+These issues are already fixed or are on the way to being fixed:
 
-* [Add Github Actions Support](https://github.com/in-toto/in-toto-golang/pull/72)
-* [Gitignore like exclude patterns](https://github.com/in-toto/in-toto-golang/pull/53)
+* Moving our subSetCheck function to the utils.Set interface
+	* Issue [#66](https://github.com/in-toto/in-toto-golang/issues/66)
+	* PR [#73](https://github.com/in-toto/in-toto-golang/pull/73)
+* Support for Go 1.15 (moving to ecdsa.SignASN1 + fixing testMain)
+	* Issue [#60](https://github.com/in-toto/in-toto-golang/issues/60) and [#64](https://github.com/in-toto/in-toto-golang/issues/64)
+	* PR (not merged yet) [#70](https://github.com/in-toto/in-toto-golang/pull/70)
+* Add Logo + fix Readme (because who does not like fancy logos?!)
+	* PR [#77](https://github.com/in-toto/in-toto-golang/pull/77)
+* Add Github Actions support
+	* Issue [#62](https://github.com/in-toto/in-toto-golang/issues/62)
+	* PR (not merged yet) [#72](https://github.com/in-toto/in-toto-golang/pull/72)
+* Implement multi hash support
+	* Issue [#31](https://github.com/in-toto/in-toto-golang/issues/31) and [#67](https://github.com/in-toto/in-toto-golang/issues/67)
+	* PR [#78](https://github.com/in-toto/in-toto-golang/pull/78)
+* Gitignore like exclude patterns
+	* Issue [#33](https://github.com/in-toto/in-toto-golang/issues/33)
+	* PR [#53](https://github.com/in-toto/in-toto-golang/pull/53)
 
 ## My personal highlights
 
