@@ -135,15 +135,16 @@ definitely help me in increasing my Site Reliability Skills.
 
 ## Special thanks
 
-I do not want to finish, before honouring a few people I have worked with.
-First I want to thank my three mentors Lukas Pühringer, Justin Cappos and
-Santiago Torres-Arias. They always reacted quickly when needed and they always
-gave me the right hints, when I had difficulties understanding the specification
-or the code base. Especially the work with Lukas was very enjoyable and I look forward
-to a lot more interesting discussions in future pull requests and issues.
-Santiago has been always there for me, when I needed a fast contact, when I did a few hours
-too much. The timezone difference was definitely a bonus and not a malus this time.
-Besides my mentors I want to highlight the excellent help from Trishank Karthik Kuppusamy.
-Trishank has not been my mentor, but still he supported me in many ways and we had a few
-interesting discussions around the in-toto specification. I am pretty sure, this will be not
-the last discussions we had about the in-toto specification.
+I do not want to finish, before honouring my four mentors Lukas Pühringer,
+Justin Cappos, Santiago Torres-Arias and Trishank Karthik Kuppusamy. They
+always reacted quickly when needed and they always gave me the right hints,
+when I had difficulties understanding the specification or the code base.
+Especially the work with Lukas was very enjoyable and I look forward to a lot
+more interesting discussions in future pull requests and issues. Santiago has
+been always there for me, when I did a few hours too much and slipped into a
+different timezone. The timezone difference was definitely a bonus and not a
+malus this time. Trishank was a person I could always count on. He supported me
+in many ways and gave me hints when I have encountered a problem. Furthermore
+we had a few interesting discussions around the in-toto specification, the
+securesystemslib and their relationship to TUF. I am pretty sure, this will be
+not the last discussions we had about the in-toto specification.
