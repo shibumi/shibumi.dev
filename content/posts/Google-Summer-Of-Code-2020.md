@@ -1,6 +1,6 @@
 ---
 title: "Google Summer of Code 2020"
-date: 2020-08-08T16:40:20+02:00
+date: 2020-08-31T02:03:00+02:00
 draft: false
 description:
 tags:
