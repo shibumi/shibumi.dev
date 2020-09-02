@@ -161,7 +161,7 @@ Sorry for the different AV-Vendors. But some of the malware was nearly undetecte
 
 ![Virustotalreport](/img/img-2015-11-29-182918.png)
 
-I have created a shellscript for downloading the most of the samples automatically:
+I have created a shellscript for downloading the most samples automatically:
 
 ![shellscript](/img/img-2015-11-29-180932.png)
 
