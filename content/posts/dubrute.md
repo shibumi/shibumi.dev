@@ -184,5 +184,3 @@ Here are the virustotal-links to the two binaries:
 
 thanks to my fellow team mates and our supporters for the great assistance.
 
-Visit [http://blog.malwaremustdie.org](https//blog.malwaremustdie.org) for more information.
-
