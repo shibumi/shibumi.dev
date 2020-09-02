@@ -13,7 +13,7 @@ tags:
 
 I spent the last three to four months working on the open source project [in-toto](https://in-toto.io) as part
 of my Google Summer of Code stipend at the Cloud Native Computing Foundation (CNCF).
-Followers of my blog might have read already about in-toto. If you do not know the project, I
+Followers of my blog might have already read about in-toto. If you do not know the project, I
 suggest you have a look on my [introduction to in-toto](/posts/introduction-to-in-toto/).
 The introduction article has been written as part of my Google Summer of Code stipend and gives
 a good overview about the project and what its objectives are.
@@ -30,7 +30,7 @@ Adding in-toto run functionality to the Go implementation has been tracked in th
 *  [https://github.com/in-toto/in-toto-golang/issues/30](https://github.com/in-toto/in-toto-golang/issues/30)
 *  [https://github.com/in-toto/in-toto-golang/issues/27](https://github.com/in-toto/in-toto-golang/issues/27)
 
-The following key results must have been achieved:
+The following key results were to be achieved:
 
 * Signing generated link data via signature algorithms as specified in the [in-toto specification](https://github.com/in-toto/docs/blob/master/in-toto-spec.md)
 * Full support for RSA-PSS, ED25519 and ECDSA.
@@ -38,7 +38,7 @@ The following key results must have been achieved:
 
 My merged pull request, that addresses these key results can be found here: [https://github.com/in-toto/in-toto-golang/pull/56](https://github.com/in-toto/in-toto-golang/pull/56)
 
-During my journey I did a lot more than that. Implementing the above requirements lead us (my mentors and me) to a few other issues.
+During my journey I did a lot more than that. Implementing the above requirements led us (my mentors and me) to a few other issues.
 These issues were so significant that we decided to solve these issues, while working on the actual in-toto run implementation.
 The following listing shall give a brief insight on what I have worked on additionally.
 
@@ -82,7 +82,7 @@ Additionally, the following issues have been uncovered during the development pr
 * Do not share state in test functions: Issue [#71](https://github.com/in-toto/in-toto-golang/issues/71)
 * Use Go Linter for CI: Issue [#74](https://github.com/in-toto/in-toto-golang/issues/74)
 
-These issues are already fixed or are on the way to being fixed:
+These issues are already fixed or are on the verge of being fixed:
 
 * Moving our subSetCheck function to the utils.Set interface
 	* Issue [#66](https://github.com/in-toto/in-toto-golang/issues/66)
@@ -108,27 +108,27 @@ During the Google Summer of Code my personal highlights were [finding and submit
 
 ## What did I learn?
 
-I had a lot of fun while working on the CNCF project in-toto, but did I also
-learn something? The answer is clearly **yes**.  Before the Google Summer of
-Code I have contributed already to open source projects, but these
-contributions were mostly small bug fixes, reporting bugs or my very system and
-security focused work at Arch Linux.  It has been a long dream to contribute
-more than just a few lines of code to a project, but in the past I had
-difficulties to get into such a project. The Google Summer of Code was my first
-successful try to deep-dive into a foreign code base and to contribute more
-than just a few lines of code. This experience definitely increased my skills
-in reading foreign code, getting faster familiar with a foreign code-base and
-communicating with project developers. Furthermore, in-toto challenged my
-security skills and lead to a much wider understanding of signing algorithms
-such like ED25519, RSA-PSS or ECDSA and key formats such like PKCS1, PKCS8 or
-PEM. This project increased my security awareness in terms of cryptography
-significantly.
+During Google Summer of Code I had a lot of fun working on the CNCF project
+in-toto, but did I also learn something? The answer is clearly **yes**.  Before
+Google Summer of Code I have contributed already to open source projects, but
+these contributions were mostly small bug fixes, reporting bugs or my very
+system and security focused work at Arch Linux.  It has been a dream since long
+to contribute more than just a few lines of code to a project, but in the past
+I had difficulties to get into such a project. The Google Summer of Code was my
+first successful try to deep-dive into a foreign code base and to contribute
+more than just a few lines of code. This experience definitely increased my
+skills in reading foreign code, getting faster familiar with a foreign
+code-base and communicating with project developers. Furthermore, in-toto
+challenged my security skills and lead to a much wider understanding of signing
+algorithms such like ED25519, RSA-PSS or ECDSA and key formats such like PKCS1,
+PKCS8 or PEM. This project increased my security awareness in terms of
+cryptography significantly.
 
 ## Plans for the future
 
-Well, I think I totally fall in love with the project. Not only I did never
-join such a welcoming and interesting community, I have also finally found a
-project, that I think is important, interesting and challenging at the same
+Well, I think I totally fell in love with the project. Not only did I never
+join such a welcoming and interesting community, I also finally found a
+project that I think is important, interesting and challenging at the same
 time. Moreover I really think, that my future career goals will come one step
 closer with this project. The Go implementation and the near to the CNCF will
 definitely help me in increasing my Site Reliability Skills.
