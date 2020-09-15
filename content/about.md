@@ -11,7 +11,8 @@ My interests are high-scalable infrastructure, IT security and Linux.
 ## Want to hire me?
 
 * I am currently interested in positions as Site Reliability Engineer (SRE).
-* Checkout my CV: [Rebischke_CV.pdf](/storage/Rebischke_CV.pdf)
+* Checkout my CV (short version): [Rebischke_CV.pdf](/storage/Rebischke_CV.pdf)
+* If you want to have a look on all of my accomplishments, check out my portfolio: [Rebischke_portfolio.pdf](/storage/Rebischke_portfolio.pdf)
 
 ## Involvement
 
