@@ -27,6 +27,9 @@ In 2014/2015 I have been involved in the analysis of the Xor DDoS Linux Trojan.
 My VirusTotal profile from that time:
 [https://www.virustotal.com/gui/user/Shibumi/comments](https://www.virustotal.com/gui/user/Shibumi/comments)
 
+The Cloud Native Computing Foundation (CNCF) mentions their Google Summer of Code 2020 Graduates:
+[https://www.cncf.io/blog/2020/09/17/16-cncf-interns-graduate-from-summer-of-code-gsoc-2020/](https://www.cncf.io/blog/2020/09/17/16-cncf-interns-graduate-from-summer-of-code-gsoc-2020/)
+
 ## Publications
 
 * Seminar paper: Amazon AWS (EC2 virtual Server and EC2 container) ([https://github.com/shibumi/aws-ec2-project-paper](https://github.com/shibumi/aws-ec2-project-paper))
