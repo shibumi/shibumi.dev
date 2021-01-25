@@ -56,11 +56,11 @@ $ ls
 ```
 
 The `README.md` file gives us a brief explanation about inputs and outputs and gives us hints about loadbalancers.
-The `versions.tf` file tells us the required terraform version and the required providers. In our case the cloud provider is hcloud.
+The `versions.tf` file tells us the required Terraform version and the required providers. In our case the cloud provider is hcloud.
 The `variables.tf` file defines all variables for our new cluster infrastructure.
-The `output.tf` file defines the output of terraform. This will get important later, because we will use the output as direct input
+The `output.tf` file defines the output of Terraform. This will get important later, because we will use the output as direct input
 for KubeOne. The `main.tf` file hides the core logic behind all of this. The `main.tf` file is reponsible for bootstrapping the infrastructure.
-In this file we see networks, ssh keys, loadbalancers and virtual machines defined. I do not want to explain terraform in detail here.
+In this file we see networks, ssh keys, loadbalancers and virtual machines defined. I do not want to explain Terraform in detail here.
 If you are interested in this I suggest you have a look on the excellent [terraform registry](https://registry.terraform.io/providers/hetznercloud/hcloud/latest/docs) documentation. It gives you a nice introduction
 for each resource. You do not have to edit one of these files. They are ready to go as they are.
 
@@ -90,8 +90,8 @@ cloudProvider:
 ```
 
 Pretty simple, isn't it? If this is done we save our json output into a json file via: `terraform output -json > output.json`.
-Now we get to our final line: `kubeone apply --manifest kubeone.yaml --tfjson output.json`. This line will apply the 
-KubeOne configuration to our current terraform configuration and install the cluster in our infrastructure.
+Now we get to our final line: `kubeone apply --manifest kubeone.yaml --tfjson output.json`. This line will apply the
+KubeOne configuration to our current Terraform configuration and install the cluster in our infrastructure.
 Your output should be similar to this one here:
 ```log
 INFO[22:38:58 CET] Determine hostname...
@@ -124,7 +124,7 @@ INFO[22:49:57 CET] Installing machine-controller webhooks...
 INFO[22:49:58 CET] Waiting for machine-controller to come up...
 INFO[22:50:34 CET] Creating worker machines...
 ```
-KubeOne could take a few minutes for setting everything up, but in the end you should be greeted with a `-kubeconfig` file
+KubeOne could take a few minutes for setting everything up, but in the end you should be greeted with a `*-kubeconfig` file
 in the current directory. I suggest you setup a `configs` directory in `$HOME/.kube/configs`. This way you can store
 every kubernetes config for multiple clusters in one directory. Additionally you should set this environment variable
 in your `zshrc` or `bashrc` configuration: `KUBECONFIG="$(find ~/.kube/configs/ -type f -exec printf '%s:' '{}' +)"`.
@@ -139,7 +139,7 @@ You are even able to scale your cluster to zero: `kubectl scale -n kube-system m
 
 Take in mind that you need modify your `output.tf` or KubeOne configuration manifest if you scale up or down, otherwise you might end up
 deleting/adding resources you do not want. Apropos deleting, if you want to get rid of everything and this article sucks just do a `terraform destroy`.
-This should destroy all configured resources that got created via terraform. Playing around with this multiple hours cost me around 20 cent.
+This should destroy all configured resources that got created via Terraform. Playing around with this multiple hours cost me around 20 cent.
 I hope you do not forget to delete your resources after playing around. Luckily Hetzner is not that expensive and you should not wake up with a €2000 bill
 the next day (not looking at you Amazon AWS...).
 
