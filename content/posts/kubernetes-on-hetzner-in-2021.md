@@ -17,9 +17,9 @@ Kubeadm is **the** official tool for installing Kubernetes on VMs or bare-metal 
 KubeOne tries to solve this with providing you a wrapper around Kubeadm and various other provisioning tools like [Terraform](https://www.terraform.io/).
 Terraform lets you manage your infrastructure as code. The advantage is that you can easily destroy, deploy or enhance your infrastructure
 via a few config file changes. You may ask yourself why you even need this tutorial. There is already at [least one tutorial](https://community.hetzner.com/tutorials/install-kubernetes-cluster) that guides you through the process of setting up a Kubernetes cluster on Hetzner. This is correct, but I felt it is unnecessary complicated,
-takes too much manual steps and is not really automatable (although there are solutions like [kubespray](https://github.com/kubernetes-sigs/kubespray) that intends to solve this).
+takes too much manual steps and is not really automatable (although there are solutions like [kubespray](https://github.com/kubernetes-sigs/kubespray) that intend to solve this).
 
-I hope you will give this tutorial a chance and I promise that you will not regret it. You will definitely something from it.
+I hope you will give this tutorial a chance and I promise that you will not regret it. You will definitely learn something from it.
 For the beginning you need the following ingredients for mixing your first Kubernetes cluster with Hetzner flavor:
 
 * A Hetzner Cloud account
