@@ -57,11 +57,11 @@ $ ls
 
 The `README.md` file gives us a brief explanation about inputs and outputs and gives us hints about loadbalancers.
 The `versions.tf` file tells us the required terraform version and the required providers. In our case the cloud provider is hcloud.
-THe `variables.tf` file defines all variables for our new cluster infrastructure.
+The `variables.tf` file defines all variables for our new cluster infrastructure.
 The `output.tf` file defines the output of terraform. This will get important later, because we will use the output as direct input
 for KubeOne. The `main.tf` file hides the core logic behind all of this. The `main.tf` file is reponsible for bootstrapping the infrastructure.
 In this file we see networks, ssh keys, loadbalancers and virtual machines defined. I do not want to explain terraform in detail here.
-If you are interested in this I suggest you have a look on the excellent terraform registry documentation. It gives you a nice introduction
+If you are interested in this I suggest you have a look on the excellent [terraform registry](https://registry.terraform.io/providers/hetznercloud/hcloud/latest/docs) documentation. It gives you a nice introduction
 for each resource. You do not have to edit one of these files. They are ready to go as they are.
 
 For provisioning the infrastructure we can do the following:
@@ -71,7 +71,7 @@ $ terraform init
 $ terraform apply
 ```
 
-`terraform apply` will ask you for a cluster name and will prompt you later for a confirmation. After a only a few seconds (wow),
+`terraform apply` will ask you for a cluster name and will prompt you for confirmation later. After only a few seconds (wow),
 you should see a JSON configuration in green letters. This means everything has been successfuly and the infrastructure is
 starting right now. You might have noticed the `terraform.tfstate` file already.
 Do not lose it, it stores the status quo of your infrastructure configuration. Next we can create our first `kubeone.yaml` configuration
