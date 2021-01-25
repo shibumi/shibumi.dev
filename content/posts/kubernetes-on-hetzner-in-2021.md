@@ -126,21 +126,28 @@ INFO[22:50:34 CET] Creating worker machines...
 ```
 KubeOne could take a few minutes for setting everything up, but in the end you should be greeted with a `*-kubeconfig` file
 in the current directory. I suggest you setup a `configs` directory in `$HOME/.kube/configs`. This way you can store
-every kubernetes config for multiple clusters in one directory. Additionally you should set this environment variable
+every Kubernetes config for multiple clusters in one directory. Additionally you should set this environment variable
 in your `zshrc` or `bashrc` configuration: `KUBECONFIG="$(find ~/.kube/configs/ -type f -exec printf '%s:' '{}' +)"`.
-It will load all kubernetes configuration files and construct a path from them. Big thanks to my friend Morre for tip.
+It will load all Kubernetes configuration files and construct a path from them. Big thanks to my friend Morre for the tip.
 
 If you moved the config file to the right direction and restarted your shell you should be able to list all nodes: `kubectl get nodes`.
 The biggest advantage of KubeOne over the previous mentioned method is that you can easily scale your cluster up and down.
-This works because, KubeOne ships a `machine-controller` for deploying or deleting worker nodes.
+This works, because KubeOne ships a `machine-controller` for deploying or deleting worker nodes.
 For scaling your cluster up and down just modify the `machinedeployment` resource in the `kube-system` namespace or
 use the `kubectl scale` command: `kubectl scale -n kube-system machinedeployment <machinedeployment-name> --replicas=5`.
 You are even able to scale your cluster to zero: `kubectl scale -n kube-system machinedeployment <machinedeployment-name> --replicas=0`.
 
 Take in mind that you need modify your `output.tf` or KubeOne configuration manifest if you scale up or down, otherwise you might end up
 deleting/adding resources you do not want. Apropos deleting, if you want to get rid of everything and this article sucks just do a `terraform destroy`.
-This should destroy all configured resources that got created via Terraform. Playing around with this multiple hours cost me around 20 cent.
+This should destroy all configured resources that got created via Terraform. Playing around with this for multiple hours cost me around 20 cent.
 I hope you do not forget to delete your resources after playing around. Luckily Hetzner is not that expensive and you should not wake up with a €2000 bill
 the next day (not looking at you Amazon AWS...).
 
 Next time we will dive into bootstrapping our first Kubernetes cluster without machine-controller and static worker nodes.
+
+Here are some additional links that were helpful:
+
+* [https://docs.kubermatic.com/kubeone/v1.0/](https://docs.kubermatic.com/kubeone/v1.0/)
+* [https://registry.terraform.io/providers/hetznercloud/hcloud/latest/docs](https://registry.terraform.io/providers/hetznercloud/hcloud/latest/docs)
+* [https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/)
+* [https://www.kubermatic.com/blog/kubeone-oidc-authentication-audit-logging/](https://www.kubermatic.com/blog/kubeone-oidc-authentication-audit-logging/)
