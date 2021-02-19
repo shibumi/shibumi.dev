@@ -5,12 +5,6 @@ draft: false
 toc: false
 ---
 
-Christian Rebischke  
-Marie-Hedwigstraße 13  
-Apartment 321  
-38678 Clausthal-Zellerfeld  
-Germany
-
 ## Mail
 
 chris@shibumi.dev  

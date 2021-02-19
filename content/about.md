@@ -26,11 +26,15 @@ My interests are high-scalable infrastructure, IT security and Linux.
 In 2014/2015 I have been involved in the analysis of the Xor DDoS Linux Trojan.
 [Virus Bulletin Conference 2015](/storage/KalnaiHorejsi-VB2015.pdf)
 
-My VirusTotal profile from that time:
+My VirusTotal profile:
 [https://www.virustotal.com/gui/user/Shibumi/comments](https://www.virustotal.com/gui/user/Shibumi/comments)
 
 The Cloud Native Computing Foundation (CNCF) mentions their Google Summer of Code 2020 Graduates:
 [https://www.cncf.io/blog/2020/09/17/16-cncf-interns-graduate-from-summer-of-code-gsoc-2020/](https://www.cncf.io/blog/2020/09/17/16-cncf-interns-graduate-from-summer-of-code-gsoc-2020/)
+
+The NYU about my Google Summer of Code internship:
+[https://ssl.engineering.nyu.edu/blog/2020-11-13-christian-gsoc](https://ssl.engineering.nyu.edu/blog/2020-11-13-christian-gsoc)
+
 
 ## Publications
 
