@@ -2,7 +2,7 @@
 title: "Kubernetes on Hetzner in 2021"
 date: 2021-01-25T21:24:59+01:00
 draft: false
-description:
+description: How to create a Kubernetes Cluster with Kubermatic's KubeOne on Hetzner Cloud
 tags:
  - linux
  - devops
