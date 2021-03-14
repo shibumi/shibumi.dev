@@ -187,6 +187,24 @@ oath=$(ykman oath code -s "$input")
 echo "$oath" | wl-copy --paste-once
 ```
 
+### Update (2021-03-14)
+
+I always thought that `wl-copy --paste-once` does not work in the browser, because the browser was not
+Wayland-native. Turns out even with Wayland-native browsers you will encounter the same bug.
+This seem to be related to [https://github.com/bugaevc/wl-clipboard/issues/107](https://github.com/bugaevc/wl-clipboard/issues/107).
+I decided to fix this issue for me via using a timer and `wl-copy --clear` instead of `wl-copy --paste-once`:
+
+The new script for triggering bemenu looks like this:
+```bash
+#!/bin/bash
+source "${HOME}/.local/share/scripts/bemenu"
+
+input=$(gopass list -f | _bemenu -p "gopass")
+printf '%s' "$(gopass show -o "$input")" | wl-copy
+sleep 5
+wl-copy --clear
+```
+
 ## Screen sharing
 
 Screen sharing is a bigger topic. I really had a lot(!) issues with it over the last
@@ -229,3 +247,20 @@ This file sets all of my environment variables and gets automatically loaded by 
 If you have the environment variable and a working pipewire-media-session service everything else should work
 out of the box.
 
+### Update (2021-03-14)
+
+Right now it is not possible to directly select the output for the screen sharing in the browser.
+You can work around this issue via this little script here:
+
+```
+#!/bin/bash
+source "${HOME}/.local/share/scripts/bemenu"
+
+input=$(swaymsg -t get_outputs | jq -r '.[].name' | _bemenu)
+/usr/lib/xdg-desktop-portal -r & /usr/lib/xdg-desktop-portal-wlr -r -o "$input" &
+```
+
+This script allows me to select the screen for screen sharing. I just have to remember that I need to
+trigger this script before sharing my screen. The preview window in the web browser will then show the
+correct screen preview. The disadvantage from this method is that you need to know your monitors
+name. If you find a better solution for this let me know.
