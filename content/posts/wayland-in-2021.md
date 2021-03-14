@@ -247,7 +247,7 @@ This file sets all of my environment variables and gets automatically loaded by 
 If you have the environment variable and a working pipewire-media-session service everything else should work
 out of the box.
 
-### Update (2021-03-14)
+### Update (2021-03-14T14:41)
 
 Right now it is not possible to directly select the output for the screen sharing in the browser.
 You can work around this issue via this little script here:
@@ -264,3 +264,16 @@ This script allows me to select the screen for screen sharing. I just have to re
 trigger this script before sharing my screen. The preview window in the web browser will then show the
 correct screen preview. The disadvantage from this method is that you need to know your monitors
 name. If you find a better solution for this let me know.
+
+### Update (2021-03-14T15:11)
+
+[One user on Reddit](https://www.reddit.com/r/swaywm/comments/m4vagz/running_sway_in_production_in_the_year_of_2021/gqwc7nx/?utm_source=reddit&utm_medium=web2x&context=3) suggested that I should use slurp instead of bemenu for the selection. And indeed this makes selection
+way easier, because you do not need to remember the monitor output name:
+
+The update script is this two-liner here:
+```bash
+#!/bin/bash
+
+input=$(slurp -o -f "%o")
+/usr/lib/xdg-desktop-portal -r & /usr/lib/xdg-desktop-portal-wlr -r -o "$input" &
+```
