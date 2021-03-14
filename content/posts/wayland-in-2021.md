@@ -252,7 +252,7 @@ out of the box.
 Right now it is not possible to directly select the output for the screen sharing in the browser.
 You can work around this issue via this little script here:
 
-```
+```bash
 #!/bin/bash
 source "${HOME}/.local/share/scripts/bemenu"
 
