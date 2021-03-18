@@ -5,16 +5,17 @@ draft: false
 toc: false
 ---
 
-I am Christian Rebischke a passionted Linux user from the Harz (Germany).
+I am Christian Rebischke a passionted Linux user from Germany.
 My interests are high-scalable infrastructure, IT security and Linux.
+You may know me for being Arch Linux Trusted User or for my engagement
+in the CNCF community.
 
 ## Want to hire me?
 
 **Sorry, currently I am not interested in job offers. This may change in the future :)**
 
 * I am currently interested in positions as Site Reliability Engineer (SRE).
-* Checkout my CV (short version): [Rebischke_CV.pdf](/storage/Rebischke_CV.pdf)
-* If you want to have a look on all of my accomplishments, check out my portfolio: [Rebischke_portfolio.pdf](/storage/Rebischke_portfolio.pdf)
+* Checkout my resume (CV): [Rebischke_CV.pdf](/storage/Rebischke_CV.pdf)
 
 ## Involvement
 
@@ -31,6 +32,9 @@ My VirusTotal profile:
 
 The Cloud Native Computing Foundation (CNCF) mentions their Google Summer of Code 2020 Graduates:
 [https://www.cncf.io/blog/2020/09/17/16-cncf-interns-graduate-from-summer-of-code-gsoc-2020/](https://www.cncf.io/blog/2020/09/17/16-cncf-interns-graduate-from-summer-of-code-gsoc-2020/)
+
+Cloud Native Computing Foundation (CNCF) spotlight on my Google Summer of Code 2020 internship:
+[https://www.cncf.io/blog/2020/10/07/gsoc-spotlight-my-google-summer-of-code-experience-at-cncf-in-2020/](https://www.cncf.io/blog/2020/10/07/gsoc-spotlight-my-google-summer-of-code-experience-at-cncf-in-2020/)
 
 The NYU about my Google Summer of Code internship:
 [https://ssl.engineering.nyu.edu/blog/2020-11-13-christian-gsoc](https://ssl.engineering.nyu.edu/blog/2020-11-13-christian-gsoc)
