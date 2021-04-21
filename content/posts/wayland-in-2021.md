@@ -277,3 +277,15 @@ The update script is this two-liner here:
 input=$(slurp -o -f "%o")
 /usr/lib/xdg-desktop-portal -r & /usr/lib/xdg-desktop-portal-wlr -r -o "$input" &
 ```
+
+### Update (2021-04-21T22:46)
+
+With `xdg-desktop-portal-wlr` version 0.3.0 it is necessary to import the user environment in your sway session.
+You can do this via adding the following line to your sway configuration:
+
+```
+exec "systemctl --user import-environment"
+```
+
+If `xdg-desktop-portal-wlr` does not work for some reason try checking the environment variables for the `xdg-desktop-portal` process.
+You **need** to have `WAYLAND_DESKTOP` and `XDG_CURRENT_DESKTOP` variables in the environment of the `xdg-desktop-portal` process: `cat /proc/$(pidof xdg-desktop-portal)/environ`
