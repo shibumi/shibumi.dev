@@ -288,4 +288,17 @@ exec "systemctl --user import-environment"
 ```
 
 If `xdg-desktop-portal-wlr` does not work for some reason try checking the environment variables for the `xdg-desktop-portal` process.
-You **need** to have `WAYLAND_DESKTOP` and `XDG_CURRENT_DESKTOP` variables in the environment of the `xdg-desktop-portal` process: `cat /proc/$(pidof xdg-desktop-portal)/environ`
+You **need** to have `WAYLAND_DESKTOP` and `XDG_CURRENT_DESKTOP` variables in the environment of the `xdg-desktop-portal` process: `cat /proc/$(pidof xdg-desktop-portal)/environ`.
+
+With version 0.3.0 `xdg-desktop-portal-wlr` is also being able to start a desktop chooser command. Just place
+the following configuration file in `$XDG_CONFIG_HOME/xdg-desktop-portal-wlr/config`:
+
+```ini
+[screencast]
+output_name=
+max_fps=30
+chooser_cmd="slurp -f %o -o"
+chooser_type=simple
+```
+
+This will start up the chooser automatically and using my little helper script before is no longer necessary.
