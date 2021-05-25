@@ -10,7 +10,7 @@ tags:
 
 In today's article I would like to shine some light on my local terminal setup. 
 My setup consists of ZSH and [Alacritty](https://github.com/alacritty/alacritty).
-ZSH or the Z shell is an extended variant of the Bourne shell (bash). It comes
+ZSH or the Z shell is an extended variant of the Bourne again shell (bash). It comes
 with a few useful features and extensions. Many people use the ZSH mostly for 
 nice shell prompts or tab completion. This article will be about more advanced features,
 like custom shortcuts. Alacritty is a terminal emulator written in Rust. It has
