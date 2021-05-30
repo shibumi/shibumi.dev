@@ -48,7 +48,7 @@ Normally I construct my KUBECONFIG with some bash magic like this:
 
 This allows me to store all my kubeconfigs in the directory `$HOME/.kube/configs` and gives me benefit that I do not need to merge them.
 However, with Kubermatic (especially the kubermatic installer, I ran into some issues with it). So, if you see an "unauthorized" error,
-while installing kubermatic this might be the issue for it. By the way, the issue is being tracked in: ![https://github.com/kubermatic/kubermatic/issues/7093](https://github.com/kubermatic/kubermatic/issues/7093)
+while installing kubermatic this might be the issue for it. By the way, the issue is being tracked in: [https://github.com/kubermatic/kubermatic/issues/7093](https://github.com/kubermatic/kubermatic/issues/7093)
 
 So much about the kubeconfig. Let us talk about the installation process itself now. You will need the kubermatic-installer.
 I recommend the community edition for doing your first steps with Kubermatic:
