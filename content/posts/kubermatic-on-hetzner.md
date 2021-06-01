@@ -9,12 +9,6 @@ tags:
 ---
 
 Hello and welcome to another article about Kubernetes. In this article we will go through the Kubermatic installation on Hetzner Cloud.
-
-## DISCLAIMER
-**If you follow this tutorial you may or may not have a working cluster. I do not recommend this article as setup guide yet,
-because I still have some issues with it. If you scroll to the bottom you will see that I have created a cluster, but it is not
-ready yet, due to seed/cluster communication problems. I am currently working on a fix.**
-
 But first of all let us go through a few questions: 
 
 ### What is Kubermatic and why do I need it? 
@@ -129,7 +123,7 @@ service/nginx-ingress-controller   LoadBalancer   10.97.231.63   <pending>     8
 ```
 
 This is because Kubermatic fails to provision the load balancer on Hetzner. You can fix this via adding an anotation to the
-nginx-ingress-controller: `kubectl annotate service load-balancer.hetzner.cloud/location: fsn1` (Note: change the location according to your datacenter).
+nginx-ingress-controller: `kubectl annotate service/nginx-ingress-controller -n nginx-ingress-controller load-balancer.hetzner.cloud/location=fsn1` (Note: change the location according to your datacenter).
 
 With this change you should see a new LoadBalancer resource popping up in your Hetzner Cloud UI or via `hcloud load-balancer list`:
 ```
@@ -185,9 +179,8 @@ This means our setup is ready. You should be able to login into Kubermatic now v
 The dex installation can be found on `dex.<base domain>` (if configured).
 
 For your first steps in the UI you need to configure a project, then you can create a cluster but wait... there are no cluster providers, right? 
-This is intended. You need to configure
-a seed cluster first, because you can create your first clusters with Kubermatic. On smaller setups, like this one, we can use the master cluster
-as seed cluster. Do you remember the `seed.example.yaml` file in the kubermatic examples directory? This is where go next.
+This is intended. You need to configure a seed cluster and the corresponding container storage interface (CSI) first. On smaller setups, like this one, we can use the master cluster
+as seed cluster. Do you remember the `seed.example.yaml` file in the kubermatic examples directory? This is where we go next.
 
 Modify the file according to the comments:
 
@@ -222,66 +215,35 @@ spec:
     namespace: kubermatic
 ```
 
-As last step apply the new `seed.example.yaml`: `kubectl apply -f seed.example.yaml`. Now you should be able to
+As last step apply the new `seed.example.yaml`: `kubectl apply -f seed.example.yaml`. 
+With the new seed cluster we can deploy the [Hetzner CSI driver](https://github.com/hetznercloud/csi-driver#container-storage-interface-driver-for-hetzner-cloud).
+For the Hetzner CSI driver we have to create a secret:
+```yaml
+# secret.yml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: hcloud-csi
+  namespace: kube-system
+stringData:
+  token: YOURTOKEN
+```
+
+Deploy this secret via `kubectl apply` and continue with installing the Hetzner CSI driver:
+`kubectl apply -f https://raw.githubusercontent.com/hetznercloud/csi-driver/v1.5.1/deploy/kubernetes/hcloud-csi.yml`
+
+Note: Make sure to have a look on their [version compatibility matrix](https://github.com/hetznercloud/csi-driver/blob/master/README.md#versioning-policy).
+
+Now you should be able to
 select a provider in your Kubermatic installation. Click through the Kubermatic "Create a cluster"-dialog.
 If this fails, this might be because you are lacking nodes. Just scale up your master cluster with additional worker nodes.
 I recommend doing it via the `kubeone.yaml` + `kubeone apply` (declarative setup), but you can just do it imperative as well
 via: `kubectl scale -n kube-system machinedeployment master-pool1 --replicas=2`.
 
-If necessary repeat the "create a cluster"-dialog. In the end you should see this:
+Congratulations! You have just created your first Kubernetes cluster via Kubermatic on Hetzner Cloud:
 
 ![/img/kubermatic-01.png](/img/kubermatic-01.png)
 
-This is the point where I would write "Congratulations, You have created your first cluster with Kubermatic.", but
-my cluster creation failed and I do not know yet, why.
-
-Is it because I jumped over the cluster backup configuration? The kubermatic docs recommend installing minio and the s3-exporter.
-I just jumped over this part for demo purposes. Kubermatic stores all created Kubernetes cluster configurations in namespaces.
-Let us have a look:
-
-```
-chris motoko ~/kubermatic 17:25:59 a9833cb1 master  kubernetes-admin@master cluster-xbrkdflsmq
-❯ kubens cluster-xbrkdflsmq
-Context "kubernetes-admin@master" modified.
-Active namespace is "cluster-xbrkdflsmq".
-chris motoko ~/kubermatic 17:26:04 a9833cb1 master  kubernetes-admin@master cluster-xbrkdflsmq
-❯ kubectl get pods
-NAME                                              READY   STATUS     RESTARTS   AGE
-pod/apiserver-7b9456c7cd-tmv7l                    0/4     Init:0/1   0          2m56s
-pod/apiserver-7b9456c7cd-wzl9z                    0/4     Init:0/1   0          2m56s
-pod/controller-manager-658ff44b89-jm4bv           1/2     Running    1          2m56s
-pod/dns-resolver-57fb778488-drklk                 2/2     Running    0          2m56s
-pod/dns-resolver-57fb778488-lgl28                 2/2     Running    0          2m56s
-pod/etcd-0                                        0/1     Pending    0          2m56s
-pod/etcd-1                                        0/1     Pending    0          2m56s
-pod/etcd-2                                        0/1     Pending    0          2m56s
-pod/kubernetes-dashboard-7dd5b4799c-9h2j2         1/1     Running    0          2m56s
-pod/kubernetes-dashboard-7dd5b4799c-wwxsm         1/1     Running    0          2m56s
-pod/machine-controller-74fd44d686-zf7vl           1/1     Running    4          2m56s
-pod/machine-controller-webhook-7cfb964d5b-l5vsl   0/1     Running    1          2m56s
-pod/metrics-server-5bb8f467fb-g6qpp               3/3     Running    0          2m56s
-pod/metrics-server-5bb8f467fb-vvjlh               3/3     Running    0          2m56s
-pod/openvpn-server-f587f95c5-27xj8                3/3     Running    0          2m56s
-pod/scheduler-55f9c9764c-zjnz2                    1/2     Running    1          2m56s
-pod/usercluster-controller-84879dc867-jh8tb       0/1     Running    0          2m56s
-```
-
-To summarize this:
-
-* The apiservers pods are not running
-* The etcd pods are pending
-* the machine-controller is not ready (and will very likely be in Crashloopbackoff state soon)
-
-If we investigate the apiserver logs (the etcd-running init container to be precise) we see this:
-```
-{"level":"warn","ts":"2021-05-30T15:27:10.313Z","caller":"clientv3/retry_interceptor.go:61","msg":"retrying of unary invoker failed","target":"endpoint://client-3c76155a-4268-42d4-b6da-e87113a510bb/etcd-0.etcd.cluster-xbrkdflsmq.svc.cluster.local.:2379","attempt":0,"error":"rpc error: code = DeadlineExceeded desc = latest connection error: connection error: desc = \"transport: Error while dialing dial tcp: lookup etcd-1.etcd.cluster-xbrkdflsmq.svc.cluster.local. on 10.96.153.22:53: no such host\""}
-Error: context deadline exceeded
-waiting for etcd
-```
-
-I have no explanation for this bug yet.. for me this looks like the seed/cluster-communication does not seem to work.
-
-If you have any idea get in touch with me :) I am willing to repeat the whole blog article.
 
 
 
