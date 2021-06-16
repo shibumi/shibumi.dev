@@ -302,3 +302,17 @@ chooser_type=simple
 ```
 
 This will start up the chooser automatically and using my little helper script before is no longer necessary.
+
+### Update (2021-06-17T00:09)
+
+The above `xdg-desktop-portal-wlr` version will not work, because `xdg-desktop-portal-wlr` changed their parser.
+If you are using this configuration and if you are wondering that it stopped working you need to change the `chooser_cmd` line
+to `slurp -f %o -o` **without** double quotes. The full configuration should look like this:
+
+```ini
+[screencast]
+output_name=
+max_fps=30
+chooser_cmd=slurp -f %o -o
+chooser_type=simple
+```
