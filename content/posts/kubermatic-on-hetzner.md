@@ -1,7 +1,7 @@
 ---
 title: "Kubermatic on Hetzner"
-date: 2021-05-30T16:24:26+02:00
-draft: true
+date: 2021-08-01T22:02:00+02:00
+draft: false
 description: Installing Kubermatic on Hetzner
 tags:
  - linux
