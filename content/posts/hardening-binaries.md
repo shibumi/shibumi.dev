@@ -11,7 +11,7 @@ tags:
 
 Quite a while ago, Arch Linux has turned on many binary security features via
 compilation flags (2016)[^1] or turned off options that are known to help
-exploit software (debugging symbols, RPATH). Now we have 2020 and Arch Linux made good
+exploit software (debugging symbols, RPATH). Now we have 2021 and Arch Linux made good
 experience with the additional security options.
 
 We made good experience on Arch Linux with the following flags so far:
@@ -31,11 +31,11 @@ project[^9] delivered good results[^10] and we decided to enable these flags.
 
 For validating EFI binaries we use the tool checksec.sh.
 The follows snippet shows the example output of `check-sec --file=/usr/bin/kubectl`
-with kubectl version 1.19.2-1 on Arch Linux:
+with kubectl version 1.21.3-1 on Arch Linux:
 
 ```
-RELRO           STACK CANARY      NX            PIE             RPATH      RUNPATH	Symbols		FORTIFY	Fortified	Fortifiable	FILE
-Full RELRO      Canary found      NX enabled    PIE enabled     No RPATH   No RUNPATH   No Symbols	  Yes	2		2		/usr/bin/kubectl
+RELRO           STACK CANARY      NX            PIE             RPATH      RUNPATH      Symbols         FORTIFY Fortified       Fortifiable     FILE
+Full RELRO      Canary found      NX enabled    PIE enabled     No RPATH   No RUNPATH   No Symbols        Yes   2               3               /usr/bin/kubectl
 ```
 
 We achieved a fully hardened kubectl binary via the following methods:
