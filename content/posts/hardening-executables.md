@@ -1,5 +1,5 @@
 ---
-title: "Hardening Binaries"
+title: "Hardening Executables"
 date: 2021-08-01T21:40:03+02:00
 draft: false
 description:
@@ -26,10 +26,10 @@ We made good experience on Arch Linux with the following flags so far:
 
 Some of these flags are known to have effects on performance.
 A 'call for assistance'[^8] in 2016 tried to measure these effects via running
-different operations with binaries that have above flags enabled. The
+different operations with executables that have above flags enabled. The
 project[^9] delivered good results[^10] and we decided to enable these flags.
 
-For validating EFI binaries we use the tool checksec.sh.
+For validating EFI executables we use the tool checksec.sh.
 The follows snippet shows the example output of `check-sec --file=/usr/bin/kubectl`
 with kubectl version 1.21.3-1 on Arch Linux:
 
