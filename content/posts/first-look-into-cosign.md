@@ -2,7 +2,7 @@
 title: "Keyless signatures for blobs with cosign"
 date: 2021-11-07T04:09:03+01:00
 draft: false
-description: "First look into cosign and rekor for signing and validating binaries"
+description: "First look into cosign and rekor for signing and verifying binaries"
 tags: 
   - linux
   - devops
@@ -142,8 +142,8 @@ $ rekor-cli get --log-index 832324 --format json | jq
 }
 ```
 
-The transparency log entry stores everything what you need for validating my signature. There is the sha256 checksum of my file, the signature and
-the public key for validating the signature.
+The transparency log entry stores everything what you need for verify my signature. There is the sha256 checksum of my file, the signature and
+the public key for verify the signature.
 
 I could not find an easy way to use this rekor transparency log as input for cosign, hence I have extracted the information manually as follows:
 ```bash
@@ -151,7 +151,7 @@ $ rekor-cli get --log-index 832324 --format json | jq -r '.Body.RekordObj.signat
 $ rekor-cli get --log-index 832324 --format json | jq -r '.Body.RekordObj.signature.publicKey.content' | base64 -d > pub.crt
 ```
 
-The above commands will extract a signature file and the public certificate. Next, we can use both to validate the file:
+The above commands will extract a signature file and the public certificate. Next, we can use both to verify the file:
 ```bash
 $ COSIGN_EXPERIMENTAL=1 cosign verify-blob -cert pub.crt -signature hello-world.txt.sig hello-world.txt
 No TUF root installed, using embedded CA certificate.
