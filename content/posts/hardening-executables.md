@@ -29,7 +29,7 @@ A 'call for assistance'[^8] in 2016 tried to measure these effects via running
 different operations with executables that have above flags enabled. The
 project[^9] delivered good results[^10] and we decided to enable these flags.
 
-For validating EFI executables we use the tool checksec.sh.
+For validating ELF executables we use the tool checksec.sh.
 The follows snippet shows the example output of `check-sec --file=/usr/bin/kubectl`
 with kubectl version 1.21.3-1 on Arch Linux:
 
