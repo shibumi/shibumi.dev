@@ -76,3 +76,10 @@ One possible usecase for this is: Ship your artifact + the public certificate + 
 validate the artifact with the given public certificate and signature. For additional security, he can check the transparency log for the
 given signature and certificate and validate if the certificate has been created by the correct OIDC identifier. In my case, this is my email. 
 
+**Addition from the 14th November 2021**
+
+A few people asked me if it would be possible to fake the system time for creating a signature with a stolen expired certificate.
+This is indeed possible for offline verification, but cosign queries the rekor transparency log on default. The rekor transparency
+log uses the time-stamp protocol (TSP), also known as [RFC3161](https://www.ietf.org/rfc/rfc3161.txt) for secure timestamps.
+Therefore, it is highly recommended to verify all signatures against the rekor transparency log.
+Cosign does this on default and cosign v1.3.1 even downloads the certificate from the transparency log on default.

@@ -182,5 +182,5 @@ Some forecasts for the future:
 * Cosign will get functionality for piping the created public certificate into a file.
 * GoReleaser will get functionality for releasing the public certificate as well (nice for double-checking: offline certificate + rekor transparency log)
 
-The sigstore infrastructure is not yet production ready, but save to use. As far as I know transparency logs will transition into the new public production ready instance.
+The sigstore infrastructure is not yet production ready, but safe to use. As far as I know transparency logs will transition into the new public production ready instance.
 The experimental features will hopefully be general available soon.
