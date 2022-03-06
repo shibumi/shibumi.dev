@@ -12,7 +12,8 @@ in the CNCF community.
 
 ## Want to hire me?
 
-* I am currently interested in positions as Site Reliability Engineer (SRE).
+**I am currently not interested in Job offers**
+
 * Checkout my resume (CV): [Rebischke_CV.pdf](/storage/Rebischke_CV.pdf)
 
 ## Involvement
