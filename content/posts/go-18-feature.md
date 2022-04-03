@@ -2,7 +2,7 @@
 title: "Go 1.18 debug/buildinfo features"
 date: 2022-04-03T18:31:24+02:00
 draft: false
-description:
+description: debug/buildinfo vcs information with Go 1.18
 tags:
  - linux
  - devops
