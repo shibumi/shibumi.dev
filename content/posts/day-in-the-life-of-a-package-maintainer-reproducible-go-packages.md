@@ -1,7 +1,7 @@
 ---
 title: "Day in the life of a package maintainer: Reproducible Go packages"
 date: 2022-08-24T17:30:12+02:00
-draft: true
+draft: false
 description: "Today, we want fix one non-reproducible Go package in Arch Linux"
 toc: false
 images:
