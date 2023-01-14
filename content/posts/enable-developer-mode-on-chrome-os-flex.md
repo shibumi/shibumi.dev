@@ -1,6 +1,6 @@
 ---
 title: "How to enable developer mode on Chrome OS Flex"
-date: 2022-01-14T12:28:10+01:00
+date: 2023-01-14T12:28:10+01:00
 draft: false
 description:
 tags:
@@ -64,3 +64,4 @@ In Chrome OS open Google Chrome and press `ctrl+alt+t`, this will open the Chrom
 Developer mode alone might not be sufficient, because you want to very likely modify files. If you tried mounting the rootfs writeable, you might have realized that this does not work. This is because of [dm-verity](https://docs.kernel.org/admin-guide/device-mapper/verity.html). For disabling dm-verity, you must run the following command on Chrome OS Flex and reboot: `/usr/share/vboot/bin/make_dev_ssd.sh --remove_rootfs_verification --force --partition 2`.
 
 The command can be destructive, so make sure to backup any meaningful data first. After a fresh reboot you should be able to do: `sudo mount -o remount,rw /`. This remounts your rootfs writeable and you can directly work on the rootfs. This comes very useful when you want to debug system internals or want more log data for preparing a bug report to the Google Chrome OS team.
+
