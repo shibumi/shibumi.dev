@@ -2,7 +2,7 @@
 title: "Mount Block Devices in ChromeOS"
 date: 2023-08-05T19:04:49+02:00
 draft: false
-description:
+description: How to mount block devices in ChromeOS
 tags:
  - linux
  - devops
