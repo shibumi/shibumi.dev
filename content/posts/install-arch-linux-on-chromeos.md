@@ -55,6 +55,13 @@ a new running container.
 
 From here, you can follow the Arch Linux installation guide. Jump in the container (`lxc exec arch -- bash`) and run the following:
 
+### Update(2023-08-05)
+
+Do not change the username. If you change the username filesharing between the container and ChromeOS will stop working.
+When you continue to use the same user name + same IDs, the filesharing should be working fine.
+
+### Update(2023-08-05)
+
 ```
 # pkill -9 -u old-username
 # groupmod -n new-username old-username
@@ -106,4 +113,3 @@ From here, you should be good to go. Stop all running containers do the renaming
 Then open the ChromeOS Terminal App (not crosh) and just start Linux via starting the penguin container.
 
 Voila, you should be running Arch Linux on ChromeOS now.
-
