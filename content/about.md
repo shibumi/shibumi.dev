@@ -5,9 +5,9 @@ draft: false
 toc: false
 ---
 
-I am Christian Rebischke a passionted Linux user from Germany.
+I am Christian Rebischke a passionated Linux user from Germany.
 My interests are high-scalable infrastructure, IT security and Linux.
-You may know me for being Arch Linux Trusted User or for my engagement
+You may know me for being an Arch Linux package maintainer or for my engagement
 in the CNCF community.
 
 ## Want to hire me?
