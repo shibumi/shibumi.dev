@@ -1,0 +1,72 @@
+<script type="application/ld+json">
+    {{ if eq .Section "posts" }}
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": {{ .Title }},
+      "image": {{ .Params.featuredImage | absURL }},
+      "datePublished": {{ .PublishDate }},
+      "dateModified": {{ .Lastmod }},
+      "author": {
+        "@type": "Person",
+        "name": {{ .Site.Author.name }}
+      },
+      "mainEntityOfPage": { "@type": "WebPage" },
+      "publisher": {
+        "@type": "Organization",
+        "name": {{ .Site.Author.name }},
+        "logo": {
+          "@type": "ImageObject",
+          "url": {{ .Site.Params.logo }}
+        }
+      },
+      "description": {{ .Summary | plainify | safeHTML }},
+      "keywords": [{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}]
+    }
+    {{ end }}
+</script>
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": {{ .Site.Author.name }},
+      "url": {{ .Site.BaseURL }},
+      "sameAs": [
+        "https://twitter.com/sh1bumi",
+        "https://github.com/shibumi",
+        "https://linkedin.com/in/shibumi",
+        "https://www.wikidata.org/wiki/Q113655550"
+      ]
+    }
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "givenName": "Christian",
+        "familyName": "Rebischke",
+        "jobTitle": "Site Reliability Engineer",
+        "email": "chris@shibumi.dev",
+        "alumniOf": {
+            "@type": "Organization",
+            "legalName": "Clausthal University of Technology",
+            "url": [
+                "https://tu-clausthal.de",
+                "https://www.tu-clausthal.de"
+            ],
+            "name": "Clausthal University of Technology",
+            "alternateName": [
+                "TU Clausthal",
+                "TU-Clausthal",
+                "Technical University Clausthal",
+                "Technische Universität Clausthal"
+            ]
+        },
+        "url": [
+          "https://twitter.com/sh1bumi",
+          "https://github.com/shibumi",
+          "https://linkedin.com/in/shibumi",
+          "https://www.wikidata.org/wiki/Q113655550"
+        ]
+    }
+</script>
