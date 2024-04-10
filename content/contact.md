@@ -15,6 +15,11 @@ If you want to write me an encrypted email via PGP, feel free to download my PGP
 
 The fingerprint for the key is: `6DAF 7B80 8F9D F251 3962 0000 D214 61E3 DFE2 060D`
 
+For improved security write me on Signal:
+
+[![https://signal.me/#eu/x520dvN-eMzZuJuyiP0sfoeZwj-td_FGyirTN_A3rGRh-VrTKQRFzq6VsuczYbpX](/img/signal.jpeg)](https://signal.me/#eu/x520dvN-eMzZuJuyiP0sfoeZwj-td_FGyirTN_A3rGRh-VrTKQRFzq6VsuczYbpX)
+
+
 ## Privacy Policy
 
 This website is hosted [https://netlify.com](https://netlify.com)'s content delivery network (CDN).
